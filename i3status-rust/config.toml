@@ -1,0 +1,69 @@
+icons_format = "{icon}"
+invert_scrolling = true
+
+[theme]
+theme = "ctp-mocha"
+# [theme.overrides]
+# good_bg: "ctp-mocha"
+# good_fg: "ctp-mocha"
+# warning_bg: "ctp-mocha"
+# warning_fg: "ctp-mocha"
+# critical_bg: "ctp-mocha"
+# critical_fg: "ctp-mocha"
+# idle_bg = "#123456"
+# idle_fg = "#abcdef"
+
+[icons]
+icons = "awesome6"
+# [icons.overrides]
+# bat = ["|E|", "|_|", "|=|", "|F|"]
+# bat_charging = "|^| "
+
+[[block]]
+block = "cpu"
+info_cpu = 94
+warning_cpu = 95
+critical_cpu = 99
+
+# [[block]]
+# block = "disk_space"
+# path = "/"
+# info_type = "available"
+# alert_unit = "GB"
+# interval = 20
+# warning = 20.0
+# alert = 10.0
+# format = " $icon root: $available.eng(w:2) "
+
+[[block]]
+block = "memory"
+format = " $icon $mem_used_percents.eng(w:2) "
+format_alt = " $icon_swap $swap_used_percents.eng(w:2) "
+
+[[block]]
+block = "backlight"
+invert_icons = true
+
+[[block]]
+block = "sound"
+[[block.click]]
+button = "left"
+cmd = "pavucontrol"
+
+[[block]]
+block = "battery"
+# if_command = "test -e /sys/class/power_supply/BAT0"
+device = "BAT0"
+format = " $icon $percentage|N/A "
+info = 11
+warning = 10
+critical = 1
+
+[[block]]
+block = "net"
+format = "  $icon {$ssid |Wired connection}via $device "
+
+[[block]]
+block = "time"
+interval = 5
+format = " $timestamp.datetime(f:'%a %d/%m %R') "
