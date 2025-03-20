@@ -14,19 +14,24 @@ sudo dnf install git
 
 sudo dnf install stow
 
-### foot, zsh, zsh-autosuggestions, zsh-syntax-highlighting
+### foot, zsh, zsh-autosuggestions, zsh-syntax-highlighting, fastfetch
 
 sudo dnf install foot  
 sudo dnf install zsh  
 sudo dnf install zsh-autosuggestions  
-sudo dnf install zsh-syntax-highlighting
+sudo dnf install zsh-syntax-highlighting  
+sudo dnf install fastfetch
 
-### eza, zoxide, fzf, xclip, FantasqueSansM Nerd Font
+### bat, eza, zoxide, fzf, xclip, FantasqueSansM Nerd Font
 
-sudo dnf install eza zoxide fzf xclip
+sudo dnf install bat eza zoxide fzf xclip
 
 https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/FantasqueSansMono.zip  
-- unzip, move folder to ~/.local/share/fonts/
+unzip, move folder to ~/.local/share/fonts/
+
+## DNF packages summary
+
+git stow foot zsh zsh-autosuggestions zsh-syntax-highlighting fastfetch bat eza zoxide fzf xclip
 
 ### powerlevel10k
 
@@ -37,7 +42,23 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 
 set up zshrc and powerlevel10k for the first time then delete .zshrc and .p10k.zsh
 
+### yazi
+
+- install rust:  
+(version may change in future)  
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh  
+rustup update
+
+- clone and compile:  
+git clone https://github.com/sxyazi/yazi.git  
+cd yazi  
+cargo build --release --locked
+
+- add path:  
+mv target/release/yazi target/release/ya /usr/local/bin/
+
 ### Stow dotfiles
+
 cd  
 git clone https://github.com/paxmix/dotfiles.git  
 cd dotfiles  
