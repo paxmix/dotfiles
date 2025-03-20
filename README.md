@@ -1,1 +1,1 @@
-info about this project
+stow for dotfiles
