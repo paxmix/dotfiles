@@ -2,7 +2,7 @@
 show_hidden = true
 show_symlink = true
 
-[opener]
-edit = [
-	{ run = 'nvim "$@"', block = true, for = "unix" },
-]
+# [opener]
+# edit = [
+# 	{ run = 'nvim "$@"', block = true, for = "unix" },
+# ]
