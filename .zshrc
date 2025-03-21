@@ -103,3 +103,7 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 export PATH=$PATH:~/go/bin
+export PATH=$PATH:~/.local/bin
+
+alias nvim=lvim
+export EDITOR='lvim'
