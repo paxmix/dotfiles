@@ -14,7 +14,7 @@ config.font_size = 13
 
 config.default_cursor_style = "SteadyBar"
 
-config.alternate_buffer_wheel_scroll_speed = 5
+-- config.alternate_buffer_wheel_scroll_speed = 5
 
 config.hide_mouse_cursor_when_typing = true
 
