@@ -18,9 +18,10 @@ config.default_cursor_style = "SteadyBar"
 
 config.hide_mouse_cursor_when_typing = true
 
+-- startup size
 config.initial_cols = 180
 config.initial_rows = 45
-
+-- set max_fps to 75, probably not doing anything
 config.max_fps = 75
 
 config.use_fancy_tab_bar = false
