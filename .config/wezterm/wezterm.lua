@@ -5,7 +5,10 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
 -- This is where you actually apply your config choices
-config.color_scheme = "Tokyo Night Storm"
+-- config.color_scheme = "Tokyo Night Storm"
+config.color_scheme_dirs = { "~/.config/wezterm/colors" }
+config.color_scheme = "tokyonight_storm"
+
 config.font = wezterm.font("FantasqueSansM Nerd Font")
 config.font_size = 13
 
