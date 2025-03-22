@@ -14,14 +14,13 @@ sudo dnf install git
 
 sudo dnf install stow
 
-### foot, zsh, zsh-autosuggestions, zsh-syntax-highlighting, fastfetch, tmux
+### foot, zsh, zsh-autosuggestions, zsh-syntax-highlighting, fastfetch
 
 sudo dnf install foot  
 sudo dnf install zsh  
 sudo dnf install zsh-autosuggestions  
 sudo dnf install zsh-syntax-highlighting  
 sudo dnf install fastfetch
-sudo dnf install tmux
 
 ### bat, eza, zoxide, fzf, xclip, FantasqueSansM Nerd Font
 
@@ -57,6 +56,13 @@ set up zshrc and powerlevel10k for the first time then delete .zshrc and .p10k.z
 
 - add path:  
   mv target/release/yazi target/release/ya /usr/local/bin/
+
+### Wezterm
+
+added through copr repo:
+
+sudo dnf copr enable wezfurlong/wezterm-nightly  
+sudo dnf install wezterm
 
 ### Stow dotfiles
 
