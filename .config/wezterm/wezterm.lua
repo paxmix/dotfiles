@@ -26,5 +26,7 @@ config.max_fps = 75
 
 config.use_fancy_tab_bar = false
 
+-- config.window_background_opacity = 0.8
+
 -- and finally, return the configuration to wezterm
 return config
