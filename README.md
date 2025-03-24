@@ -14,7 +14,7 @@ sudo dnf install git
 
 sudo dnf install stow
 
-### foot, zsh, zsh-autosuggestions, zsh-syntax-highlighting, fastfetch
+### foot, fastfetch
 
 sudo dnf install foot  
 sudo dnf install zsh  
