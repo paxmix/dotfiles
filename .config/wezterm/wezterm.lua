@@ -5,6 +5,9 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
 -- This is where you actually apply your config choices
+-- Spawn a fish shell in login mode
+config.default_prog = { "/usr/bin/fish", "-l" }
+
 -- config.color_scheme = "Tokyo Night Storm"
 config.color_scheme_dirs = { "~/.config/wezterm/colors" }
 config.color_scheme = "tokyonight_storm"
