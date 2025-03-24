@@ -65,7 +65,6 @@ export FZF_ALT_C_OPTS="
 # add go/bin to PATH for lazygit
 fish_add_path -g ~/go/bin
 
-
 set -g EDITOR nvim
 
 # TokyoNight Color Palette
