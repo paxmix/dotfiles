@@ -14,12 +14,20 @@ sudo dnf install git
 
 sudo dnf install stow
 
+### Fish shell
+
+sudo dnf install fish
+
+- install fisher and plugins:
+  - fisher: curl -sL <https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish> | source && fisher install jorgebucaran/fisher
+  - nvm: fisher install jorgebucaran/nvm.fish  
+    install node, npm for lazyvim: nvm install latest
+  - autopair: fisher install jorgebucaran/autopair.fish
+  - hydro: fisher install jorgebucaran/hydro
+
 ### foot, fastfetch
 
 sudo dnf install foot  
-sudo dnf install zsh  
-sudo dnf install zsh-autosuggestions  
-sudo dnf install zsh-syntax-highlighting  
 sudo dnf install fastfetch
 
 ### bat, eza, zoxide, fzf, xclip, FantasqueSansM Nerd Font
@@ -31,16 +39,7 @@ unzip, move folder to ~/.local/share/fonts/
 
 ## DNF packages summary
 
-git stow foot zsh zsh-autosuggestions zsh-syntax-highlighting fastfetch bat eza zoxide fzf xclip tmux
-
-### powerlevel10k
-
-git clone --depth=1 <https://github.com/romkatv/powerlevel10k.git> ~/powerlevel10k  
-echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >> ~/.zshrc
-
-### Initial setup
-
-set up zshrc and powerlevel10k for the first time then delete .zshrc and .p10k.zsh
+git stow foot fastfetch bat eza zoxide fzf xclip
 
 ### yazi
 
