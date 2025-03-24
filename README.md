@@ -39,7 +39,7 @@ unzip, move folder to ~/.local/share/fonts/
 
 ## DNF packages summary
 
-git stow foot fastfetch bat eza zoxide fzf xclip
+git stow foot fastfetch bat eza zoxide fzf xclip fish go
 
 ### yazi
 
@@ -55,6 +55,14 @@ git stow foot fastfetch bat eza zoxide fzf xclip
 
 - add path:  
   mv target/release/yazi target/release/ya /usr/local/bin/
+
+### Lazygit
+
+install go: sudo dnf install go  
+git clone <https://github.com/jesseduffield/lazygit.git>  
+cd lazygit  
+go install  
+go/bin should already been added to PATH in config.fish
 
 ### Wezterm
 
