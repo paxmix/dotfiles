@@ -26,9 +26,8 @@ sudo dnf install fish
   - hydro: fisher install jorgebucaran/hydro
   - catppuccin: fisher install catppuccin/fish
 
-### foot, fastfetch
+### fastfetch
 
-sudo dnf install foot  
 sudo dnf install fastfetch
 
 ### bat, eza, zoxide, fzf, xclip, FantasqueSansM Nerd Font
