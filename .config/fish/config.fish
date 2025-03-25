@@ -107,4 +107,5 @@ end
 abbr lg lazygit
 abbr mirror "sudo cachyos-rate-mirrors"
 abbr update 'sudo pacman -Syu'
+
 abbr cleanup 'sudo pacman -Rns (pacman -Qtdq)'
