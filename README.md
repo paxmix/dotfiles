@@ -24,6 +24,7 @@ sudo dnf install fish
     install node, npm for lazyvim: nvm install latest
   - autopair: fisher install jorgebucaran/autopair.fish
   - hydro: fisher install jorgebucaran/hydro
+  - catppuccin: fisher install catppuccin/fish
 
 ### foot, fastfetch
 
