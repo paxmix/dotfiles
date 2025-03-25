@@ -10,7 +10,7 @@ config.default_prog = { "/usr/bin/fish", "-l" }
 
 -- config.color_scheme = "Tokyo Night Storm"
 config.color_scheme_dirs = { "~/.config/wezterm/colors" }
-config.color_scheme = "tokyonight_storm"
+config.color_scheme = "Catppuccin Mocha"
 
 config.font = wezterm.font("FantasqueSansM Nerd Font")
 config.font_size = 13
