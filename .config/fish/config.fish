@@ -67,25 +67,14 @@ fish_add_path -g ~/go/bin
 
 set -g EDITOR nvim
 
-# TokyoNight Color Palette
-set -l foreground c0caf5
-set -l selection 2e3c64
-set -l comment 565f89
-set -l red f7768e
-set -l orange ff9e64
-set -l yellow e0af68
-set -l green 9ece6a
-set -l purple 9d7cd8
-set -l cyan 7dcfff
-set -l pink bb9af7
-
 # Hydro config
 set -g hydro_symbol_start "  "
-set -g hydro_color_pwd $cyan
-set -g hydro_color_git $orange
-set -g hydro_color_prompt $green
-set -g hydro_color_error $red
-set -g hydro_color_duration $yellow
+set -g hydro_color_start 6c7086
+set -g hydro_color_pwd 89dceb
+set -g hydro_color_git cba6f7
+set -g hydro_color_prompt a6e3a1
+set -g hydro_color_error f38ba8
+set -g hydro_color_duration f9e2af
 set -g hydro_cmd_duration_threshold 5000
 set -g fish_prompt_pwd_dir_length 0
 # set -g hydro_multiline true
