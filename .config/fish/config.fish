@@ -79,5 +79,32 @@ set -g hydro_cmd_duration_threshold 5000
 set -g fish_prompt_pwd_dir_length 0
 # set -g hydro_multiline true
 
+# Format man pages
+set -x MANROFFOPT -c
+set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
+
+## Environment setup
+# Apply .profile: use this to put fish compatible .profile stuff in
+if test -f ~/.fish_profile
+    source ~/.fish_profile
+end
+
+# Add ~/.local/bin to PATH
+if test -d ~/.local/bin
+    if not contains -- ~/.local/bin $PATH
+        set -p PATH ~/.local/bin
+    end
+end
+
+# Add depot_tools to PATH
+if test -d ~/Applications/depot_tools
+    if not contains -- ~/Applications/depot_tools $PATH
+        set -p PATH ~/Applications/depot_tools
+    end
+end
+
 # custom abbreviation
 abbr lg lazygit
+abbr mirror "sudo cachyos-rate-mirrors"
+abbr update 'sudo pacman -Syu'
+abbr cleanup 'sudo pacman -Rns (pacman -Qtdq)'
