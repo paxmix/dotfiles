@@ -12,8 +12,8 @@ config.default_prog = { "/usr/bin/fish", "-l" }
 config.color_scheme_dirs = { "~/.config/wezterm/colors" }
 config.color_scheme = "Catppuccin Mocha"
 
-config.font = wezterm.font("FiraCode Nerd Font")
-config.font_size = 14
+config.font = wezterm.font("JetBrainsMono Nerd Font")
+config.font_size = 12
 
 config.default_cursor_style = "SteadyBar"
 
@@ -23,13 +23,13 @@ config.hide_mouse_cursor_when_typing = true
 
 -- startup size
 config.initial_cols = 180
-config.initial_rows = 45
+config.initial_rows = 40
 -- set max_fps to 75, probably not doing anything
 config.max_fps = 75
 
 -- config.use_fancy_tab_bar = false
 config.window_frame = {
-	font = wezterm.font({ family = "FiraCode Nerd Font", weight = "Bold" }),
+	font = wezterm.font({ family = "JetBrainsMono Nerd Font", weight = "Bold" }),
 
 	font_size = 12.0,
 
