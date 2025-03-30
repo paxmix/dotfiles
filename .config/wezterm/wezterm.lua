@@ -12,7 +12,7 @@ config.default_prog = { "/usr/bin/fish", "-l" }
 config.color_scheme_dirs = { "~/.config/wezterm/colors" }
 config.color_scheme = "Catppuccin Mocha"
 
-config.font = wezterm.font("FantasqueSansM Nerd Font")
+config.font = wezterm.font("FiraCode Nerd Font")
 config.font_size = 14
 
 config.default_cursor_style = "SteadyBar"
@@ -29,7 +29,7 @@ config.max_fps = 75
 
 -- config.use_fancy_tab_bar = false
 config.window_frame = {
-	font = wezterm.font({ family = "FantasqueSansM Nerd Font", weight = "Bold" }),
+	font = wezterm.font({ family = "FiraCode Nerd Font", weight = "Bold" }),
 
 	font_size = 12.0,
 
