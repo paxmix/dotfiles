@@ -69,6 +69,14 @@ if true then
         sections = { lualine_z = { { "lsp_status", icon = "" } } },
       },
     },
+    {
+      "folke/noice.nvim",
+      opts = {
+        presets = {
+          bottom_search = false,
+        },
+      },
+    },
   }
 end
 
