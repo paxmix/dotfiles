@@ -68,8 +68,8 @@ fish_add_path -g ~/go/bin
 set -g EDITOR nvim
 
 # Hydro config
-set -g hydro_symbol_start " "
-set -g hydro_color_start 00aa88
+set -g hydro_symbol_start "  "
+set -g hydro_color_start 7f3fbf
 set -g hydro_color_pwd 89dceb
 set -g hydro_color_git cba6f7
 set -g hydro_color_prompt a6e3a1
