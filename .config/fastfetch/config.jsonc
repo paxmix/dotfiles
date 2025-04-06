@@ -16,6 +16,8 @@
     "separator": " ➜  ",
   },
   "modules": [
+    "break",
+    "break",
     {
       "type": "os",
       "key": "OS   ",
