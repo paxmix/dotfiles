@@ -96,6 +96,9 @@ if test -d ~/.local/bin
     end
 end
 
+# Add .cargo/bin to PATH
+set -p PATH ~/.cargo/bin
+
 # Add depot_tools to PATH
 if test -d ~/Applications/depot_tools
     if not contains -- ~/Applications/depot_tools $PATH
