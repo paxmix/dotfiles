@@ -62,9 +62,6 @@ export FZF_ALT_C_OPTS="
   --walker-skip .git,node_modules,target
   --preview 'tree -C {}'"
 
-# add go/bin to PATH for lazygit
-fish_add_path -g ~/go/bin
-
 set -g EDITOR nvim
 
 # Hydro config
@@ -97,7 +94,11 @@ if test -d ~/.local/bin
 end
 
 # Add .cargo/bin to PATH
-set -p PATH ~/.cargo/bin
+if test -d ~/.cargo/bin
+    if not contains -- ~/.cargo/bin $PATH
+        set -p PATH ~/.cargo/bin
+    end
+end
 
 # Add depot_tools to PATH
 if test -d ~/Applications/depot_tools
@@ -110,6 +111,5 @@ end
 abbr lg lazygit
 abbr mirror "sudo cachyos-rate-mirrors"
 abbr update 'sudo pacman -Syu'
-
 abbr cleanup 'sudo pacman -Rns (pacman -Qtdq)'
 abbr logout 'sudo systemctl restart ly'
