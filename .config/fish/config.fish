@@ -109,3 +109,4 @@ abbr mirror "sudo cachyos-rate-mirrors"
 abbr update 'sudo pacman -Syu'
 
 abbr cleanup 'sudo pacman -Rns (pacman -Qtdq)'
+abbr logout 'sudo systemctl restart ly'
