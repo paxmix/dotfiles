@@ -30,9 +30,8 @@ gh auth login
 ## Requirements
 
 - Ensure you have the following installed on your system
-
-foot fastfetch bat eza zoxide fzf xclip fish go yazi lazygit btop neovim luarocks
-wl-clipboard(if using wayland)
+  foot fastfetch bat eza zoxide fzf xclip fish go yazi lazygit btop neovim luarocks
+  wl-clipboard(if using wayland)
 
 ## Rebuild bat theme cache
 
