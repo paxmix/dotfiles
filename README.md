@@ -52,10 +52,6 @@ Make sure you are using fish shell not bash or zsh.
   nvm install latest  
   set --universal nvm_default_version latest
 
-### autopair
-
-fisher install jorgebucaran/autopair.fish
-
 ### hydro
 
 fisher install jorgebucaran/hydro
