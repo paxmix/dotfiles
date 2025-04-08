@@ -16,16 +16,16 @@ gh auth login
 
 ## Stow dotfiles
 
-sudo pacman -S stow  
-cd  
-git clone <https://github.com/paxmix/dotfiles.git>  
-cd dotfiles  
-stow .
-
 - Need to stow all config files first before installing them.
 - If stow failed at any file, delete all the main config files and stow again.
 - If you on some specific distro like Cachyos, you need to delete their fish
   configs by pacman
+
+  sudo pacman -S stow  
+   cd  
+   git clone <https://github.com/paxmix/dotfiles.git>  
+   cd dotfiles  
+   stow .
 
 ## Requirements
 
