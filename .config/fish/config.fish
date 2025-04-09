@@ -65,7 +65,7 @@ export FZF_ALT_C_OPTS="
 set -g EDITOR nvim
 
 # Hydro config
-set -g hydro_symbol_start " "
+set -g hydro_symbol_start " "
 set -g hydro_color_start 00aa88
 set -g hydro_color_pwd 89dceb
 set -g hydro_color_git cba6f7
