@@ -107,7 +107,7 @@ if test -d ~/Applications/depot_tools
     end
 end
 
-# custom abbreviation
+# Custom abbreviation
 abbr lg lazygit
 abbr mirror "sudo cachyos-rate-mirrors"
 abbr update 'sudo pacman -Syu'
