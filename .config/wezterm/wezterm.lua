@@ -23,7 +23,7 @@ config.hide_mouse_cursor_when_typing = true
 
 -- startup size
 config.initial_cols = 180
-config.initial_rows = 40
+config.initial_rows = 42
 -- set max_fps to 75, probably not doing anything
 config.max_fps = 75
 
