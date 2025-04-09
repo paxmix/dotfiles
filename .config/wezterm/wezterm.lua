@@ -29,8 +29,13 @@ config.max_fps = 75
 
 config.tab_bar_at_bottom = true
 config.use_fancy_tab_bar = false
-config.window_decorations = "RESIZE"
-
+config.window_decorations = "NONE"
+config.window_padding = {
+  left = 15,
+  right = 5,
+  top = 15,
+  bottom = 0,
+}
 -- config.window_background_opacity = 0.8
 
 -- and finally, return the configuration to wezterm

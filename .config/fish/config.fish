@@ -48,7 +48,7 @@ set -g hydro_color_git cba6f7
 set -g hydro_color_prompt a6e3a1
 set -g hydro_color_error f38ba8
 set -g hydro_color_duration f9e2af
-set -g hydro_cmd_duration_threshold 100
+set -g hydro_cmd_duration_threshold 10000
 set -g fish_prompt_pwd_dir_length 0
 # set -g hydro_multiline true
 
