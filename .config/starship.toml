@@ -31,7 +31,7 @@ vimcmd_replace_symbol = '[](bold cyan)'
 vimcmd_visual_symbol = '[](bold yellow)'
 
 [cmd_duration]
-min_time = 5000
+min_time = 10000
 
 [aws]
 symbol = "  "

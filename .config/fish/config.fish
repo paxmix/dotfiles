@@ -39,16 +39,17 @@ end
 
 # Custom abbreviation
 abbr lg lazygit
-abbr update 'sudo zypper update'
-abbr cleanup 'sudo zypper remove -u'
+abbr update 'sudo pacman -Syu'
+abbr cleanup 'sudo pacman -Rns (pacman -Qtdq)'
 
 # Zoxide
 zoxide init --cmd cd fish | source
 
 # eza
-alias ls "eza -a --icons=auto --color=always"
-alias ll "eza -la --icons=auto --color=always"
-alias lt "eza -Ta --icons=auto --color=always"
+alias ls "eza -a --icons=auto --color=always" # list all files
+alias ll "eza -la --icons=auto --color=always" # list all files with details
+alias lt "eza -Ta --icons=auto --color=always" # list all files in tree form
+alias l. "eza -a | grep -e '^\.'" # list only dotfiles
 
 # Set up fzf key bindings
 fzf --fish | source
@@ -68,12 +69,12 @@ export FZF_ALT_C_OPTS="
   --preview 'tree -C {}'"
 
 function starship_transient_prompt_func
-	tput cuu1
-	starship module character
+    tput cuu1
+    starship module character
 end
 
 function prompt_newline --on-event fish_postexec
-	echo
+    echo
 end
 
 alias clear "command clear; commandline -f clear-screen"

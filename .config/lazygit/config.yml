@@ -1,41 +1,23 @@
-# DRACULA
 theme:
   activeBorderColor:
-    - "#FF79C6"
+    - '#b4befe'
     - bold
   inactiveBorderColor:
-    - "#BD93F9"
-
-  searchingActiveBorderColor:
-    - "#8BE9FD"
-    - bold
-
+    - '#a6adc8'
   optionsTextColor:
-    - "#6272A4"
-
+    - '#89b4fa'
   selectedLineBgColor:
-    - "#6272A4"
-
-  inactiveViewSelectedLineBgColor:
-    - bold
-
-  cherryPickedCommitFgColor:
-    - "#6272A4"
-
+    - '#313244'
   cherryPickedCommitBgColor:
-    - "#8BE9FD"
-
-  markedBaseCommitFgColor:
-    - "#8BE9FD"
-
-  markedBaseCommitBgColor:
-    - "#F1FA8C"
-
+    - '#45475a'
+  cherryPickedCommitFgColor:
+    - '#b4befe'
   unstagedChangesColor:
-    - "#FF5555"
-
+    - '#f38ba8'
   defaultFgColor:
-    - "#F8F8F2"
+    - '#cdd6f4'
+  searchingActiveBorderColor:
+    - '#f9e2af'
 
-os:
-  editPreset: "nvim"
+authorColors:
+  '*': '#b4befe'
