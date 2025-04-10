@@ -31,10 +31,10 @@ config.tab_bar_at_bottom = true
 config.use_fancy_tab_bar = false
 config.window_decorations = "NONE"
 config.window_padding = {
-  left = 15,
+  left = 10,
   right = 5,
-  top = 15,
-  bottom = 0,
+  top = 5,
+  bottom = 5,
 }
 -- config.window_background_opacity = 0.8
 
