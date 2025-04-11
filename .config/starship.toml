@@ -36,9 +36,9 @@ disabled = false
 style = "bold green"
 
 [character]
-success_symbol = "[[󰄛](green) ❯](peach)"
-error_symbol = "[[󰄛](red) ❯](peach)"
-vimcmd_symbol = "[󰄛 ❮](subtext1)"
+success_symbol = "[[󰈺](bold green) ➜](peach)"
+error_symbol = "[[󰈺](bold red) ✖](peach)"
+vimcmd_symbol = "[󰈺 ](subtext1)"
 
 [cmd_duration]
 min_time = 10000
@@ -180,7 +180,7 @@ Ubuntu = " "
 Unknown = " "
 Void = " "
 Windows = "󰍲 "
-CachyOS = " "
+CachyOS = " "
 
 [package]
 symbol = "󰏗 "
