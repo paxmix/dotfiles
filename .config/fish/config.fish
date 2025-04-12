@@ -39,7 +39,7 @@ end
 
 # Custom abbreviation
 abbr lg lazygit
-abbr update 'sudo pacman -Syu'
+abbr update 'sudo pacman -Syu && flatpak update'
 abbr cleanup 'sudo pacman -Rns (pacman -Qtdq)'
 
 # Zoxide
