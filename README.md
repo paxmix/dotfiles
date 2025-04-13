@@ -31,7 +31,7 @@ gh auth login
 
 - Ensure you have the following installed on your system  
   foot fastfetch bat eza zoxide fzf xclip fish go yazi lazygit btop neovim luarocks
-  wl-clipboard(if using wayland)
+  ttf-hack-nerd ttf-jetbrains-mono-nerd starship ghostty wl-clipboard(if using wayland)
 
 ## Rebuild bat theme cache
 
@@ -52,15 +52,7 @@ Make sure you are using fish shell not bash or zsh.
   nvm install latest  
   set --universal nvm_default_version latest
 
-### hydro
-
-fisher install jorgebucaran/hydro
-
 ### catppuccin
 
-fisher install catppuccin/fish
-
-## Wezterm (optional)
-
-I have a config file for Wezterm but i don't use it  
-Mainly because of its extremely high RAM usage (~20 times more than foot)
+fisher install catppuccin/fish  
+fish_config theme save "Catppuccin Mocha"
