@@ -45,14 +45,15 @@ bat cache --build
 ### fisher
 
 curl -sL <https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish>
-| source && fisher install jorgebucaran/fisher  
-Make sure you are using fish shell not bash or zsh.
+| source && fisher install jorgebucaran/fisher
+
+- Make sure you are using fish shell not bash or zsh.
 
 ### nvm
 
-#### fisher install jorgebucaran/nvm.fish
+#### - fisher install jorgebucaran/nvm.fish
 
-#### install node, npm for lazyvim
+#### - install node, npm for lazyvim
 
 nvm install latest  
 set --universal nvm_default_version latest
