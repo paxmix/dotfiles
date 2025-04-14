@@ -33,8 +33,10 @@ gh auth login
 
 ### Ensure you have the following installed on your system
 
-foot fastfetch bat eza zoxide fzf xclip fish go yazi lazygit btop neovim luarocks
+fastfetch bat eza zoxide fzf xclip fish go yazi lazygit btop neovim luarocks
 ttf-hack-nerd ttf-jetbrains-mono-nerd starship ghostty wl-clipboard(if using wayland)
+
+- foot(optional)
 
 ### Rebuild bat theme cache
 
@@ -51,7 +53,7 @@ curl -sL <https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/f
 
 ### nvm
 
-#### - fisher install jorgebucaran/nvm.fish
+fisher install jorgebucaran/nvm.fish
 
 #### - install node, npm for lazyvim
 
