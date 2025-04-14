@@ -37,7 +37,7 @@ style = "bold green"
 
 [character]
 success_symbol = "[[󰈺](bold green) ➜](peach)"
-error_symbol = "[[󰈺](bold red) ✖ ](peach)"
+error_symbol = "[[󰈺](bold red) ](peach)"
 vimcmd_symbol = "[󰈺 ](subtext1)"
 
 [cmd_duration]
