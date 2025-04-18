@@ -52,7 +52,9 @@ alias lt "eza -Ta --icons=auto --color=always" # list all files in tree form
 alias l. "eza -a | grep -e '^\.'" # list only dotfiles
 
 # Set up fzf key bindings
-fzf --fish | source
+# need fzf version > 0.48
+# fzf --fish | source
+
 # Preview file content using bat (https://github.com/sharkdp/bat)
 export FZF_CTRL_T_OPTS="
   --walker-skip .git,node_modules,target

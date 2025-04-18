@@ -5,8 +5,8 @@ window-decoration = none
 window-padding-x = 5
 window-padding-y = 5
 
-background-opacity = 0.8
-background-blur = true
+# background-opacity = 0.8
+# background-blur = true
 
 command = /usr/bin/fish 
 # This is the configuration file for Ghostty.
