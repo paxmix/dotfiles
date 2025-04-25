@@ -34,9 +34,9 @@ gh auth login
 ### Ensure you have the following installed on your system
 
 fastfetch bat eza zoxide fzf xclip fish go yazi lazygit btop neovim luarocks
-ttf-hack-nerd ttf-jetbrains-mono-nerd starship ghostty wl-clipboard(if using wayland)
+ttf-hack-nerd ttf-jetbrains-mono-nerd starship foot wl-clipboard(if using wayland)
 
-- foot(optional)
+- ghostty(optional)
 
 ### Rebuild bat theme cache
 
