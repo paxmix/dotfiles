@@ -53,7 +53,7 @@ alias l. "eza -a | grep -e '^\.'" # list only dotfiles
 
 # Set up fzf key bindings
 # need fzf version > 0.48
-# fzf --fish | source
+fzf --fish | source
 
 # Preview file content using bat (https://github.com/sharkdp/bat)
 export FZF_CTRL_T_OPTS="
