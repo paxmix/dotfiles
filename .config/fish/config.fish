@@ -37,6 +37,13 @@ if test -d ~/.cargo/bin
     end
 end
 
+# Add ~/go/bin to PATH
+if test -d ~/go/bin
+    if not contains -- ~/go/bin $PATH
+        set -p PATH ~/go/bin
+    end
+end
+
 # Custom abbreviation
 abbr lg lazygit
 abbr update 'sudo pacman -Syu && flatpak update'
