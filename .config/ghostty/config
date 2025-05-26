@@ -1,17 +1,7 @@
 theme = catppuccin-mocha.conf
 maximize = true
 
-font-family = MonaspiceNe Nerd Font
-font-feature = +ss01
-font-feature = +ss02
-font-feature = +ss03
-font-feature = +ss04
-font-feature = +ss05
-font-feature = +ss06
-font-feature = +ss07
-font-feature = +ss08
-font-feature = +ss09
-font-feature = +liga
+font-family = JetBrainsMono Nerd Font
 
 # window-decoration = none
 window-padding-x = 5
@@ -19,8 +9,8 @@ window-padding-y = 5
 
 confirm-close-surface = false
 
-background-opacity = 0.8
-background-blur = true
+# background-opacity = 0.8
+# background-blur = true
 
 command = /usr/bin/fish 
 # This is the configuration file for Ghostty.
