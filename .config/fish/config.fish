@@ -47,7 +47,6 @@ end
 # Custom abbreviation
 abbr lg lazygit
 abbr update 'sudo pacman -Syu && flatpak update'
-abbr cleanup 'sudo pacman -Rns (pacman -Qtdq)'
 
 # Zoxide
 zoxide init --cmd cd fish | source
