@@ -41,7 +41,8 @@ error_symbol = "[[󰈺](bold red) ](peach)"
 vimcmd_symbol = "[󰈺 ](subtext1)"
 
 [cmd_duration]
-min_time = 10000
+min_time = 1000
+show_milliseconds = true
 
 [aws]
 symbol = "  "
