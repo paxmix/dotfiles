@@ -67,6 +67,8 @@ alias l. "eza -a | grep -e '^\.'" # list only dotfiles
 # Set up fzf key bindings
 # need fzf version > 0.48
 # fzf --fish | source
+
+# fzf TokyoNight colorscheme
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
   --highlight-line \
   --info=inline-right \
@@ -155,3 +157,18 @@ set -g hydro_color_duration $yellow
 
 set -g fish_prompt_pwd_dir_length 4
 set -g hydro_cmd_duration_threshold 5000
+
+# function starship_transient_prompt_func
+#     tput cuu1
+#     starship module character
+# end
+#
+function prompt_newline --on-event fish_postexec
+    echo
+end
+
+alias clear "command clear; commandline -f clear-screen"
+#
+# # Starship
+# starship init fish | source
+# enable_transience
