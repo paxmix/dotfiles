@@ -120,6 +120,7 @@ set -l purple 9d7cd8
 set -l cyan 7dcfff
 set -l pink bb9af7
 set -l mauve cba6f7
+set -l neogreen 5b9835
 
 # Syntax Highlighting Colors
 set -g fish_color_normal $foreground
@@ -146,14 +147,14 @@ set -g fish_pager_color_description $comment
 set -g fish_pager_color_selected_background --background=$selection
 
 # Hydro config
-set -g hydro_symbol_start " "
+set -g hydro_symbol_start " "
 set -g hydro_symbol_prompt ➜
 
 set -g hydro_color_pwd $cyan
 set -g hydro_color_git $purple
-set -g hydro_color_start $mauve
+set -g hydro_color_start $neogreen
 set -g hydro_color_error $red
-set -g hydro_color_prompt $cyan
+set -g hydro_color_prompt $green
 set -g hydro_color_duration $yellow
 
 set -g fish_prompt_pwd_dir_length 4
