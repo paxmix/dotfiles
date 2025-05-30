@@ -1,7 +1,8 @@
-theme = tokyonight.conf
+theme = tokyonight_night
 maximize = true
 
-font-family = Maple Mono NF
+font-family = FantasqueSansM Nerd Font
+font-size = 13
 
 # window-decoration = none
 window-padding-x = 5

@@ -23,7 +23,7 @@ if test -f ~/.fish_profile
     source ~/.fish_profile
 end
 
-# Add ~/.local/bin to PATH
+# Add /opt/nvim to PATH
 if test -d /opt/nvim
     if not contains -- /opt/nvim $PATH
         set -p PATH /opt/nvim
@@ -119,6 +119,7 @@ set -l green 9ece6a
 set -l purple 9d7cd8
 set -l cyan 7dcfff
 set -l pink bb9af7
+set -l mauve cba6f7
 
 # Syntax Highlighting Colors
 set -g fish_color_normal $foreground
@@ -145,12 +146,12 @@ set -g fish_pager_color_description $comment
 set -g fish_pager_color_selected_background --background=$selection
 
 # Hydro config
-set -g hydro_symbol_start " "
+set -g hydro_symbol_start " "
 set -g hydro_symbol_prompt ➜
 
 set -g hydro_color_pwd $cyan
 set -g hydro_color_git $purple
-set -g hydro_color_start $green
+set -g hydro_color_start $mauve
 set -g hydro_color_error $red
 set -g hydro_color_prompt $cyan
 set -g hydro_color_duration $yellow
@@ -158,17 +159,8 @@ set -g hydro_color_duration $yellow
 set -g fish_prompt_pwd_dir_length 4
 set -g hydro_cmd_duration_threshold 5000
 
-# function starship_transient_prompt_func
-#     tput cuu1
-#     starship module character
-# end
-#
 function prompt_newline --on-event fish_postexec
     echo
 end
 
 alias clear "command clear; commandline -f clear-screen"
-#
-# # Starship
-# starship init fish | source
-# enable_transience
