@@ -150,7 +150,7 @@ set -g hydro_color_prompt $green
 set -g hydro_color_duration $yellow
 
 set -g fish_prompt_pwd_dir_length 4
-set -g hydro_cmd_duration_threshold 3000
+set -g hydro_cmd_duration_threshold 5000
 
 function prompt_newline --on-event fish_postexec
     echo
