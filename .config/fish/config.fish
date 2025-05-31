@@ -23,13 +23,6 @@ if test -f ~/.fish_profile
     source ~/.fish_profile
 end
 
-# Add /opt/nvim to PATH
-if test -d /opt/nvim
-    if not contains -- /opt/nvim $PATH
-        set -p PATH /opt/nvim
-    end
-end
-
 # Add ~/.local/bin to PATH
 if test -d ~/.local/bin
     if not contains -- ~/.local/bin $PATH
@@ -53,7 +46,6 @@ end
 
 # Custom abbreviation
 abbr lg lazygit
-abbr cleanup "sudo pacman -Rns (pacman -Qtdq)"
 
 # Zoxide
 zoxide init --cmd cd fish | source
@@ -158,7 +150,7 @@ set -g hydro_color_prompt $green
 set -g hydro_color_duration $yellow
 
 set -g fish_prompt_pwd_dir_length 4
-set -g hydro_cmd_duration_threshold 5000
+set -g hydro_cmd_duration_threshold 3000
 
 function prompt_newline --on-event fish_postexec
     echo
