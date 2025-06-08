@@ -46,7 +46,7 @@ end
 
 # Custom abbreviation
 abbr lg lazygit
-abbr cleanup 'sudo pacman -Rns (pacman -Qtdq)'
+abbr cleanup "sudo pacman -Rns (pacman -Qtdq)"
 
 # Zoxide
 zoxide init --cmd cd fish | source
@@ -62,48 +62,28 @@ alias l. "eza -a | grep -e '^\.'" # list only dotfiles
 fzf --fish | source
 
 # fzf TokyoNight colorscheme
-# export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
-#   --highlight-line \
-#   --info=inline-right \
-#   --ansi \
-#   --layout=reverse \
-#   --border=none \
-#   --color=bg+:#283457 \
-#   --color=bg:#16161e \
-#   --color=border:#27a1b9 \
-#   --color=fg:#c0caf5 \
-#   --color=gutter:#16161e \
-#   --color=header:#ff9e64 \
-#   --color=hl+:#2ac3de \
-#   --color=hl:#2ac3de \
-#   --color=info:#545c7e \
-#   --color=marker:#ff007c \
-#   --color=pointer:#ff007c \
-#   --color=prompt:#2ac3de \
-#   --color=query:#c0caf5:regular \
-#   --color=scrollbar:#27a1b9 \
-#   --color=separator:#ff9e64 \
-#   --color=spinner:#ff007c \
-# "
-# fzf Gruvbox colorscheme
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
   --highlight-line \
   --info=inline-right \
   --ansi \
   --layout=reverse \
   --border=none \
-  --color=bg+:#3c3836\
-  --color=bg:#32302f\
-  --color=fg+:#ebdbb2\
-  --color=fg:#bdae93\
-  --color=header:#83a598\
-  --color=hl+:#83a598\
-  --color=hl:#83a598\
-  --color=info:#fabd2f\
-  --color=marker:#8ec07c\
-  --color=pointer:#8ec07c\
-  --color=prompt:#fabd2f\
-  --color=spinner:#8ec07c\
+  --color=bg+:#283457 \
+  --color=bg:#16161e \
+  --color=border:#27a1b9 \
+  --color=fg:#c0caf5 \
+  --color=gutter:#16161e \
+  --color=header:#ff9e64 \
+  --color=hl+:#2ac3de \
+  --color=hl:#2ac3de \
+  --color=info:#545c7e \
+  --color=marker:#ff007c \
+  --color=pointer:#ff007c \
+  --color=prompt:#2ac3de \
+  --color=query:#c0caf5:regular \
+  --color=scrollbar:#27a1b9 \
+  --color=separator:#ff9e64 \
+  --color=spinner:#ff007c \
 "
 # Preview file content using bat (https://github.com/sharkdp/bat)
 export FZF_CTRL_T_OPTS="
@@ -120,8 +100,8 @@ export FZF_ALT_C_OPTS="
   --walker-skip .git,node_modules,target
   --preview 'tree -C {}'"
 
-# # Fish Tokyo Night colorscheme
-# # TokyoNight Color Palette
+# Fish Tokyo Night colorscheme
+# TokyoNight Color Palette
 set -l foreground c0caf5
 set -l selection 283457
 set -l comment 565f89
@@ -134,34 +114,36 @@ set -l cyan 7dcfff
 set -l pink bb9af7
 set -l mauve cba6f7
 set -l neogreen 5b9835
-# # Syntax Highlighting Colors
-# set -g fish_color_normal $foreground
-# set -g fish_color_command $cyan
-# set -g fish_color_keyword $pink
-# set -g fish_color_quote $yellow
-# set -g fish_color_redirection $foreground
-# set -g fish_color_end $orange
-# set -g fish_color_option $pink
-# set -g fish_color_error $red
-# set -g fish_color_param $purple
-# set -g fish_color_comment $comment
-# set -g fish_color_selection --background=$selection
-# set -g fish_color_search_match --background=$selection
-# set -g fish_color_operator $green
-# set -g fish_color_escape $pink
-# set -g fish_color_autosuggestion $comment
-# # Completion Pager Colors
-# set -g fish_pager_color_progress $comment
-# set -g fish_pager_color_prefix $cyan
-# set -g fish_pager_color_completion $foreground
-# set -g fish_pager_color_description $comment
-# set -g fish_pager_color_selected_background --background=$selection
-#
+
+# Syntax Highlighting Colors
+set -g fish_color_normal $foreground
+set -g fish_color_command $cyan
+set -g fish_color_keyword $pink
+set -g fish_color_quote $yellow
+set -g fish_color_redirection $foreground
+set -g fish_color_end $orange
+set -g fish_color_option $pink
+set -g fish_color_error $red
+set -g fish_color_param $purple
+set -g fish_color_comment $comment
+set -g fish_color_selection --background=$selection
+set -g fish_color_search_match --background=$selection
+set -g fish_color_operator $green
+set -g fish_color_escape $pink
+set -g fish_color_autosuggestion $comment
+
+# Completion Pager Colors
+set -g fish_pager_color_progress $comment
+set -g fish_pager_color_prefix $cyan
+set -g fish_pager_color_completion $foreground
+set -g fish_pager_color_description $comment
+set -g fish_pager_color_selected_background --background=$selection
+
 # Hydro config
-set -g hydro_symbol_start " "
+set -g hydro_symbol_start "$USERNAME in "
 set -g hydro_symbol_prompt ➜
 
-set -g hydro_color_pwd $orange
+set -g hydro_color_pwd $cyan
 set -g hydro_color_git $purple
 set -g hydro_color_start $neogreen
 set -g hydro_color_error $red
@@ -171,6 +153,11 @@ set -g hydro_color_duration $yellow
 set -g fish_prompt_pwd_dir_length 4
 set -g hydro_cmd_duration_threshold 5000
 
+function starship_transient_prompt_func
+    starship module character
+end
+starship init fish | source
+enable_transience
 function prompt_newline --on-event fish_postexec
     echo
 end
