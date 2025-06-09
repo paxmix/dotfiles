@@ -1,4 +1,4 @@
-theme = tokyonight_night
+theme = catppuccin-mocha.conf
 maximize = true
 
 font-family = IosevkaTerm Nerd Font
