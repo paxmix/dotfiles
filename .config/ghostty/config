@@ -1,9 +1,9 @@
 theme = catppuccin-mocha.conf
 maximize = true
 
-font-family = IosevkaTerm Nerd Font
-font-size = 15
-font-feature = cv36=13, cv44=10, cv47=14, cv55=8, cv59=4, VSAJ=2
+font-family = MonaspiceNe Nerd Font
+font-size = 14
+font-feature = calt,liga,ss01,ss02,ss03,ss04,ss05,ss06,ss07,ss08,ss09,ss10,cv01=2
 
 # window-decoration = none
 window-padding-x = 8
