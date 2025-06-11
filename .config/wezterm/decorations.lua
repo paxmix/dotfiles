@@ -1,5 +1,3 @@
-local wezterm = require("wezterm")
-
 local decorations = {}
 function decorations.apply_to_config(config)
 	-- Wezterm startup size
@@ -10,16 +8,18 @@ function decorations.apply_to_config(config)
 	-- Cursor style
 	config.default_cursor_style = "SteadyBar"
 	-- disable title bar
-	config.window_decorations = "NONE"
+	config.window_decorations = "RESIZE"
 	-- window padding
 	config.window_padding = {
-		left = 5,
+		left = 10,
 		right = 5,
-		top = 5,
+		top = 10,
 		bottom = 5,
 	}
 	-- Tab bar customizing
+	-- config.tab_bar_at_bottom = true
 	config.use_fancy_tab_bar = false
+	config.tab_max_width = 999
 	config.colors = {
 		tab_bar = {
 			background = "#1e1e2e",
