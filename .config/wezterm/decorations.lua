@@ -11,13 +11,13 @@ function decorations.apply_to_config(config)
 	config.window_decorations = "RESIZE"
 	-- window padding
 	config.window_padding = {
-		left = 10,
+		left = 7,
 		right = 5,
 		top = 10,
 		bottom = 5,
 	}
 	-- Tab bar customizing
-	-- config.tab_bar_at_bottom = true
+	config.tab_bar_at_bottom = true
 	config.use_fancy_tab_bar = false
 	config.tab_max_width = 999
 	config.colors = {
