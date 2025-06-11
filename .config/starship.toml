@@ -1,4 +1,6 @@
-format = "$os$all"
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
 add_newline = false
 
 palette = "catppuccin_mocha"
@@ -31,18 +33,19 @@ base = "#1e1e2e"
 mantle = "#181825"
 crust = "#11111b"
 
-[os]
-disabled = false
-style = "bold green"
-
 [character]
-success_symbol = "[[󰈺](bold green) ➜](peach)"
-error_symbol = "[[󰈺](bold red) ](peach)"
-vimcmd_symbol = "[󰈺 ](subtext1)"
+success_symbol = '[ ](bold green)'
+error_symbol = '[ ](bold red)'
+vimcmd_symbol = '[ ](bold green)'
+vimcmd_replace_one_symbol = '[ ](bold subtext1)'
+vimcmd_replace_symbol = '[ ](bold subtext1)'
+vimcmd_visual_symbol = '[ ](bold yellow)'
 
-[cmd_duration]
-min_time = 1000
-show_milliseconds = true
+[username]
+show_always = true
+format = '[$user]($style)[@](peach)'
+style_user = "sapphire bold"
+style_root = "maroon bold"
 
 [aws]
 symbol = "  "
@@ -50,8 +53,17 @@ symbol = "  "
 [buf]
 symbol = " "
 
+[bun]
+symbol = " "
+
 [c]
 symbol = " "
+
+[cpp]
+symbol = " "
+
+[cmake]
+symbol = " "
 
 [conda]
 symbol = " "
@@ -62,10 +74,13 @@ symbol = " "
 [dart]
 symbol = " "
 
+[deno]
+symbol = " "
+
 [directory]
-read_only = " 󰌾"
 truncation_length = 4
 style = "bold lavender"
+read_only = " 󰌾"
 
 [docker_context]
 symbol = " "
@@ -82,9 +97,12 @@ symbol = " "
 [fossil_branch]
 symbol = " "
 
+[gcloud]
+symbol = "  "
+
 [git_branch]
-symbol = " "
 style = "bold mauve"
+symbol = " "
 
 [git_commit]
 tag_symbol = '  '
@@ -105,6 +123,7 @@ symbol = " "
 symbol = " "
 
 [hostname]
+ssh_only = false
 ssh_symbol = " "
 
 [java]
@@ -145,6 +164,7 @@ Amazon = " "
 Android = " "
 Arch = " "
 Artix = " "
+CachyOS = " "
 CentOS = " "
 Debian = " "
 DragonFly = " "
@@ -166,6 +186,7 @@ MidnightBSD = " "
 Mint = " "
 NetBSD = " "
 NixOS = " "
+Nobara = " "
 OpenBSD = "󰈺 "
 openSUSE = " "
 OracleLinux = "󰌷 "
@@ -181,7 +202,6 @@ Ubuntu = " "
 Unknown = " "
 Void = " "
 Windows = "󰍲 "
-CachyOS = " "
 
 [package]
 symbol = "󰏗 "
@@ -195,9 +215,11 @@ symbol = " "
 [pijul_channel]
 symbol = " "
 
+[pixi]
+symbol = "󰏗 "
+
 [python]
 symbol = " "
-style = "bold blue"
 
 [rlang]
 symbol = "󰟔 "
