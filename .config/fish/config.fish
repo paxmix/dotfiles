@@ -18,6 +18,9 @@ set -x MANROFFOPT -c
 set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
 
 ## Environment setup
+# Set default $EDITOR
+set -x VISUAL nvim
+set -x EDITOR nvim
 # Apply .profile: use this to put fish compatible .profile stuff in
 if test -f ~/.fish_profile
     source ~/.fish_profile
