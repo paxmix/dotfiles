@@ -16,6 +16,7 @@ config.alternate_buffer_wheel_scroll_speed = 3
 config.hide_mouse_cursor_when_typing = true
 config.max_fps = 75
 config.window_close_confirmation = "NeverPrompt"
+config.scrollback_lines = 10000
 
 -- Merge all config files
 keybinds.apply_to_config(config)
