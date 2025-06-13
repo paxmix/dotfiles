@@ -3,21 +3,21 @@ maximize = true
 
 gtk-tabs-location = bottom
 
-#font-family = MonaspiceNe Nerd Font
-#font-size = 14
-#font-feature = calt,liga,ss01,ss02,ss03,ss04,ss05,ss06,ss07,ss08,ss09,ss10,cv01=2
+font-family = MonaspiceNe Nerd Font
+font-size = 13
+font-feature = calt,liga,ss01,ss02,ss03,ss04,ss05,ss06,ss07,ss08,ss09,ss10,cv01=2
 
-font-family = IosevkaTerm Nerd Font
-font-size = 15
-font-feature = cv36=13, cv44=8, cv47=8, cv55=8, cv59=4, VSAF=2
-
-# window-decoration = none
 window-padding-x = 8
 window-padding-y = 3
 
 confirm-close-surface = false
 
-# background-opacity = 0.8
-# background-blur = true
+# keybinds
+keybind = ctrl+shift+h=new_split:right
+keybind = ctrl+shift+v=new_split:down
+keybind = ctrl+alt+h=goto_split:left
+keybind = ctrl+alt+j=goto_split:down
+keybind = ctrl+alt+k=goto_split:up
+keybind = ctrl+alt+l=goto_split:right
 
 command = /usr/bin/fish
