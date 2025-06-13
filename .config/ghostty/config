@@ -11,13 +11,32 @@ window-padding-x = 8
 window-padding-y = 3
 
 confirm-close-surface = false
+command = /usr/bin/fish
 
 # keybinds
-keybind = ctrl+shift+h=new_split:right
-keybind = ctrl+shift+v=new_split:down
-keybind = ctrl+alt+h=goto_split:left
-keybind = ctrl+alt+j=goto_split:down
-keybind = ctrl+alt+k=goto_split:up
-keybind = ctrl+alt+l=goto_split:right
+# create new splits
+keybind = ctrl+shift+r=new_split:right
+keybind = ctrl+shift+d=new_split:down
+# Navigate to splits
+keybind = ctrl+shift+h=goto_split:left
+keybind = ctrl+shift+j=goto_split:down
+keybind = ctrl+shift+k=goto_split:up
+keybind = ctrl+shift+l=goto_split:right
+# Resize splits
+keybind = super+ctrl+shift+h=resize_split:left,10
+keybind = super+ctrl+shift+j=resize_split:down,10
+keybind = super+ctrl+shift+k=resize_split:up,10
+keybind = super+ctrl+shift+l=resize_split:right,10
 
-command = /usr/bin/fish
+# unbind unneccessary keybinds
+keybind = ctrl+shift+e=unbind
+keybind = ctrl+shift+o=unbind
+keybind = ctrl+alt+up=unbind
+keybind = ctrl+alt+down=unbind
+keybind = ctrl+alt+right=unbind
+keybind = ctrl+alt+left=unbind
+keybind = ctrl+enter=unbind
+keybind = super+ctrl+shift+left=unbind
+keybind = super+ctrl+shift+down=unbind
+keybind = super+ctrl+shift+up=unbind
+keybind = super+ctrl+shift+right=unbind
