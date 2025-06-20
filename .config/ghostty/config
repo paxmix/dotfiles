@@ -1,5 +1,7 @@
 theme = catppuccin-mocha.conf
-maximize = true
+#maximize = true
+window-width = 110
+window-height = 30
 
 gtk-tabs-location = bottom
 
