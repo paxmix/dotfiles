@@ -1,13 +1,14 @@
 theme = catppuccin-mocha.conf
-#maximize = true
-window-width = 110
-window-height = 30
+maximize = true
+#window-width = 90
+#window-height = 30
 
 gtk-tabs-location = bottom
 
-font-family = JetBrainsMono Nerd Font
-font-size = 13
-font-feature = zero, cv07
+font-family = MonaspiceNe Nerd Font
+font-size = 14
+#font-feature = zero, cv07
+font-feature = ss01, ss02, ss03, ss04, ss05, ss06, ss07, ss08, ss09, ss10, calt, liga, cv01=2
 
 window-padding-x = 8
 window-padding-y = 3
