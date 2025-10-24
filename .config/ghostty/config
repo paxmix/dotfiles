@@ -6,7 +6,7 @@ maximize = true
 gtk-tabs-location = bottom
 
 font-family = FantasqueSansM Nerd Font
-font-size = 16
+font-size = 15
 #font-feature = zero, cv07
 
 window-padding-x = 8
