@@ -34,12 +34,12 @@ mantle = "#181825"
 crust = "#11111b"
 
 [character]
-success_symbol = '[ ](bold green)'
-error_symbol = '[ ](bold red)'
-vimcmd_symbol = '[ ](bold green)'
-vimcmd_replace_one_symbol = '[ ](bold subtext1)'
-vimcmd_replace_symbol = '[ ](bold subtext1)'
-vimcmd_visual_symbol = '[ ](bold yellow)'
+success_symbol = '[](bold green)'
+error_symbol = '[](bold red)'
+vimcmd_symbol = '[](bold green)'
+vimcmd_replace_one_symbol = '[](bold subtext1)'
+vimcmd_replace_symbol = '[](bold subtext1)'
+vimcmd_visual_symbol = '[](bold yellow)'
 
 [username]
 show_always = true
@@ -102,6 +102,7 @@ symbol = "  "
 
 [git_branch]
 style = "bold mauve"
+symbol = " "
 
 [git_commit]
 tag_symbol = '  '
