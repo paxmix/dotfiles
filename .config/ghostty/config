@@ -1,13 +1,13 @@
-theme = tokyonight.conf
+theme = catppuccin-mocha.conf
 maximize = true
 #window-width = 90
 #window-height = 30
 
 gtk-tabs-location = bottom
 
-font-family = FantasqueSansM Nerd Font
-font-size = 15
-#font-feature = zero, cv07
+font-family = JetBrainsMono Nerd Font
+font-size = 13
+font-feature = zero, cv07
 
 window-padding-x = 8
 window-padding-y = 3
