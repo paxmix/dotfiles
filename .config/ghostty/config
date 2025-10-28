@@ -7,7 +7,7 @@ gtk-tabs-location = bottom
 
 font-family = JetBrainsMono Nerd Font
 font-size = 13
-font-feature = zero, cv07
+font-feature = zero
 
 window-padding-x = 8
 window-padding-y = 3
