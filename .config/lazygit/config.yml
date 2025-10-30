@@ -1,48 +1,27 @@
-theme:
-    lightTheme: false
+gui:
+  nerdFontsVersion: "3"
+  theme:
     activeBorderColor:
-      - '#61afef'
-      - bold
+      - "#ff966c"
+      - "bold"
     inactiveBorderColor:
-      - '#3e4452'
-    optionsTextColor:
-      - '#56b6c2'
-    selectedLineBgColor:
-      - '#2c323c'
-    selectedRangeBgColor:
-      - '#2c323c'
-    cherryPickedCommitBgColor:
-      - '#61afef'
-    cherryPickedCommitFgColor:
-      - '#56b6c2'
-    unstagedChangesColor:
-      - '#e06c75'
-    defaultFgColor:
-      - '#abb2bf'
+      - "#589ed7"
     searchingActiveBorderColor:
-      - '#e5c07b'
-
-  # Author colors
-authorColors:
-    '*': '#61afef'
-
-  # Branch colors
-branchColors:
-    main: '#c678dd'
-    master: '#c678dd'
-    develop: '#98c379'
-    staging: '#e5c07b'
-    production: '#e06c75'
-
-  # Commit hash colors
-commitHashColor:
-    - '#56b6c2'
-
-  # Status colors
-statusColors:
-    added: '#98c379'
-    modified: '#e5c07b'
-    deleted: '#e06c75'
-    untracked: '#c678dd'
-    copied: '#56b6c2'
-    renamed: '#61afef'
+      - "#ff966c"
+      - "bold"
+    optionsTextColor:
+      - "#82aaff"
+    selectedLineBgColor:
+      - "#2d3f76"
+    cherryPickedCommitFgColor:
+      - "#82aaff"
+    cherryPickedCommitBgColor:
+      - "#c099ff"
+    markedBaseCommitFgColor:
+      - "#82aaff"
+    markedBaseCommitBgColor:
+      - "#ffc777"
+    unstagedChangesColor:
+      - "#c53b53"
+    defaultFgColor:
+      - "#c8d3f5"

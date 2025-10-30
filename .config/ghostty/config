@@ -1,11 +1,11 @@
-theme = catppuccin-mocha.conf
+theme = Atom One Dark
 maximize = true
 #window-width = 90
 #window-height = 30
 
 gtk-tabs-location = bottom
 
-font-family = MonacoLigaturized Nerd Font
+font-family = JetBrainsMono Nerd Font
 font-size = 13
 #font-feature = zero
 

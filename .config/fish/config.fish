@@ -65,11 +65,11 @@ alias l. "eza -a | grep -e '^\.'" # list only dotfiles
 fzf --fish | source
 
 set -Ux FZF_DEFAULT_OPTS "\
---color=bg+:#313244,bg:#1E1E2E,spinner:#F5E0DC,hl:#F38BA8 \
---color=fg:#CDD6F4,header:#F38BA8,info:#CBA6F7,pointer:#F5E0DC \
---color=marker:#B4BEFE,fg+:#CDD6F4,prompt:#CBA6F7,hl+:#F38BA8 \
+--color=bg+:#2d3f76,bg:#1e2030,spinner:#ff007c,hl:#65bcff \
+--color=fg:#c8d3f5,header:#ff966c,info:#545c7e,pointer:#ff007c \
+--color=marker:#ff007c,fg+:#CDD6F4,prompt:#65bcff,hl+:#65bcff \
 --color=selected-bg:#45475A \
---color=border:#313244,label:#CDD6F4"
+--color=border:#589ed7,label:#CDD6F4"
 
 # Preview file content using bat (https://github.com/sharkdp/bat)
 export FZF_CTRL_T_OPTS="
@@ -87,16 +87,17 @@ export FZF_ALT_C_OPTS="
   --preview 'tree -C {}'"
 
 # TokyoNight Color Palette
-set -l foreground c0caf5
-set -l selection 283457
-set -l comment 565f89
-set -l red f7768e
-set -l orange ff9e64
-set -l yellow e0af68
-set -l green 9ece6a
-set -l purple 9d7cd8
-set -l cyan 7dcfff
-set -l pink bb9af7
+set -l foreground c8d3f5
+set -l selection 2d3f76
+set -l comment 636da6
+set -l red ff757f
+set -l orange ff966c
+set -l yellow ffc777
+set -l green c3e88d
+set -l purple fca7ea
+set -l cyan 86e1fc
+set -l pink c099ff
+
 # Syntax Highlighting Colors
 set -g fish_color_normal $foreground
 set -g fish_color_command $cyan
@@ -113,6 +114,7 @@ set -g fish_color_search_match --background=$selection
 set -g fish_color_operator $green
 set -g fish_color_escape $pink
 set -g fish_color_autosuggestion $comment
+
 # Completion Pager Colors
 set -g fish_pager_color_progress $comment
 set -g fish_pager_color_prefix $cyan
