@@ -64,12 +64,31 @@ alias l. "eza -a | grep -e '^\.'" # list only dotfiles
 # need fzf version > 0.48
 fzf --fish | source
 
-set -Ux FZF_DEFAULT_OPTS "\
---color=bg+:#2d3f76,bg:#1e2030,spinner:#ff007c,hl:#65bcff \
---color=fg:#c8d3f5,header:#ff966c,info:#545c7e,pointer:#ff007c \
---color=marker:#ff007c,fg+:#CDD6F4,prompt:#65bcff,hl+:#65bcff \
---color=selected-bg:#45475A \
---color=border:#589ed7,label:#CDD6F4"
+# One Dark Darker fzf theme for Fish
+# Core One Dark Darker colors
+set -l bg0 "#21252b"
+set -l bg1 "#282c34"
+set -l fg "#abb2bf"
+set -l red "#e06c75"
+set -l green "#98c379"
+set -l yellow "#e5c07b"
+set -l blue "#61afef"
+set -l purple "#c678dd"
+set -l cyan "#56b6c2"
+set -l gray "#5c6370"
+
+# Apply the theme to fzf
+set -gx FZF_DEFAULT_OPTS "\
+--color=fg:$fg,bg:$bg0,hl:$blue \
+--color=fg+:#ffffff,bg+:$bg1,hl+:$blue \
+--color=info:$purple,prompt:$cyan,pointer:$blue,marker:$green,spinner:$yellow,header:$gray \
+--color=border:$bg1,label:$yellow \
+--border=rounded \
+--prompt='❯ ' \
+--marker=' ' \
+--pointer='▶' \
+--separator='─' \
+--ansi"
 
 # Preview file content using bat (https://github.com/sharkdp/bat)
 export FZF_CTRL_T_OPTS="
@@ -86,41 +105,52 @@ export FZF_ALT_C_OPTS="
   --walker-skip .git,node_modules,target
   --preview 'tree -C {}'"
 
-# TokyoNight Color Palette
-set -l foreground c8d3f5
-set -l selection 2d3f76
-set -l comment 636da6
-set -l red ff757f
-set -l orange ff966c
-set -l yellow ffc777
-set -l green c3e88d
-set -l purple fca7ea
-set -l cyan 86e1fc
-set -l pink c099ff
-
+# One Dark Darker theme for Fish shell
 # Syntax Highlighting Colors
-set -g fish_color_normal $foreground
-set -g fish_color_command $cyan
-set -g fish_color_keyword $pink
-set -g fish_color_quote $yellow
-set -g fish_color_redirection $foreground
-set -g fish_color_end $orange
-set -g fish_color_option $pink
-set -g fish_color_error $red
-set -g fish_color_param $purple
-set -g fish_color_comment $comment
-set -g fish_color_selection --background=$selection
-set -g fish_color_search_match --background=$selection
-set -g fish_color_operator $green
-set -g fish_color_escape $pink
-set -g fish_color_autosuggestion $comment
+set -g fish_color_normal abb2bf
+set -g fish_color_command 61afef
+set -g fish_color_keyword c678dd
+set -g fish_color_quote e5c07b
+set -g fish_color_redirection 56b6c2
+set -g fish_color_end 98c379
+set -g fish_color_error e06c75
+set -g fish_color_param abb2bf
+set -g fish_color_comment 5c6370 --italics
+set -g fish_color_selection --background=2c323c
+set -g fish_color_search_match --background=2c323c
+set -g fish_color_operator 56b6c2
+set -g fish_color_escape c678dd
+set -g fish_color_autosuggestion 5c6370
+set -g fish_color_cancel e06c75
+set -g fish_color_cwd 98c379
+set -g fish_color_user 56b6c2
+set -g fish_color_host 61afef
+set -g fish_color_host_remote e5c07b
+set -g fish_color_status e06c75
 
 # Completion Pager Colors
-set -g fish_pager_color_progress $comment
-set -g fish_pager_color_prefix $cyan
-set -g fish_pager_color_completion $foreground
-set -g fish_pager_color_description $comment
-set -g fish_pager_color_selected_background --background=$selection
+set -g fish_pager_color_progress 5c6370
+set -g fish_pager_color_prefix 61afef --bold
+set -g fish_pager_color_completion abb2bf
+set -g fish_pager_color_description 5c6370
+set -g fish_pager_color_selected_background --background=2c323c
+set -g fish_pager_color_selected_prefix 61afef --bold
+set -g fish_pager_color_selected_completion abb2bf
+set -g fish_pager_color_selected_description 5c6370
+set -g fish_pager_color_secondary_background
+set -g fish_pager_color_secondary_prefix 61afef
+set -g fish_pager_color_secondary_completion abb2bf
+set -g fish_pager_color_secondary_description 5c6370
+
+# Git prompt colors (if using fish_git_prompt)
+set -g __fish_git_prompt_color_branch c678dd
+set -g __fish_git_prompt_color_branch_detached e06c75
+set -g __fish_git_prompt_color_upstream 56b6c2
+set -g __fish_git_prompt_color_dirtystate e5c07b
+set -g __fish_git_prompt_color_stagedstate 98c379
+set -g __fish_git_prompt_color_invalidstate e06c75
+set -g __fish_git_prompt_color_untrackedfiles e5c07b
+set -g __fish_git_prompt_color_cleanstate 98c379
 
 function starship_transient_prompt_func
     starship module character

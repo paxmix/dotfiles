@@ -1,0 +1,39 @@
+#CPU graph colors
+theme[cpu_start]="#61afef"
+theme[cpu_mid]="#c678dd"
+theme[cpu_end]="#e06c75"
+
+# Mem/Disk free meter
+theme[free_start]="#98c379"
+theme[free_mid]="#e5c07b"
+theme[free_end]="#e06c75"
+
+# Mem/Disk cached meter
+theme[cached_start]="#56b6c2"
+theme[cached_mid]="#61afef"
+theme[cached_end]="#c678dd"
+
+# Mem/Disk available meter
+theme[available_start]="#e06c75"
+theme[available_mid]="#e5c07b"
+theme[available_end]="#98c379"
+
+# Mem/Disk used meter
+theme[used_start]="#98c379"
+theme[used_mid]="#e5c07b"
+theme[used_end]="#e06c75"
+
+# Download graph colors
+theme[download_start]="#56b6c2"
+theme[download_mid]="#61afef"
+theme[download_end]="#c678dd"
+
+# Upload graph colors
+theme[upload_start]="#98c379"
+theme[upload_mid]="#e5c07b"
+theme[upload_end]="#e06c75"
+
+# Process box color gradient for threads, mem and cpu usage
+theme[process_start]="#98c379"
+theme[process_mid]="#e5c07b"
+theme[process_end]="#e06c75"
