@@ -1,23 +1,48 @@
 theme:
-  activeBorderColor:
-    - '#74c7ec'
-    - bold
-  inactiveBorderColor:
-    - '#a6adc8'
-  optionsTextColor:
-    - '#89b4fa'
-  selectedLineBgColor:
-    - '#313244'
-  cherryPickedCommitBgColor:
-    - '#45475a'
-  cherryPickedCommitFgColor:
-    - '#74c7ec'
-  unstagedChangesColor:
-    - '#f38ba8'
-  defaultFgColor:
-    - '#cdd6f4'
-  searchingActiveBorderColor:
-    - '#f9e2af'
+    lightTheme: false
+    activeBorderColor:
+      - '#61afef'
+      - bold
+    inactiveBorderColor:
+      - '#3e4452'
+    optionsTextColor:
+      - '#56b6c2'
+    selectedLineBgColor:
+      - '#2c323c'
+    selectedRangeBgColor:
+      - '#2c323c'
+    cherryPickedCommitBgColor:
+      - '#61afef'
+    cherryPickedCommitFgColor:
+      - '#56b6c2'
+    unstagedChangesColor:
+      - '#e06c75'
+    defaultFgColor:
+      - '#abb2bf'
+    searchingActiveBorderColor:
+      - '#e5c07b'
 
+  # Author colors
 authorColors:
-  '*': '#b4befe'
+    '*': '#61afef'
+
+  # Branch colors
+branchColors:
+    main: '#c678dd'
+    master: '#c678dd'
+    develop: '#98c379'
+    staging: '#e5c07b'
+    production: '#e06c75'
+
+  # Commit hash colors
+commitHashColor:
+    - '#56b6c2'
+
+  # Status colors
+statusColors:
+    added: '#98c379'
+    modified: '#e5c07b'
+    deleted: '#e06c75'
+    untracked: '#c678dd'
+    copied: '#56b6c2'
+    renamed: '#61afef'
