@@ -1,6 +1,6 @@
 [mgr]
 # NOTE: can combined with tmTheme (sublime colorshceme file) for preview code highlight
-syntect_theme = "~/.config/yazi/tokyonight.tmTheme"
+syntect_theme = "~/.config/yazi/flavors/onedark.yazi/tmtheme.xml"
 
 cwd = { fg = "#a9b1d6", italic = true }
 
