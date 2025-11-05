@@ -6,7 +6,11 @@ maximize = true
 gtk-tabs-location = bottom
 
 font-family = CaskaydiaCove Nerd Font
+<<<<<<< HEAD
 font-size = 12
+=======
+font-size = 14
+>>>>>>> 4820394 (change to cascadia)
 
 window-padding-x = 8
 window-padding-y = 3
