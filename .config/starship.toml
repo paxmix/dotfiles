@@ -3,49 +3,44 @@
 
 add_newline = false
 
-palette = "catppuccin_mocha"
+palette = "onedark_darker"
 
-[palettes.catppuccin_mocha]
-rosewater = "#f5e0dc"
-flamingo = "#f2cdcd"
-pink = "#f5c2e7"
-mauve = "#cba6f7"
-red = "#f38ba8"
-maroon = "#eba0ac"
-peach = "#fab387"
-yellow = "#f9e2af"
-green = "#a6e3a1"
-teal = "#94e2d5"
-sky = "#89dceb"
-sapphire = "#74c7ec"
-blue = "#89b4fa"
-lavender = "#b4befe"
-text = "#cdd6f4"
-subtext1 = "#bac2de"
-subtext0 = "#a6adc8"
-overlay2 = "#9399b2"
-overlay1 = "#7f849c"
-overlay0 = "#6c7086"
-surface2 = "#585b70"
-surface1 = "#45475a"
-surface0 = "#313244"
-base = "#1e1e2e"
-mantle = "#181825"
-crust = "#11111b"
+[palettes.onedark_darker]
+black = "#1e1e1e"
+bg0 = "#21252b"
+bg1 = "#282c34"
+bg2 = "#2c323c"
+bg3 = "#353b45"
+fg = "#abb2bf"
+fg_bright = "#c8ccd4"
+comment = "#5c6370"
+cursor = "#528bff"
+red = "#e06c75"
+orange = "#d19a66"
+yellow = "#e5c07b"
+green = "#98c379"
+cyan = "#56b6c2"
+blue = "#61afef"
+purple = "#c678dd"
+# Optional "darker" tweaks for depth (used as background transitions)
+surface0 = "#1b1d23"
+surface1 = "#21252b"
+surface2 = "#2a2e36"
+surface3 = "#323842"
 
 [character]
 success_symbol = '[](bold green)'
 error_symbol = '[](bold red)'
 vimcmd_symbol = '[](bold green)'
-vimcmd_replace_one_symbol = '[](bold subtext1)'
-vimcmd_replace_symbol = '[](bold subtext1)'
-vimcmd_visual_symbol = '[](bold yellow)'
+vimcmd_replace_one_symbol = '[](bold yellow)'
+vimcmd_replace_symbol = '[](bold yellow)'
+vimcmd_visual_symbol = '[](bold orange)'
 
 [username]
 show_always = true
-format = '[$user]($style)[@](peach)'
-style_user = "sapphire bold"
-style_root = "maroon bold"
+format = '[$user]($style)[@](orange)'
+style_user = "blue"
+style_root = "red bold"
 
 [aws]
 symbol = "  "
@@ -79,7 +74,7 @@ symbol = " "
 
 [directory]
 truncation_length = 4
-style = "bold lavender"
+style = "bold green"
 read_only = " 󰌾"
 
 [docker_context]
@@ -101,8 +96,11 @@ symbol = " "
 symbol = "  "
 
 [git_branch]
-style = "bold mauve"
+style = "bold purple"
 symbol = " "
+
+[git_status]
+style = "yellow"
 
 [git_commit]
 tag_symbol = '  '
@@ -125,6 +123,7 @@ symbol = " "
 [hostname]
 ssh_only = false
 ssh_symbol = " "
+style = "cyan"
 
 [java]
 symbol = " "
