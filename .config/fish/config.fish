@@ -64,31 +64,66 @@ alias l. "eza -a | grep -e '^\.'" # list only dotfiles
 # need fzf version > 0.48
 fzf --fish | source
 
-# One Dark Darker fzf theme for Fish
-# Core One Dark Darker colors
-set -l bg0 "#21252b"
-set -l bg1 "#282c34"
-set -l fg "#abb2bf"
-set -l red "#e06c75"
-set -l green "#98c379"
-set -l yellow "#e5c07b"
-set -l blue "#61afef"
-set -l purple "#c678dd"
-set -l cyan "#56b6c2"
-set -l gray "#5c6370"
+# TokyoNight Color Palette
+set -l foreground c0caf5
+set -l selection 283457
+set -l comment 565f89
+set -l red f7768e
+set -l orange ff9e64
+set -l yellow e0af68
+set -l green 9ece6a
+set -l purple 9d7cd8
+set -l cyan 7dcfff
+set -l pink bb9af7
 
-# Apply the theme to fzf
-set -gx FZF_DEFAULT_OPTS "\
---color=fg:$fg,bg:$bg0,hl:$blue \
---color=fg+:#ffffff,bg+:$bg1,hl+:$blue \
---color=info:$purple,prompt:$cyan,pointer:$blue,marker:$green,spinner:$yellow,header:$gray \
---color=border:$bg1,label:$yellow \
---border=rounded \
---prompt='❯ ' \
---marker=' ' \
---pointer='▶' \
---separator='─' \
---ansi"
+# Syntax Highlighting Colors
+set -g fish_color_normal $foreground
+set -g fish_color_command $cyan
+set -g fish_color_keyword $pink
+set -g fish_color_quote $yellow
+set -g fish_color_redirection $foreground
+set -g fish_color_end $orange
+set -g fish_color_option $pink
+set -g fish_color_error $red
+set -g fish_color_param $purple
+set -g fish_color_comment $comment
+set -g fish_color_selection --background=$selection
+set -g fish_color_search_match --background=$selection
+set -g fish_color_operator $green
+set -g fish_color_escape $pink
+set -g fish_color_autosuggestion $comment
+
+# Completion Pager Colors
+set -g fish_pager_color_progress $comment
+set -g fish_pager_color_prefix $cyan
+set -g fish_pager_color_completion $foreground
+set -g fish_pager_color_description $comment
+set -g fish_pager_color_selected_background --background=$selection
+
+# fzf theme for Fish
+set -x FZF_DEFAULT_OPTS "$FZF_DEFAULT_OPTS \
+  --highlight-line \
+  --info=inline-right \
+  --ansi \
+  --layout=reverse \
+  --border=none \
+  --color=bg+:#283457 \
+  --color=bg:#16161e \
+  --color=border:#27a1b9 \
+  --color=fg:#c0caf5 \
+  --color=gutter:#16161e \
+  --color=header:#ff9e64 \
+  --color=hl+:#2ac3de \
+  --color=hl:#2ac3de \
+  --color=info:#545c7e \
+  --color=marker:#ff007c \
+  --color=pointer:#ff007c \
+  --color=prompt:#2ac3de \
+  --color=query:#c0caf5:regular \
+  --color=scrollbar:#27a1b9 \
+  --color=separator:#ff9e64 \
+  --color=spinner:#ff007c \
+"
 
 # Preview file content using bat (https://github.com/sharkdp/bat)
 export FZF_CTRL_T_OPTS="

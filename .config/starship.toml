@@ -3,7 +3,30 @@
 
 add_newline = false
 
-palette = "onedark_darker"
+palette = "tokyonight_night"
+
+[palettes.tokyonight_night]
+black = "#1a1b26"
+bg0 = "#1a1b26"        # main background
+bg1 = "#16161e"
+bg2 = "#1f2335"
+bg3 = "#292e42"
+fg = "#c0caf5"
+fg_bright = "#a9b1d6"
+comment = "#565f89"
+cursor = "#7aa2f7"
+red = "#f7768e"
+orange = "#ff9e64"
+yellow = "#e0af68"
+green = "#9ece6a"
+cyan = "#7dcfff"
+blue = "#7aa2f7"
+purple = "#bb9af7"
+# Extra "surface" tonal steps
+surface0 = "#13141c"
+surface1 = "#1a1b26"
+surface2 = "#1f2335"
+surface3 = "#24283b"
 
 [palettes.onedark_darker]
 black = "#1e1e1e"
