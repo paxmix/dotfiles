@@ -2,19 +2,19 @@
 WINIT_X11_SCALE_FACTOR = "1"
 
 [window]
-padding={x=5,y=5}
+padding = { x = 5, y = 5 }
 startup_mode = "Maximized"
 dynamic_title = false
 
 [terminal]
-shell="fish"
+shell = "fish"
 
 [scrolling]
 history = 10000
 multiplier = 3
 
 [font]
-size = 13
+size = 12
 
 [font.normal]
 family = "SauceCodePro Nerd Font"
@@ -124,6 +124,6 @@ mods = "Control|Shift"
 action = "Quit"
 
 [general]
-import = ["~/.config/alacritty/onedark.toml"]
+import = ["~/.config/alacritty/tokyonight.toml"]
 live_config_reload = true
 working_directory = "None"
