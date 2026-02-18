@@ -17,19 +17,19 @@ multiplier = 3
 size = 12
 
 [font.normal]
-family = "SauceCodePro Nerd Font"
+family = "CaskaydiaMono Nerd Font"
 style = "Regular"
 
 [font.bold]
-family = "SauceCodePro Nerd Font"
+family = "CaskaydiaMono Nerd Font"
 style = "Bold"
 
 [font.italic]
-family = "SauceCodePro Nerd Font"
+family = "CaskaydiaMono Nerd Font"
 style = "Italic"
 
 [font.bold_italic]
-family = "SauceCodePro Nerd Font"
+family = "MesloLGS Nerd Font"
 style = "Bold Italic"
 
 [selection]
