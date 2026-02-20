@@ -3,10 +3,22 @@ maximize = true
 #window-width = 90
 #window-height = 30
 
+custom-shader = shaders/cursor_smear_original.glsl
+# custom-shader = shaders/cursor_blaze.glsl
+# custom-shader = shaders/cursor_blaze_no_trail.glsl
+# custom-shader = shaders/cursor_blaze_tapered.glsl
+# custom-shader = shaders/cursor_border_1.glsl
+# custom-shader = shaders/cursor_smear_fade.glsl
+# custom-shader = shaders/cursor_smear_fade_original.glsl
+# custom-shader = shaders/cursor_smear_gradient.glsl
+# custom-shader = shaders/cursor_smear_gradient_original.glsl
+# custom-shader = shaders/cursor_smear_rainbow.glsl
+# custom-shader = shaders/cursor_smear_rainbow_original.glsl
+
 gtk-tabs-location = bottom
 
 font-family = Cascadia Code
-font-size = 13
+font-size = 12
 
 window-padding-x = 8
 window-padding-y = 3
