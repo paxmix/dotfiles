@@ -17,19 +17,19 @@ multiplier = 3
 size = 12
 
 [font.normal]
-family = "CaskaydiaMono Nerd Font"
+family = "Cascadia Mono NF"
 style = "Regular"
 
 [font.bold]
-family = "CaskaydiaMono Nerd Font"
+family = "Cascadia Mono NF"
 style = "Bold"
 
 [font.italic]
-family = "CaskaydiaMono Nerd Font"
+family = "Cascadia Mono NF"
 style = "Italic"
 
 [font.bold_italic]
-family = "MesloLGS Nerd Font"
+family = "Cascadia Mono NF"
 style = "Bold Italic"
 
 [selection]
