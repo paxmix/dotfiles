@@ -1,0 +1,81 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+    "buffer_line_height": "standard",
+    "buffer_font_weight": 400.0,
+    "tab_size": 4,
+    "ui_font_family": ".ZedSans",
+    "agent": {
+        "default_model": {
+            "provider": "google",
+            "model": "gemini-2.5-flash",
+            "enable_thinking": true,
+        },
+        "favorite_models": [],
+        "model_parameters": [],
+    },
+    "file_finder": {
+        "include_ignored": "smart",
+    },
+    "search": {
+        "include_ignored": false,
+    },
+    "inlay_hints": {
+        "enabled": false,
+    },
+    "terminal": {
+        "shell": {
+            "program": "fish",
+        },
+    },
+    "ensure_final_newline_on_save": false,
+    "scrollbar": {
+        "show": "auto",
+    },
+    "hover_popover_enabled": false,
+    "which_key": {
+        "enabled": false,
+    },
+    "autosave": "off",
+    "use_auto_surround": true,
+    "file_types": {
+        "C": ["c", "h"],
+    },
+    "languages": {
+        "C": {
+            "format_on_save": "on",
+        },
+        "C++": {
+            "format_on_save": "on",
+        },
+    },
+    "relative_line_numbers": "enabled",
+    "cursor_blink": false,
+    "auto_update": false,
+    "buffer_font_family": "Cascadia Code NF",
+    // "buffer_font_features": {
+    //     "ss08": true,
+    // },
+    "telemetry": {
+        "diagnostics": false,
+        "metrics": false,
+    },
+    "session": {
+        "trust_all_worktrees": true,
+    },
+    "vim_mode": true,
+    "base_keymap": "Emacs",
+    "ui_font_size": 15.0,
+    "buffer_font_size": 14.0,
+    "theme": {
+        "mode": "dark",
+        "light": "One Light",
+        "dark": "Kanagawa Dragon",
+    },
+}
