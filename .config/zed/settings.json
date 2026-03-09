@@ -60,7 +60,8 @@
     "auto_update": false,
     "buffer_font_family": "Cascadia Code NF",
     // "buffer_font_features": {
-    //     "ss08": true,
+    //     // "ss08": true,
+    //     "calt": false,
     // },
     "telemetry": {
         "diagnostics": false,
@@ -72,10 +73,10 @@
     "vim_mode": true,
     "base_keymap": "Emacs",
     "ui_font_size": 15.0,
-    "buffer_font_size": 14.0,
+    "buffer_font_size": 15.0,
     "theme": {
         "mode": "dark",
         "light": "One Light",
-        "dark": "Kanagawa Dragon",
+        "dark": "Tokyo Night",
     },
 }
