@@ -17,19 +17,19 @@ multiplier = 3
 size = 12
 
 [font.normal]
-family = "Cascadia Mono NF"
+family = "InputMono Nerd Font"
 style = "Regular"
 
 [font.bold]
-family = "Cascadia Mono NF"
+family = "InputMono Nerd Font"
 style = "Bold"
 
 [font.italic]
-family = "Cascadia Mono NF"
+family = "InputMono Nerd Font"
 style = "Italic"
 
 [font.bold_italic]
-family = "Cascadia Mono NF"
+family = "InputMono Nerd Font"
 style = "Bold Italic"
 
 [selection]
@@ -124,6 +124,6 @@ mods = "Control|Shift"
 action = "Quit"
 
 [general]
-import = ["~/.config/alacritty/catppuccin-mocha.toml"]
+import = ["~/.config/alacritty/tokyonight.toml"]
 live_config_reload = true
 working_directory = "None"
