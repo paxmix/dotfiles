@@ -3,8 +3,35 @@
 
 add_newline = false
 
-palette = "tokyonight_night"
+palette = "gruvbox_material_dark"
 
+[palettes.gruvbox_material_dark]
+rosewater = "#fbf1c7"    # light neutral / soft cream
+flamingo = "#f2c6aa"     # salmon / muted red
+pink = "#f5bde6"         # bright pink / accent
+mauve = "#d3869b"        # purple / mauve
+red = "#fb4934"           # classic Gruvbox red
+maroon = "#cc241d"        # dark red / maroon
+peach = "#fe8019"         # orange / warm accent
+yellow = "#fabd2f"        # yellow / highlight
+green = "#b8bb26"         # green / foreground accent
+teal = "#8ec07c"          # teal / soft greenish
+sky = "#83a598"           # sky / muted blue
+sapphire = "#458588"      # sapphire / dark cyan
+blue = "#076678"           # deep blue / strong background accent
+lavender = "#b16286"      # lavender / purple accent
+text = "#ebdbb2"           # main text / foreground
+subtext1 = "#d5c4a1"      # secondary text
+subtext0 = "#bdae93"      # subtle text / dimmed
+overlay2 = "#a89984"      # line numbers / comments
+overlay1 = "#7c6f64"      # dimmed UI elements
+overlay0 = "#665c54"      # even dimmer UI elements
+surface2 = "#504945"      # panels / selection background
+surface1 = "#3c3836"      # floating windows / secondary surface
+surface0 = "#282828"      # base surface
+base = "#1d2021"           # main background
+mantle = "#1b1d1c"         # near black / dark panel
+crust = "#161616"          # darkest background / very deep black
 [palettes.gruvbox]
 rosewater = "#fb4934"
 flamingo = "#fe8019"
