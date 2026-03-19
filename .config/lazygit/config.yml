@@ -1,37 +1,23 @@
 theme:
   activeBorderColor:
-    - '#fb4934'
+    - '#b4befe'
     - bold
   inactiveBorderColor:
-    - '#665c54'
+    - '#a6adc8'
   optionsTextColor:
-    - '#b8bb26'
+    - '#89b4fa'
   selectedLineBgColor:
-    - '#3c3836'
+    - '#313244'
   cherryPickedCommitBgColor:
-    - '#504945'
+    - '#45475a'
   cherryPickedCommitFgColor:
-    - '#fabd2f'
+    - '#b4befe'
   unstagedChangesColor:
-    - '#fe8019'
+    - '#f38ba8'
   defaultFgColor:
-    - '#ebdbb2'
+    - '#cdd6f4'
   searchingActiveBorderColor:
-    - '#83a598'
-  stagedChangesColor:
-    - '#8ec07c'
-  mergeConflictColor:
-    - '#fb4934'
-  diffAddColor:
-    - '#b8bb26'
-  diffDeleteColor:
-    - '#fb4934'
-  promptColor:
-    - '#b8bb26'
-  warningColor:
-    - '#fe8019'
-  infoColor:
-    - '#83a598'
+    - '#f9e2af'
 
 authorColors:
-  '*': '#8ec07c'  # green for author names by default
+  '*': '#b4befe'

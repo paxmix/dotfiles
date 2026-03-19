@@ -66,11 +66,11 @@ fzf --fish | source
 
 # fzf theme for Fish
 set -x FZF_DEFAULT_OPTS "\
---color=bg+:#3a352f,bg:#282828,spinner:#d79921,hl:#cc241d \
---color=fg:#ebdbb2,header:#cc241d,info:#83a598,pointer:#98971a \
---color=marker:#b16286,fg+:#ebdbb2,prompt:#98971a,hl+:#cc241d \
---color=selected-bg:#32302f \
---color=border:#7c6f64,label:#ebdbb2"
+--color=bg+:#313244,bg:#1E1E2E,spinner:#F5E0DC,hl:#F38BA8 \
+--color=fg:#CDD6F4,header:#F38BA8,info:#CBA6F7,pointer:#F5E0DC \
+--color=marker:#B4BEFE,fg+:#CDD6F4,prompt:#CBA6F7,hl+:#F38BA8 \
+--color=selected-bg:#45475A \
+--color=border:#6C7086,label:#CDD6F4"
 
 # Preview file content using bat (https://github.com/sharkdp/bat)
 export FZF_CTRL_T_OPTS="
