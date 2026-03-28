@@ -50,6 +50,7 @@ set --erase _asdf_shims
 # Custom abbreviation
 abbr lg lazygit
 abbr cleanup "sudo pacman -Rns (pacman -Qtdq)"
+abbr zed zeditor
 
 # Zoxide
 zoxide init --cmd cd fish | source
@@ -66,11 +67,11 @@ fzf --fish | source
 
 # fzf theme for Fish
 set -x FZF_DEFAULT_OPTS "\
---color=bg+:#313244,bg:#1E1E2E,spinner:#F5E0DC,hl:#F38BA8 \
---color=fg:#CDD6F4,header:#F38BA8,info:#CBA6F7,pointer:#F5E0DC \
---color=marker:#B4BEFE,fg+:#CDD6F4,prompt:#CBA6F7,hl+:#F38BA8 \
---color=selected-bg:#45475A \
---color=border:#6C7086,label:#CDD6F4"
+--color=bg+:#3e4451,bg:#282c34,spinner:#56b6c2,hl:#e06c75 \
+--color=fg:#abb2bf,header:#e06c75,info:#c678dd,pointer:#56b6c2 \
+--color=marker:#61afef,fg+:#abb2bf,prompt:#c678dd,hl+:#e06c75 \
+--color=selected-bg:#3e4451 \
+--color=border:#5c6370,label:#abb2bf"
 
 # Preview file content using bat (https://github.com/sharkdp/bat)
 export FZF_CTRL_T_OPTS="
