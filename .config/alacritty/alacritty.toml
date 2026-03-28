@@ -17,19 +17,19 @@ multiplier = 3
 size = 12
 
 [font.normal]
-family = "InputMono Nerd Font"
+family = "BlexMono Nerd Font"
 style = "Regular"
 
 [font.bold]
-family = "InputMono Nerd Font"
+family = "BlexMono Nerd Font"
 style = "Bold"
 
 [font.italic]
-family = "InputMono Nerd Font"
+family = "BlexMono Nerd Font"
 style = "Italic"
 
 [font.bold_italic]
-family = "InputMono Nerd Font"
+family = "BlexMono Nerd Font"
 style = "Bold Italic"
 
 [selection]
