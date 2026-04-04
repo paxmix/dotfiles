@@ -1,27 +1,27 @@
 gui:
   theme:
     activeBorderColor:
-      - "#61afef"   # blue
+      - "#719cd6"   # Nightfox Blue
       - bold
     inactiveBorderColor:
-      - "#5c6370"   # gray
+      - "#52585f"   # Muted Surface/Gray
     optionsTextColor:
-      - "#61afef"
+      - "#719cd6"   # Nightfox Blue
     selectedLineBgColor:
-      - "#3e4451"   # selection bg
+      - "#29313a"   # Surface 1 (Lighter Background)
     selectedRangeBgColor:
-      - "#3e4451"
+      - "#29313a"
     cherryPickedCommitBgColor:
-      - "#3e4451"
+      - "#29313a"
     cherryPickedCommitFgColor:
-      - "#98c379"   # green
+      - "#81b29a"   # Nightfox Green
     unstagedChangesColor:
-      - "#e06c75"   # red
+      - "#c94f6d"   # Nightfox Red
     defaultFgColor:
-      - "#abb2bf"   # foreground
+      - "#cdcecf"   # Main Text Foreground
 
     searchingActiveBorderColor:
-      - "#e5c07b"   # yellow
+      - "#e0af68"   # Nightfox Yellow
 
     authorColors:
-      "*": "#c678dd"   # purple
+      "*": "#9d79d6"   # Nightfox Magenta/Purple

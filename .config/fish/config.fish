@@ -26,12 +26,7 @@ if test -f ~/.fish_profile
     source ~/.fish_profile
 end
 
-# Add ~/.local/bin to PATH
-if test -d ~/.local/bin
-    if not contains -- ~/.local/bin $PATH
-        set -p PATH ~/.local/bin
-    end
-end
+fish_add_path ~/.local/bin
 
 # ASDF configuration code
 if test -z $ASDF_DATA_DIR
@@ -67,11 +62,11 @@ fzf --fish | source
 
 # fzf theme for Fish
 set -x FZF_DEFAULT_OPTS "\
---color=bg+:#3e4451,bg:#282c34,spinner:#56b6c2,hl:#e06c75 \
---color=fg:#abb2bf,header:#e06c75,info:#c678dd,pointer:#56b6c2 \
---color=marker:#61afef,fg+:#abb2bf,prompt:#c678dd,hl+:#e06c75 \
---color=selected-bg:#3e4451 \
---color=border:#5c6370,label:#abb2bf"
+--color=bg+:#29313a,bg:#192330,spinner:#63cdcf,hl:#c94f6d \
+--color=fg:#cdcecf,header:#c94f6d,info:#9d79d6,pointer:#63cdcf \
+--color=marker:#719cd6,fg+:#cdcecf,prompt:#9d79d6,hl+:#c94f6d \
+--color=selected-bg:#29313a \
+--color=border:#52585f,label:#aeafb0"
 
 # Preview file content using bat (https://github.com/sharkdp/bat)
 export FZF_CTRL_T_OPTS="
