@@ -46,6 +46,7 @@ set --erase _asdf_shims
 abbr lg lazygit
 abbr cleanup "sudo pacman -Rns (pacman -Qtdq)"
 abbr zed zeditor
+abbr vi nvim
 
 # Zoxide
 zoxide init --cmd cd fish | source
@@ -83,14 +84,25 @@ export FZF_ALT_C_OPTS="
   --walker-skip .git,node_modules,target
   --preview 'tree -C {}'"
 
-function starship_transient_prompt_func
-    starship module character
-end
-starship init fish | source
-enable_transience
+# set -g hydro_color_start
+set -g hydro_color_pwd 719cd6
+set -g hydro_color_git 9d79d6
+set -g hydro_color_error c94f6d
+set -g hydro_color_prompt 81b29a
+set -g hydro_color_duration e0af68
 
-function prompt_newline --on-event fish_postexec
-    echo
-end
+set -g hydro_cmd_duration_threshold 3000
+set -g hydro_fetch true
+set -g fish_prompt_pwd_dir_length 3
 
-alias clear "command clear; commandline -f clear-screen"
+# function starship_transient_prompt_func
+#     starship module character
+# end
+# starship init fish | source
+# enable_transience
+#
+# function prompt_newline --on-event fish_postexec
+#     echo
+# end
+#
+# alias clear "command clear; commandline -f clear-screen"
