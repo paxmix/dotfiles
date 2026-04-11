@@ -1,4 +1,4 @@
-theme = Nightfox
+theme = everforest_dark.conf
 
 maximize = true
 #window-width = 90
@@ -18,7 +18,7 @@ maximize = true
 
 gtk-tabs-location = bottom
 
-font-family = Firax Code
+font-family = Source Code Pro
 font-size = 13
 
 window-padding-x = 5

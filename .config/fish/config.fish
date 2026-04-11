@@ -62,12 +62,11 @@ alias l. "eza -a | grep -e '^\.'" # list only dotfiles
 fzf --fish | source
 
 # fzf theme for Fish
-set -x FZF_DEFAULT_OPTS "\
---color=bg+:#29313a,bg:#192330,spinner:#63cdcf,hl:#c94f6d \
---color=fg:#cdcecf,header:#c94f6d,info:#9d79d6,pointer:#63cdcf \
---color=marker:#719cd6,fg+:#cdcecf,prompt:#9d79d6,hl+:#c94f6d \
---color=selected-bg:#29313a \
---color=border:#52585f,label:#aeafb0"
+set -x FZF_DEFAULT_OPTS "
+  --color=fg:#d3c6aa,bg:-1,hl:#a7c080
+  --color=fg+:#d3c6aa,bg+:#323c41,hl+:#a7c080
+  --color=info:#dbbc7f,prompt:#7fbbb3,pointer:#d699b6
+  --color=marker:#e67e80,spinner:#d699b6,header:#7fbbb3"
 
 # Preview file content using bat (https://github.com/sharkdp/bat)
 export FZF_CTRL_T_OPTS="
