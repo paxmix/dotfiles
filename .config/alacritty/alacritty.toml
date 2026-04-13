@@ -129,6 +129,6 @@ mods = "Control|Shift"
 action = "CreateNewWindow"
 
 [general]
-import = ["~/.config/alacritty/themes/nightfox.toml"]
+import = ["~/.config/alacritty/themes/everforest.toml"]
 live_config_reload = true
 working_directory = "None"

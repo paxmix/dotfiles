@@ -84,11 +84,11 @@ export FZF_ALT_C_OPTS="
   --preview 'tree -C {}'"
 
 # set -g hydro_color_start
-set -g hydro_color_pwd 719cd6
-set -g hydro_color_git 9d79d6
-set -g hydro_color_error c94f6d
-set -g hydro_color_prompt 81b29a
-set -g hydro_color_duration e0af68
+set -g hydro_color_pwd 7fbbb3
+set -g hydro_color_git d699b6
+set -g hydro_color_error e67e80
+set -g hydro_color_prompt a7c080
+set -g hydro_color_duration dbbc7f
 
 set -g hydro_cmd_duration_threshold 3000
 set -g hydro_fetch true
