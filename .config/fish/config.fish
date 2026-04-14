@@ -28,20 +28,6 @@ end
 
 fish_add_path ~/.local/bin
 
-# ASDF configuration code
-if test -z $ASDF_DATA_DIR
-    set _asdf_shims "$HOME/.asdf/shims"
-else
-    set _asdf_shims "$ASDF_DATA_DIR/shims"
-end
-
-# Do not use fish_add_path (added in Fish 3.2) because it
-# potentially changes the order of items in PATH
-if not contains $_asdf_shims $PATH
-    set -gx --prepend PATH $_asdf_shims
-end
-set --erase _asdf_shims
-
 # Custom abbreviation
 abbr lg lazygit
 abbr cleanup "sudo pacman -Rns (pacman -Qtdq)"
@@ -93,15 +79,3 @@ set -g hydro_color_duration dbbc7f
 set -g hydro_cmd_duration_threshold 3000
 set -g hydro_fetch true
 set -g fish_prompt_pwd_dir_length 3
-
-# function starship_transient_prompt_func
-#     starship module character
-# end
-# starship init fish | source
-# enable_transience
-#
-# function prompt_newline --on-event fish_postexec
-#     echo
-# end
-#
-# alias clear "command clear; commandline -f clear-screen"
