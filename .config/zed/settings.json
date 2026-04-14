@@ -14,7 +14,7 @@
     "project_panel": {
         "dock": "right",
     },
-    "buffer_font_family": "JetBrainsMono Nerd Font",
+    "buffer_font_family": "Firax Code",
     "icon_theme": {
         "mode": "dark",
         "light": "Catppuccin Mocha",
@@ -40,7 +40,7 @@
         "include_ignored": false,
     },
     "inlay_hints": {
-        "enabled": false,
+        "enabled": true,
     },
     "terminal": {
         "shell": {
@@ -59,7 +59,7 @@
     "use_auto_surround": true,
     "languages": {
         "Elixir": {
-            "tab_size": 2
+            "tab_size": 2,
         },
         "Haskell": {
             "tab_size": 2,
@@ -93,6 +93,6 @@
     "theme": {
         "mode": "dark",
         "light": "Dayfox - opaque",
-        "dark": "Nightfox - opaque",
+        "dark": "Everforest Dark Hard",
     },
 }
