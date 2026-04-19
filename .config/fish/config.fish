@@ -25,14 +25,14 @@ set -x EDITOR nvim
 if test -f ~/.fish_profile
     source ~/.fish_profile
 end
-
+# add paths
 fish_add_path ~/.local/bin
 
-# Custom abbreviation
-abbr lg lazygit
+# Custom abbreviation / aliases
+alias lg lazygit
 abbr cleanup "sudo pacman -Rns (pacman -Qtdq)"
-abbr zed zeditor
-abbr vi nvim
+alias zed zeditor
+alias vi nvim
 
 # Zoxide
 zoxide init --cmd cd fish | source
@@ -43,8 +43,7 @@ alias ll "eza -la --icons=auto --color=always" # list all files with details
 alias lt "eza -Ta --icons=auto --color=always" # list all files in tree form
 alias l. "eza -a | grep -e '^\.'" # list only dotfiles
 
-# Set up fzf key bindings
-# need fzf version > 0.48
+# Set up fzf key bindings, need fzf version > 0.48
 fzf --fish | source
 
 # fzf theme for Fish
@@ -55,27 +54,29 @@ set -x FZF_DEFAULT_OPTS "
   --color=marker:#e67e80,spinner:#d699b6,header:#7fbbb3"
 
 # Preview file content using bat (https://github.com/sharkdp/bat)
-export FZF_CTRL_T_OPTS="
+set -x FZF_CTRL_T_OPTS "
   --walker-skip .git,node_modules,target
   --preview 'bat -n --color=always {}'
   --bind 'ctrl-/:change-preview-window(down|hidden|)'"
 # CTRL-Y to copy the command into clipboard using pbcopy
-export FZF_CTRL_R_OPTS="
+set -x FZF_CTRL_R_OPTS "
   --bind 'ctrl-y:execute-silent(echo -n {2..} | xclip -selection clipboard)+abort'
   --color header:italic
   --header 'Press CTRL-Y to copy command into clipboard'"
 # Print tree structure in the preview window
-export FZF_ALT_C_OPTS="
+set -x FZF_ALT_C_OPTS "
   --walker-skip .git,node_modules,target
   --preview 'tree -C {}'"
 
-# set -g hydro_color_start
-set -g hydro_color_pwd 7fbbb3
-set -g hydro_color_git d699b6
-set -g hydro_color_error e67e80
-set -g hydro_color_prompt a7c080
-set -g hydro_color_duration dbbc7f
+# starship setup
+function starship_transient_prompt_func
+    starship module character
+end
+starship init fish | source
+enable_transience
 
-set -g hydro_cmd_duration_threshold 3000
-set -g hydro_fetch true
-set -g fish_prompt_pwd_dir_length 3
+function prompt_newline --on-event fish_postexec
+    echo
+end
+
+alias clear "command clear; commandline -f clear-screen"
