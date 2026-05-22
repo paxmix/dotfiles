@@ -1,4 +1,4 @@
-theme = everforest_dark.conf
+theme = Catppuccin Mocha
 
 maximize = true
 #window-width = 90
@@ -18,7 +18,7 @@ maximize = true
 
 gtk-tabs-location = bottom
 
-font-family = JetBrains Mono
+font-family = Cascadia Code
 font-size = 13
 
 window-padding-x = 5
