@@ -14,22 +14,22 @@ history = 10000
 multiplier = 3
 
 [font]
-size = 12
+size = 13
 
 [font.normal]
-family = "MesloLGL Nerd Font"
+family = "CaskaydiaMono Nerd Font"
 style = "Regular"
 
 [font.bold]
-family = "MesloLGL Nerd Font"
+family = "CaskaydiaMono Nerd Font"
 style = "Bold"
 
 [font.italic]
-family = "MesloLGL Nerd Font"
+family = "CaskaydiaMono Nerd Font"
 style = "Italic"
 
 [font.bold_italic]
-family = "MesloLGL Nerd Font"
+family = "CaskaydiaMono Nerd Font"
 style = "Bold Italic"
 
 [selection]
@@ -129,6 +129,6 @@ mods = "Control|Shift"
 action = "CreateNewWindow"
 
 [general]
-import = ["~/.config/alacritty/themes/catppuccin-mocha.toml"]
+import = ["~/.config/alacritty/themes/tokyonight.toml"]
 live_config_reload = true
 working_directory = "None"
