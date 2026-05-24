@@ -3,35 +3,35 @@
 
 add_newline = false
 
-palette = "catppuccin_mocha"
+palette = "tokyonight"
 
-[palettes.catppuccin_mocha]
-rosewater = "#f5e0dc"
-flamingo = "#f2cdcd"
-pink = "#f5c2e7"
-mauve = "#cba6f7"
-red = "#f38ba8"
-maroon = "#eba0ac"
-peach = "#fab387"
-yellow = "#f9e2af"
-green = "#a6e3a1"
-teal = "#94e2d5"
-sky = "#89dceb"
-sapphire = "#74c7ec"
-blue = "#89b4fa"
-lavender = "#b4befe"
-text = "#cdd6f4"
-subtext1 = "#bac2de"
-subtext0 = "#a6adc8"
-overlay2 = "#9399b2"
-overlay1 = "#7f849c"
-overlay0 = "#6c7086"
-surface2 = "#585b70"
-surface1 = "#45475a"
-surface0 = "#313244"
-base = "#1e1e2e"
-mantle = "#181825"
-crust = "#11111b"
+[palettes.tokyonight]
+rosewater = "#ff9e64" # Warm sunset orange accent
+flamingo  = "#f7768e" # Vibrant coral pink
+pink      = "#bb9af7" # Vivid amethyst purple
+mauve     = "#bb9af7" # Main deep purple
+red       = "#f7768e" # Bright neon red
+maroon    = "#f7768e" # Deep red accent
+peach     = "#ff9e64" # Sunset orange
+yellow    = "#e0af68" # Warm banana yellow
+green     = "#9ece6a" # Vibrant lime green
+teal      = "#73daca" # Sharp teal / aqua
+sky       = "#7dcfff" # Bright neon cyan
+sapphire  = "#2ac3de" # Steel blue-cyan
+blue      = "#7aa2f7" # Bright steel blue
+lavender  = "#b4f9f8" # Crisp ice blue / pastel aqua
+text      = "#c0caf5" # Cool white main foreground
+subtext1  = "#a9b1d6" # Mild slate foreground
+subtext0  = "#9aa5ce" # Subdued slate text
+overlay2  = "#565f89" # Muted status gray-blue
+overlay1  = "#444b6a" # Subtle UI contrast text
+overlay0  = "#414868" # Soft interface elements
+surface2  = "#2f3549" # Lighter panel / card background
+surface1  = "#24283b" # Selection row / active state
+surface0  = "#1f2335" # Hover / context states
+base      = "#1a1b26" # The main deep storm blue background
+mantle    = "#181924" # Slightly darker workspace background
+crust     = "#16161e" # Deepest night background for borders and status lines
 
 [character]
 success_symbol = '[󰘧](bold green)'
