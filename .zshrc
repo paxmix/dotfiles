@@ -5,43 +5,52 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# Lines configured by zsh-newuser-install
-HISTFILE=~/.histfile
-HISTSIZE=50000
-SAVEHIST=50000
-export HISTCONTROL=ignoreboth
+# History
+HISTFILE="$XDG_CACHE_HOME/zsh_history"
+HISTSIZE=10000
+SAVEHIST=10000
 
-setopt autocd extendedglob nomatch notify
+# Load modules
+fpath=(~/.zsh/completions $fpath)
+zmodload zsh/complist
+autoload -Uz compinit && compinit
+autoload -U colors && colors
+
+# cmp opts
+zstyle ':completion:*' menu select # tab opens cmp menu
+zstyle ':completion:*' special-dirs true # force . and .. to show in cmp menu
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS} ma=0\;33 # colorize cmp menu
+# zstyle ':completion:*' file-list true # more detailed list
+zstyle ':completion:*' squeeze-slashes false # explicit disable to allow /*/ expansion
+
+# Opts
+setopt hist_ignore_dups hist_ignore_space hist_reduce_blanks
+setopt share_history # better history
+# on exit, history appends rather than overwrites; history is appended as soon as cmds executed; history shared across sessions
+setopt auto_menu
+setopt autocd extendedglob
+setopt auto_param_slash # when a dir is completed, add a / instead of a trailing space
+setopt no_case_glob no_case_match # make cmp case insensitive
+setopt globdots # include dotfiles
+setopt interactive_comments # allow comments in shell
 unsetopt beep
+
+# Keybinds
 bindkey -e
-# End of lines configured by zsh-newuser-install
-# The following lines were added by compinstall
-zstyle :compinstall filename '/home/paxmix/.zshrc'
-
-autoload -Uz compinit
-compinit
-# End of lines added by compinstall
-
-## Enviroment setup
-export VISUAL="nvim"
-export EDITOR="nvim"
-
-# add paths
-path+=( ~/.local/bin )
-path+=( ~/go/bin )
+bindkey '^[[H' beginning-of-line      # Home key
+bindkey '^[[F' end-of-line            # End key
+bindkey '^[[3~' delete-char           # Delete key
+bindkey '^[[1;5D' backward-word       # Ctrl + Left
+bindkey '^[[1;5C' forward-word        # Ctrl + Right
 
 # Aliases
 alias lg=lazygit
 alias zed=zeditor
-alias cleanup="sudo pacman -Rsn $(pacman -Qtdq)"
-# Eza
-alias ls="eza -a --icons=auto --color=always" # list all files
-alias ll="eza -la --icons=auto --color=always" # list all files with details
-alias lt="eza -Ta --icons=auto --color=always" # list all files in tree form
-alias l.="eza -a | grep -e '^\.'" # list only dotfiles
-
-# Zoxide setup
-eval "$(zoxide init zsh --cmd cd)"
+alias cleanup='sudo pacman -Rsn $(pacman -Qtdq)'
+# Replace ls with eza
+alias ls='eza -a --icons=auto --color=always' # list all files
+alias ll='eza -la --icons=auto --color=always' # list all files with details
+alias lt='eza -Ta --icons=auto --color=always' # list all files in tree form
 
 # Yazi setup
 function y() {
@@ -52,56 +61,19 @@ function y() {
 	command rm -f -- "$tmp"
 }
 
-# Fzf setup
-# Set up fzf key bindings and fuzzy completion
-source <(fzf --zsh)
-# Preview file content using bat (https://github.com/sharkdp/bat)
-export FZF_CTRL_T_OPTS="
-  --walker-skip .git,node_modules,target
-  --preview 'bat -n --color=always {}'
-  --bind 'ctrl-/:change-preview-window(down|hidden|)'"
-# CTRL-Y to copy the command into clipboard using pbcopy
-export FZF_CTRL_R_OPTS="
-  --bind 'ctrl-y:execute-silent(echo -n {2..} | wl-copy)+abort'
-  --color header:italic
-  --header 'Press CTRL-Y to copy command into clipboard'"
-# Print tree structure in the preview window
-export FZF_ALT_C_OPTS="
-  --walker-skip .git,node_modules,target
-  --preview 'tree -C {}'"
-# TokyoNight theme
-export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
-  --highlight-line \
-  --info=inline-right \
-  --ansi \
-  --layout=reverse \
-  --border=none \
-  --color=bg+:#283457 \
-  --color=bg:#16161e \
-  --color=border:#27a1b9 \
-  --color=fg:#c0caf5 \
-  --color=gutter:#16161e \
-  --color=header:#ff9e64 \
-  --color=hl+:#2ac3de \
-  --color=hl:#2ac3de \
-  --color=info:#545c7e \
-  --color=marker:#ff007c \
-  --color=pointer:#ff007c \
-  --color=prompt:#2ac3de \
-  --color=query:#c0caf5:regular \
-  --color=scrollbar:#27a1b9 \
-  --color=separator:#ff9e64 \
-  --color=spinner:#ff007c \
-"
+# Zoxide setup
+eval "$(zoxide init zsh --cmd cd)"
 
+# Fzf setup
+source <(fzf --zsh)
+
+# fnm
+eval "$(fnm env --use-on-cd --shell zsh)"
+
+# load plugins
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
-# Fish-like syntax highlighting and autosuggestions
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-# Use history substring search
-source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
-# pkgfile "command not found" handler
-source /usr/share/doc/pkgfile/command-not-found.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
