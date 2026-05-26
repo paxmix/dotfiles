@@ -6,9 +6,6 @@ padding = { x = 5, y = 5 }
 startup_mode = "Maximized"
 dynamic_title = false
 
-[terminal]
-shell = "fish"
-
 [scrolling]
 history = 10000
 multiplier = 3
