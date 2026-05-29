@@ -52,15 +52,6 @@ alias ls='eza -a --icons=auto --color=always' # list all files
 alias ll='eza -la --icons=auto --color=always' # list all files with details
 alias lt='eza -Ta --icons=auto --color=always' # list all files in tree form
 
-# Yazi setup
-function y() {
-	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
-	command yazi "$@" --cwd-file="$tmp"
-	IFS= read -r -d '' cwd < "$tmp"
-	[ "$cwd" != "$PWD" ] && [ -d "$cwd" ] && builtin cd -- "$cwd"
-	command rm -f -- "$tmp"
-}
-
 # Zoxide setup
 eval "$(zoxide init zsh --cmd cd)"
 
