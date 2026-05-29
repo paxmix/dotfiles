@@ -67,9 +67,6 @@ eval "$(zoxide init zsh --cmd cd)"
 # Fzf setup
 source <(fzf --zsh)
 
-# fnm
-eval "$(fnm env --use-on-cd --shell zsh)"
-
 # load plugins
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
