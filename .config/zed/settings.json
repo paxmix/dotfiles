@@ -1,64 +1,75 @@
 {
-  "icon_theme": "Catppuccin Mocha",
-  "theme": "Catppuccin Mocha - No Italics",
-  "disable_ai": true,
-  "outline_panel": {
-    "dock": "right",
-  },
-  "project_panel": {
-    "dock": "right",
-  },
-  // "buffer_font_family": "Source Code Pro",
-  "buffer_line_height": "standard",
-  "agent": {
-    "default_model": {
-      "provider": "google",
-      "model": "gemini-2.5-flash",
-      "enable_thinking": true,
+    "ui_font_size": 15.0,
+    "ui_font_family": ".ZedMono",
+    "buffer_line_height": "standard",
+    "inlay_hints": {},
+    "disable_ai": true,
+    "diagnostics": {
+        "inline": {
+            "enabled": true
+        }
     },
-    "favorite_models": [],
-    "model_parameters": [],
-  },
-  "file_finder": {
-    "include_ignored": "smart",
-  },
-  "search": {
-    "include_ignored": false,
-  },
-  "scrollbar": {
-    "show": "auto",
-  },
-  "hover_popover_enabled": false,
-  "which_key": {
-    "enabled": false,
-  },
-  "autosave": "off",
-  "use_auto_surround": true,
-  "languages": {
-    "C": {
-      "format_on_save": "on",
+    "icon_theme": "Material Icon Theme",
+    "theme": "Nightfox - opaque",
+    "outline_panel": {
+        "dock": "right"
     },
-    "C++": {
-      "format_on_save": "on",
+    "project_panel": {
+        "dock": "right"
     },
-  },
-  "relative_line_numbers": "enabled",
-  "cursor_blink": false,
-  "auto_update": false,
-  // "buffer_font_features": {
-  //     // "ss08": true,
-  //     "calt": true
-  //     // "ss19": true,
-  // },
-  "telemetry": {
-    "diagnostics": false,
-    "metrics": false,
-  },
-  "session": {
-    "trust_all_worktrees": true,
-  },
-  "vim_mode": true,
-  "base_keymap": "Emacs",
-  "colorize_brackets": true,
-  "semantic_tokens": "combined",
+    "agent": {
+        "default_model": {
+            "provider": "google",
+            "model": "gemini-2.5-flash",
+            "enable_thinking": true
+        },
+        "favorite_models": [],
+        "model_parameters": []
+    },
+    "file_finder": {
+        "include_ignored": "smart"
+    },
+    "search": {
+        "include_ignored": false
+    },
+    "scrollbar": {
+        "show": "auto"
+    },
+    "which_key": {
+        "enabled": false
+    },
+    "autosave": "off",
+    "use_auto_surround": true,
+    "languages": {
+        "C": {
+            "format_on_save": "on"
+        },
+        "C++": {
+            "format_on_save": "on"
+        }
+    },
+    "file_types": {
+        "HTML": ["tmpl"]
+    },
+    "relative_line_numbers": "enabled",
+    "cursor_blink": false,
+    "auto_update": false,
+    "buffer_font_features": {
+        // "ss08": true,
+        "calt": false
+        // "dlig": true
+        // "ss19": true,
+    },
+    "telemetry": {
+        "diagnostics": false,
+        "metrics": false
+    },
+    "session": {
+        "trust_all_worktrees": true
+    },
+    "vim_mode": true,
+    "base_keymap": "Emacs",
+    "colorize_brackets": true,
+    "semantic_tokens": "combined"
 }
+
