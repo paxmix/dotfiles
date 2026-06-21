@@ -16,7 +16,7 @@ maximize = true
 
 gtk-tabs-location = bottom
 
-font-family = Cascadia Code
+font-family = CommitMono
 font-size = 13
 
 window-padding-x = 5
