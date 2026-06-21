@@ -45,6 +45,7 @@ bindkey '^[[1;5C' forward-word        # Ctrl + Right
 
 # Aliases
 alias lg=lazygit
+alias cleanup='sudo pacman -Rsn $(pacman -Qtdq)'
 # Replace ls with eza
 alias ls='eza -a --icons=auto --color=always' # list all files
 alias ll='eza -la --icons=auto --color=always' # list all files with details
@@ -65,10 +66,13 @@ eval "$(zoxide init zsh --cmd cd)"
 # Fzf setup
 source <(fzf --zsh)
 
+# Fnm setup
+eval "$(fnm env --use-on-cd --shell zsh)"
+
 # load plugins
-source ~/powerlevel10k/powerlevel10k.zsh-theme
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
