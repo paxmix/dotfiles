@@ -44,7 +44,7 @@ bindkey '^[[1;5D' backward-word       # Ctrl + Left
 bindkey '^[[1;5C' forward-word        # Ctrl + Right
 
 ## Aliases
-# alias lg=lazygit
+alias lg=lazygit
 # Replace ls with eza
 alias ls='eza -a --icons=auto --color=always' # list all files
 alias ll='eza -la --icons=auto --color=always' # list all files with details
@@ -63,12 +63,7 @@ function y() {
 eval "$(zoxide init zsh --cmd cd)"
 
 # Fzf setup
-# source <(fzf --zsh)
-
-# NVM setup
-export NVM_DIR="$HOME/.config/nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+source <(fzf --zsh)
 
 # load plugins
 source ~/powerlevel10k/powerlevel10k.zsh-theme
