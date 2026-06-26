@@ -24,11 +24,11 @@ export FZF_ALT_C_OPTS="
   --preview 'tree -C {}'"
 # fzf theme
 export FZF_DEFAULT_OPTS=" \
---color=bg+:#313244,bg:#1E1E2E,spinner:#F5E0DC,hl:#F38BA8 \
---color=fg:#CDD6F4,header:#F38BA8,info:#CBA6F7,pointer:#F5E0DC \
---color=marker:#B4BEFE,fg+:#CDD6F4,prompt:#CBA6F7,hl+:#F38BA8 \
---color=selected-bg:#45475A \
---color=border:#6C7086,label:#CDD6F4"
+--color=bg+:#3c3836,bg:#282828,spinner:#d8a657,hl:#ea6962 \
+--color=fg:#d4be98,header:#a9b665,info:#89b482,pointer:#d8a657 \
+--color=marker:#7daea3,fg+:#ddc7a1,prompt:#a9b665,hl+:#ea6962 \
+--color=selected-bg:#504945 \
+--color=border:#665c54,label:#d4be98"
 
 # Miscs
 export MANPAGER="less -R --use-color -Dd+r -Du+b" # colored man pages
