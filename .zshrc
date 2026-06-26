@@ -43,9 +43,8 @@ bindkey '^[[3~' delete-char           # Delete key
 bindkey '^[[1;5D' backward-word       # Ctrl + Left
 bindkey '^[[1;5C' forward-word        # Ctrl + Right
 
-# Aliases
-alias lg=lazygit
-alias cleanup='sudo pacman -Rsn $(pacman -Qtdq)'
+## Aliases
+# alias lg=lazygit
 # Replace ls with eza
 alias ls='eza -a --icons=auto --color=always' # list all files
 alias ll='eza -la --icons=auto --color=always' # list all files with details
@@ -64,15 +63,18 @@ function y() {
 eval "$(zoxide init zsh --cmd cd)"
 
 # Fzf setup
-source <(fzf --zsh)
+# source <(fzf --zsh)
 
-# Fnm setup
-eval "$(fnm env --use-on-cd --shell zsh)"
+# NVM setup
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # load plugins
-source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/powerlevel10k/powerlevel10k.zsh-theme
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
