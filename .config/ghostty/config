@@ -1,4 +1,4 @@
-theme = catppuccin-mocha.conf
+theme = Gruvbox Material Dark
 
 maximize = true
 
