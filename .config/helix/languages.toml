@@ -1,0 +1,11 @@
+[[language]]
+name = "go"
+auto-format = true
+# Use goimports for formatting and managing imports on save
+formatter = { command = "goimports" } 
+language-servers = [ "gopls" ]
+
+[language-server.gopls]
+command = "gopls"
+# Optional: Enable advanced gopls features
+config = { "ui.diagnostic.staticcheck" = true, "formatting.gofumpt" = true }
