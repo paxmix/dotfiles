@@ -1,6 +1,6 @@
-theme = Gruvbox Material Dark
+theme = Catppuccin Mocha
 
-maximize = true
+# maximize = true
 
 # custom-shader = shaders/cursor_smear_original.glsl
 # custom-shader = shaders/cursor_blaze.glsl
@@ -17,9 +17,9 @@ maximize = true
 gtk-tabs-location = bottom
 
 font-family = CommitMono
-font-size = 13
+font-size = 12
 
 window-padding-x = 5
-window-padding-y = 3
+window-padding-y = 5
 
 confirm-close-surface = false
