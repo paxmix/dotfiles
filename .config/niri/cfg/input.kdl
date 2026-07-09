@@ -3,8 +3,8 @@
 
 input {
     keyboard {
-	repeat-rate 35
-	repeat-delay 200
+	repeat-rate 25
+	repeat-delay 300
 
         xkb {
             //If you want to overwrite your keyboard layout,
