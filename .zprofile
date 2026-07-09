@@ -4,8 +4,8 @@ export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CACHE_HOME="$HOME/.cache"
 
 # default programs
-export VISUAL="hx"
-export EDITOR="hx"
+export VISUAL="helix"
+export EDITOR="helix"
 
 # fzf
 # Preview file content using bat (https://github.com/sharkdp/bat)
