@@ -615,7 +615,7 @@
         "boxBorderEnabled": false,
         "fontDefault": "Noto Sans",
         "fontDefaultScale": 1,
-        "fontFixed": "JetBrains Mono NL",
+        "fontFixed": "CommitMono",
         "fontFixedScale": 1,
         "panelBackgroundOpacity": 0.93,
         "panelsAttachedToBar": true,
