@@ -15,6 +15,7 @@ fpath=(~/.zsh/completions $fpath)
 zmodload zsh/complist
 autoload -U compinit && compinit
 autoload -U colors && colors
+autoload -U select-word-style && select-word-style bash
 
 # cmp opts
 zstyle ':completion:*' menu select # tab opens cmp menu
@@ -36,7 +37,7 @@ setopt interactive_comments # allow comments in shell
 unsetopt beep
 
 # Keybinds
-bindkey -e
+# bindkey -e
 bindkey '^[[H' beginning-of-line      # Home key
 bindkey '^[[F' end-of-line            # End key
 bindkey '^[[3~' delete-char           # Delete key
@@ -45,6 +46,8 @@ bindkey '^[[1;5C' forward-word        # Ctrl + Right
 
 ## Aliases
 alias lg=lazygit
+alias hx=helix
+alias cleanup='sudo pacman -Rsn $(pacman -Qtdq)'
 # Replace ls with eza
 alias ls='eza -a --icons=auto --color=always' # list all files
 alias ll='eza -la --icons=auto --color=always' # list all files with details
@@ -66,9 +69,9 @@ eval "$(zoxide init zsh --cmd cd)"
 source <(fzf --zsh)
 
 # load plugins
-source ~/powerlevel10k/powerlevel10k.zsh-theme
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
