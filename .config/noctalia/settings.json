@@ -593,7 +593,7 @@
         "boxBorderEnabled": false,
         "fontDefault": "Noto Sans",
         "fontDefaultScale": 1,
-        "fontFixed": "CommitMono",
+        "fontFixed": "Input Mono",
         "fontFixedScale": 1,
         "panelBackgroundOpacity": 0.93,
         "panelsAttachedToBar": true,
