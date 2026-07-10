@@ -37,7 +37,7 @@ setopt interactive_comments # allow comments in shell
 unsetopt beep
 
 # Keybinds
-# bindkey -e
+bindkey -e
 bindkey '^[[H' beginning-of-line      # Home key
 bindkey '^[[F' end-of-line            # End key
 bindkey '^[[3~' delete-char           # Delete key
