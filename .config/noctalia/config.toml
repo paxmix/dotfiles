@@ -1,9 +1,37 @@
 [bar.default]
 end = [ "tray", "notifications", "clipboard", "network", "volume", "brightness", "session" ]
 font_weight = 400
+shadow = false
 start = [ "workspaces" ]
 thickness = 30
-widget_spacing = 12
+widget_spacing = 16
+
+[brightness]
+enable_ddcutil = true
+
+[calendar.account.manh1998nb]
+type = "google"
+
+[[control_center.shortcuts]]
+type = "wifi"
+
+[[control_center.shortcuts]]
+type = "caffeine"
+
+[[control_center.shortcuts]]
+type = "nightlight"
+
+[[control_center.shortcuts]]
+type = "notification"
+
+[[control_center.shortcuts]]
+type = "power_profile"
+
+[[control_center.shortcuts]]
+type = "dark_mode"
+
+[dock]
+shadow = false
 
 [location]
 address = "Vientiane"
@@ -38,15 +66,29 @@ widget_order = [ "lockscreen-login-box@HDMI-A-1" ]
         show_login_button = true
         show_password_hint = true
 
+[nightlight]
+enabled = true
+temperature_night = 4500
+
 [shell]
-font_family = "Noto Sans"
+font_family = "Adwaita Sans"
 polkit_agent = true
+
+    [shell.panel]
+    shadow = false
+
+    [shell.screenshot]
+    confirm_region = true
+    directory = "/home/paxmix/Pictures/Screenshots"
 
 [system.monitor]
 enabled = false
 
 [theme]
 builtin = "Catppuccin"
+
+    [theme.templates]
+    builtin_ids = [ "mango" ]
 
 [wallpaper]
 directory = "/home/paxmix/Pictures/Wallpapers"
@@ -56,3 +98,8 @@ directory = "/home/paxmix/Pictures/Wallpapers"
 
     [wallpaper.last]
     path = "/home/paxmix/Pictures/Wallpapers/black-hole.png"
+
+[widget.clock]
+font_family = "Adwaita Sans"
+font_weight = 600
+format = "{:%I:%M %p %A, %d/%m/%Y}"
