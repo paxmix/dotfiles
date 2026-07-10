@@ -46,7 +46,6 @@ bindkey '^[[1;5C' forward-word        # Ctrl + Right
 
 ## Aliases
 alias lg=lazygit
-alias hx=helix
 alias cleanup='sudo pacman -Rsn $(pacman -Qtdq)'
 # Replace ls with eza
 alias ls='eza -a --icons=auto --color=always' # list all files
@@ -67,6 +66,9 @@ eval "$(zoxide init zsh --cmd cd)"
 
 # Fzf setup
 source <(fzf --zsh)
+
+# Fnm setup
+eval "$(fnm env --use-on-cd --shell zsh)"
 
 # load plugins
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
