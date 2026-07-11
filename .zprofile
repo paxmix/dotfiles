@@ -10,18 +10,18 @@ export EDITOR="nvim"
 
 # fzf
 # Preview file content using bat (https://github.com/sharkdp/bat)
-export FZF_CTRL_T_OPTS="
-  --walker-skip .git,node_modules,target
-  --preview 'bat -n --color=always {}'
+export FZF_CTRL_T_OPTS="\
+  --walker-skip .git,node_modules,target \
+  --preview 'bat -n --color=always {}' \
   --bind 'ctrl-/:change-preview-window(down|hidden|)'"
 # CTRL-Y to copy the command into clipboard using wl-copy (pb-copy on Mac, xclip -selection clipboard on X11)
-export FZF_CTRL_R_OPTS="
-  --bind 'ctrl-y:execute-silent(echo -n {2..} | wl-copy)+abort'
-  --color header:italic
+export FZF_CTRL_R_OPTS="\
+  --bind 'ctrl-y:execute-silent(echo -n {2..} | wl-copy)+abort' \
+  --color header:italic \
   --header 'Press CTRL-Y to copy command into clipboard'"
 # Print tree structure in the preview window
-export FZF_ALT_C_OPTS="
-  --walker-skip .git,node_modules,target
+export FZF_ALT_C_OPTS="\
+  --walker-skip .git,node_modules,target \
   --preview 'tree -C {}'"
 # fzf theme
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
