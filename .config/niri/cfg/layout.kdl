@@ -1,21 +1,21 @@
-    layout {
-        gaps 8 // Gap between windows
-        center-focused-column "never" // Don’t auto-center focused column
+layout {
+  gaps 8 // Gap between windows
+  center-focused-column "never" // Don’t auto-center focused column
 
-        background-color "transparent" // <- needed for noctalia-shell to set wallpaper
+  background-color "transparent" // <- needed for noctalia-shell to set wallpaper
 
-        preset-column-widths {
-            proportion 0.33333
-            proportion 0.5
-            proportion 0.66667
-        }
+  preset-column-widths {
+      proportion 0.33333
+      proportion 0.5
+      proportion 0.66667
+  }
 
-        focus-ring {
-            width 2
-            // Smooth Lavender to Mauve gradient
-            active-gradient from="#b4befe" to="#cba6f7" angle=45
-            inactive-color "#313244" // Surface 1 (subtle contrast)
-        }
+  focus-ring {
+      width 2
+      // Smooth Lavender to Mauve gradient
+      active-gradient from="#b4befe" to="#cba6f7" angle=45
+      inactive-color "#313244" // Surface 1 (subtle contrast)
+  }
 
-        struts {}
-    }
+  struts {}
+}
