@@ -1,8 +1,10 @@
 ## Cachy Hello
 - Rank mirrors
 - Change DNS (Quad 9)
+## Get a browser
+
 ## Apps:
-sudo pacman -S helium-browser-bin github-cli stow wlsunset ddcutil bat eza zoxide fzf go yazi lazygit tealdeer ghostty fcitx5-bamboo fcitx5-configtool ttf-nerd-fonts-symbols zsh zsh-completions zsh-theme-powerlevel10k zsh-syntax-highlighting zsh-autosuggestions localsend papirus-icon-theme gnome-themes-extra cachyos-gaming-applications fnm papers gnome-disk-utility baobab loupe showtime amberol libreoffice-fresh yay mission-center ly
+sudo pacman -S github-cli stow wlsunset ddcutil bat eza zoxide fzf go yazi lazygit tealdeer ghostty fcitx5-bamboo fcitx5-configtool ttf-nerd-fonts-symbols zsh zsh-completions zsh-theme-powerlevel10k zsh-syntax-highlighting zsh-autosuggestions localsend papirus-icon-theme gnome-themes-extra cachyos-gaming-applications fnm papers gnome-disk-utility baobab loupe showtime amberol libreoffice-fresh yay mission-center ly
 ## Set Gnome defaults:
 dconf write /org/gnome/desktop/interface/color-scheme '"prefer-dark"'
 
