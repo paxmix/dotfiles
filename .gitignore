@@ -10,3 +10,11 @@
 .config/yazi/yazi.toml-1748626958795619
 .config/kitty/kitty.conf.bak
 *.uuid
+tt.*
+.tests
+doc/tags
+debug
+.repro
+foo.*
+*.log
+data
