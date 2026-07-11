@@ -117,9 +117,9 @@ binds {
   Mod+W                               { toggle-column-tabbed-display; }
 
   // ─── Screenshots ───
-  CTRL+Shift+1                        { screenshot; }
-  CTRL+Shift+2                        { screenshot-screen; }
-  CTRL+Shift+3                        { screenshot-window; }
+  Mod+Shift+S                         { spawn-sh "noctalia msg screenshot-region"; }
+  Print                               { spawn-sh "noctalia msg screenshot-fullscreen"; }
+  Mod+Print                           { spawn-sh "noctalia msg screenshot-fullscreen all"; }
 
   // ─── Emergency Escape Key ───
   // Use this when a fullscreen app blocks your keybinds.
