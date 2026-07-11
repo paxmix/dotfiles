@@ -5,17 +5,45 @@ layout {
   background-color "transparent" // <- needed for noctalia-shell to set wallpaper
 
   preset-column-widths {
-      proportion 0.33333
-      proportion 0.5
-      proportion 0.66667
+    proportion 0.33333
+    proportion 0.5
+    proportion 0.66667
   }
 
   focus-ring {
-      width 2
-      // Smooth Lavender to Mauve gradient
-      active-gradient from="#b4befe" to="#cba6f7" angle=45
-      inactive-color "#313244" // Surface 1 (subtle contrast)
+    width 2
+    active-color   "#7aa2f7"
+    inactive-color "#1a1b26"
+    urgent-color   "#f7768e"
+  }
+
+  border {
+    active-color   "#7aa2f7"
+    inactive-color "#1a1b26"
+    urgent-color   "#f7768e"
+  }
+
+  shadow {
+    color "#15161e70"
+  }
+
+  tab-indicator {
+    active-color   "#7aa2f7"
+    inactive-color "#003dbf"
+    urgent-color   "#f7768e"
+  }
+
+  insert-hint {
+    color "#7aa2f780"
   }
 
   struts {}
 }
+
+recent-windows {
+  highlight {
+    active-color "#7aa2f7"
+    urgent-color "#f7768e"
+  }
+}
+
