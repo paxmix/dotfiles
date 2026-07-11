@@ -1,4 +1,4 @@
-# CachyOS mangowm dms to mangowm noctalia v5
+# CachyOS noctalia v5 (Currently use Niri)
 
 ## Cachy Hello
 
@@ -14,7 +14,8 @@ tealdeer ghostty fcitx5-bamboo fcitx5-configtool ttf-nerd-fonts-symbols zsh
 zsh-completions zsh-theme-powerlevel10k zsh-syntax-highlighting zsh-autosuggestions
 localsend papirus-icon-theme gnome-themes-extra cachyos-gaming-applications fnm
 papers gnome-disk-utility baobab loupe showtime amberol libreoffice-fresh yay
-mission-center ly mangowm noctalia neovim luarocks vesktop gnome-text-editor nautilus
+ly niri noctalia neovim luarocks vesktop gnome-text-editor nautilus wl-clipboard
+ghostty-nautilus xwayland-satellite
 
 ## Replace sddm with ly
 
