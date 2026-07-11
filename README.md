@@ -1,66 +1,28 @@
-# My dotfiles
-
-This directory contains the dotfiles for my system (Arch-based Linux)
-
-## Set up git
-
-### Install git and github-cli
-
-sudo pacman -S git github-cli
-
-### Set up git to clone my private repo
-
-#### Need to log in github prior to this
-
-git config --global user.name "{username}"  
-git config --global user.email "{email}"  
+## Cachy Hello
+- Rank mirrors
+- Change DNS (Quad 9)
+## Apps:
+sudo pacman -S helium-browser-bin github-cli stow wlsunset ddcutil bat eza zoxide fzf go yazi lazygit tealdeer ghostty fcitx5-bamboo fcitx5-configtool ttf-nerd-fonts-symbols zsh zsh-completions zsh-theme-powerlevel10k zsh-syntax-highlighting zsh-autosuggestions localsend papirus-icon-theme gnome-themes-extra cachyos-gaming-applications fnm papers gnome-disk-utility baobab loupe showtime amberol libreoffice-fresh yay mission-center ly
+## Set Gnome defaults:
+dconf write /org/gnome/desktop/interface/color-scheme '"prefer-dark"'
+gsettings set org.gnome.desktop.interface cursor-theme 'Adwaita'
+gsettings set org.gnome.desktop.interface cursor-size 24
+gsettings set org.gnome.desktop.default-applications.terminal exec 'ghostty'
+gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
+## Setup git (might need to delete CachyOS default config):
+git config --global user.name "paxmix"
+git config --global user.email "manh1998nb@gmail.com"
 gh auth login
-
-## Stow dotfiles
-
-- Need to stow all config files first before installing them.
-- If stow failed at any file, delete all the main config files and stow again.
-- If you on some specific distro like Cachyos, you need to delete their fish
-  configs by pacman
-
-  sudo pacman -S stow  
-   cd  
-   git clone <https://github.com/paxmix/dotfiles.git>  
-   cd dotfiles  
-   stow .
-
-## Requirements
-
-### Ensure you have the following installed on your system
-
-fastfetch bat eza zoxide fzf xclip fish go yazi lazygit btop neovim luarocks
-ttf-hack-nerd ttf-jetbrains-mono-nerd starship foot wl-clipboard(if using wayland)
-
-- ghostty(optional)
-
-### Rebuild bat theme cache
-
-bat cache --build
-
-## Install fisher and plugins for fish shell
-
-### fisher
-
-curl -sL <https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish>
-| source && fisher install jorgebucaran/fisher
-
-- Make sure you are using fish shell not bash or zsh.
-
-### nvm
-
-fisher install jorgebucaran/nvm.fish
-
-#### - install node, npm for lazyvim
-
-nvm install latest  
-set --universal nvm_default_version latest
-
-### catppuccin
-
-fisher install catppuccin/fish  
-fish_config theme save "Catppuccin Mocha"
+cd
+git clone https://github.com/paxmix/dotfiles.git
+cd dotfiles
+stow .
+(noctalia need to restart for some configs to work)
+## Setup cache
+tldr --update && bat cache --build
+## Change shell
+chsh -s /bin/zsh
+## Replace sddm with ly
+systemctl disable sddm
+systemctl enable ly@tty2.service
+sudo pacman -Rns sddm
