@@ -3,8 +3,8 @@
 
 input {
   keyboard {
-  repeat-rate 30
-  repeat-delay 300
+    repeat-rate 30
+    repeat-delay 300
 
     xkb {
         //If you want to overwrite your keyboard layout,
@@ -14,10 +14,10 @@ input {
     numlock // Enable numlock on startup
   }
 
-  touchpad {
-      tap // Enable tap-to-click
-      natural-scroll // Enable natural (macOS-style) scrolling
-  }
+  // touchpad {
+  //     tap // Enable tap-to-click
+  //     natural-scroll // Enable natural (macOS-style) scrolling
+  // }
 
   mouse {
     // If you want to disable Mouse Acceleration,
