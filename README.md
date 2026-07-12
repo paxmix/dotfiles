@@ -15,7 +15,7 @@ zsh-completions zsh-theme-powerlevel10k zsh-syntax-highlighting zsh-autosuggesti
 localsend papirus-icon-theme gnome-themes-extra cachyos-gaming-applications fnm
 papers gnome-disk-utility baobab loupe showtime amberol libreoffice-fresh yay
 ly niri noctalia neovim luarocks vesktop gnome-text-editor nautilus wl-clipboard
-ghostty-nautilus xwayland-satellite transmission
+ghostty-nautilus xwayland-satellite transmission file-roller
 
 ## Replace sddm with ly
 
