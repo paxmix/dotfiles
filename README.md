@@ -94,4 +94,4 @@ set -Ux FZF_CTRL_R_OPTS \
     "--color header:italic" \
     "--header 'Press CTRL-Y to copy command into clipboard'"
 
-chsh -s /bin/zsh
+chsh -s /bin/fish
