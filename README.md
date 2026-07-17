@@ -1,10 +1,5 @@
 # CachyOS noctalia v5 (Currently use Mango)
 
-## Cachy Hello
-
-- Rank mirrors
-- Change DNS (Quad 9)
-
 ## Get a browser
 
 ## Apps
@@ -14,7 +9,7 @@ tealdeer foot fcitx5-bamboo fcitx5-configtool ttf-nerd-fonts-symbols localsend
 papirus-icon-theme gnome-themes-extra cachyos-gaming-applications fnm
 papers gnome-disk-utility baobab loupe vlc amberol libreoffice-fresh yay
 ly mangowm noctalia neovim luarocks vesktop gnome-text-editor nautilus wl-clipboard
-foot transmission file-roller
+foot transmission file-roller otf-commit-mono-nerd fish fisher
 
 ## Replace sddm with ly
 
@@ -40,6 +35,12 @@ audio/wav audio/flac audio/aac
 xdg-mime default org.gnome.Papers.desktop application/pdf
 application/postscript image/vnd.djvu
 
+## Localsend ufw
+
+sudo ufw allow 53317/tcp  
+sudo ufw allow 53317/udp  
+sudo ufw reload  
+
 ## Setup git (might need to delete CachyOS default config)
 
 git config --global user.name "paxmix"  
@@ -57,5 +58,40 @@ stow .
 tldr --update && bat cache --build
 
 ## Change shell
+
+fisher install jorgebucaran/hydro  
+
+set -Ux FZF_ALT_C_OPTS "--walker-skip
+.git,node_modules,target --preview 'tree -C {}'"  
+set -Ux FZF_DEFAULT_OPTS "$FZF_DEFAULT_OPTS \
+--highlight-line \
+--info=inline-right \
+--ansi \
+--layout=reverse \
+--border=none \
+--color=bg+:#283457 \
+--color=bg:#16161e \
+--color=border:#27a1b9 \
+--color=fg:#c0caf5 \
+--color=gutter:#16161e \
+--color=header:#ff9e64 \
+--color=hl+:#2ac3de \
+--color=hl:#2ac3de \
+--color=info:#545c7e \
+--color=marker:#ff007c \
+--color=pointer:#ff007c \
+--color=prompt:#2ac3de \
+--color=query:#c0caf5:regular \
+--color=scrollbar:#27a1b9 \
+--color=separator:#ff9e64 \
+--color=spinner:#ff007c"  
+set -Ux FZF_CTRL_T_OPTS "--walker-skip .git,node_modules,target --preview 'bat
+-n --color=always {}' --bind 'ctrl-/:change-preview-window(down|hidden|)'"  
+set -Ux FZF_CTRL_R_OPTS \
+    "--with-nth 1,3.." \
+    "--bind 'alt-t:change-with-nth(2..|3..|1,3..)'" \
+    "--bind 'ctrl-y:execute-silent(echo -n {3..} | wl-copy)+abort'" \
+    "--color header:italic" \
+    "--header 'Press CTRL-Y to copy command into clipboard'"
 
 chsh -s /bin/zsh
