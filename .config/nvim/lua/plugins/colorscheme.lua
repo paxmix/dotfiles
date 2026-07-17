@@ -1,32 +1,32 @@
 return {
-  -- {
-  --   "catppuccin/nvim",
-  --   opts = {
-  --     styles = {
-  --       conditionals = {},
-  --       miscs = {},
-  --     },
-  --   },
-  -- },
+  {
+    "catppuccin/nvim",
+    opts = {
+      styles = {
+        conditionals = {},
+        miscs = {},
+      },
+    },
+  },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "tokyonight",
+      colorscheme = "catppuccin-mocha",
     },
   },
   -- { "sainnhe/gruvbox-material" },
   -- { "sainnhe/everforest" },
   -- { "ellisonleao/gruvbox.nvim" },
-  {
-    "folke/tokyonight.nvim",
-    lazy = true,
-    opts = {
-      style = "night",
-      styles = {
-        keywords = { italic = false },
-      },
-    },
-  },
+  -- {
+  --   "folke/tokyonight.nvim",
+  --   lazy = true,
+  --   opts = {
+  --     style = "night",
+  --     styles = {
+  --       keywords = { italic = false },
+  --     },
+  --   },
+  -- },
   -- { "edeneast/nightfox.nvim" },
   -- {
   --   "webhooked/kanso.nvim",
