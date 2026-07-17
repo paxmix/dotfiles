@@ -94,4 +94,7 @@ set -Ux FZF_CTRL_R_OPTS \
     "--color header:italic" \
     "--header 'Press CTRL-Y to copy command into clipboard'"
 
+mkdir -p ~/.local/bin ~/go/bin  
+fish_add_path ~/.local/bin ~/go/bin
+
 chsh -s /bin/fish
