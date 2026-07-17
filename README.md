@@ -9,7 +9,7 @@ tealdeer foot fcitx5-bamboo fcitx5-configtool ttf-nerd-fonts-symbols localsend
 papirus-icon-theme gnome-themes-extra cachyos-gaming-applications fnm
 papers gnome-disk-utility baobab loupe vlc amberol libreoffice-fresh yay
 ly mangowm noctalia neovim luarocks vesktop gnome-text-editor nautilus wl-clipboard
-foot transmission file-roller ttf-jetbrains-mono ttf-jetbrains-mono-nerd fish
+foot transmission file-roller ttf-input ttf-input-nerd fish
 fisher sushi adwaita-qt5
 
 yay -S bibata-cursor-theme-bin
