@@ -1,4 +1,4 @@
-# CachyOS noctalia v5 (Currently use Niri)
+# CachyOS noctalia v5 (Currently use Mango)
 
 ## Cachy Hello
 
@@ -10,12 +10,11 @@
 ## Apps
 
 sudo pacman -S github-cli stow wlsunset ddcutil bat eza zoxide fzf go yazi lazygit
-tealdeer ghostty fcitx5-bamboo fcitx5-configtool ttf-nerd-fonts-symbols zsh
-zsh-completions zsh-theme-powerlevel10k zsh-syntax-highlighting zsh-autosuggestions
-localsend papirus-icon-theme gnome-themes-extra cachyos-gaming-applications fnm
-papers gnome-disk-utility baobab loupe showtime amberol libreoffice-fresh yay
-ly niri noctalia neovim luarocks vesktop gnome-text-editor nautilus wl-clipboard
-ghostty-nautilus xwayland-satellite transmission file-roller
+tealdeer foot fcitx5-bamboo fcitx5-configtool ttf-nerd-fonts-symbols localsend
+papirus-icon-theme gnome-themes-extra cachyos-gaming-applications fnm
+papers gnome-disk-utility baobab loupe vlc amberol libreoffice-fresh yay
+ly mangowm noctalia neovim luarocks vesktop gnome-text-editor nautilus wl-clipboard
+foot transmission file-roller
 
 ## Replace sddm with ly
 
@@ -28,13 +27,13 @@ sudo pacman -Rns sddm
 dconf write /org/gnome/desktop/interface/color-scheme '"prefer-dark"'  
 gsettings set org.gnome.desktop.interface cursor-theme 'Adwaita'  
 gsettings set org.gnome.desktop.interface cursor-size 24  
-gsettings set org.gnome.desktop.default-applications.terminal exec 'ghostty'  
+gsettings set org.gnome.desktop.default-applications.terminal exec 'foot'  
 gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'  
 xdg-mime default org.gnome.Nautilus.desktop inode/directory  
 xdg-mime default org.gnome.TextEditor.desktop text/plain  
 xdg-mime default org.gnome.Loupe.desktop image/jpeg image/png image/gif
 image/webp  
-xdg-mime default org.gnome.Showtime.desktop video/mp4 video/x-matroska
+xdg-mime default vlc.desktop video/mp4 video/x-matroska
 video/quicktime video/webm video/x-flv  
 xdg-mime default io.bassi.Amberol.desktop audio/mpeg audio/ogg audio/mp4
 audio/wav audio/flac audio/aac  
