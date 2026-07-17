@@ -11,6 +11,8 @@ papers gnome-disk-utility baobab loupe vlc amberol libreoffice-fresh yay
 ly mangowm noctalia neovim luarocks vesktop gnome-text-editor nautilus wl-clipboard
 foot transmission file-roller otf-commit-mono-nerd fish fisher sushi adwaita-qt5
 
+yay -S bibata-cursor-theme-bin
+
 ## Replace sddm with ly
 
 systemctl disable sddm  
@@ -20,7 +22,7 @@ sudo pacman -Rns sddm
 ## Set Gnome defaults
 
 dconf write /org/gnome/desktop/interface/color-scheme '"prefer-dark"'  
-gsettings set org.gnome.desktop.interface cursor-theme 'Adwaita'  
+gsettings set org.gnome.desktop.interface cursor-theme 'Bibata-Modern-Ice'  
 gsettings set org.gnome.desktop.interface cursor-size 24  
 gsettings set org.gnome.desktop.default-applications.terminal exec 'foot'  
 gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'  
