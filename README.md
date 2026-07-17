@@ -94,6 +94,10 @@ set -Ux FZF_CTRL_R_OPTS \
     "--color header:italic" \
     "--header 'Press CTRL-Y to copy command into clipboard'"
 
+set -Ux TERMINAL foot  
+set -Ux VISUAL nvim  
+set -Ux EDITOR nvim
+
 mkdir -p ~/.local/bin ~/go/bin  
 fish_add_path ~/.local/bin ~/go/bin
 
