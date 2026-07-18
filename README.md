@@ -9,7 +9,7 @@ tealdeer foot fcitx5-bamboo fcitx5-configtool ttf-nerd-fonts-symbols localsend
 papirus-icon-theme gnome-themes-extra cachyos-gaming-applications fnm
 papers gnome-disk-utility baobab loupe vlc amberol libreoffice-fresh yay
 ly mangowm noctalia neovim luarocks vesktop gnome-text-editor nautilus wl-clipboard
-foot transmission file-roller otf-commit-mono-nerd fish sushi adwaita-qt5
+transmission-gtk file-roller otf-commit-mono-nerd fish sushi adwaita-qt5 fuzzel
 
 yay -S bibata-cursor-theme-bin
 
@@ -73,12 +73,13 @@ set -Ux FZF_DEFAULT_OPTS "\
 --color=border:#6C7086,label:#CDD6F4"  
 set -Ux FZF_CTRL_T_OPTS "--walker-skip .git,node_modules,target --preview 'bat
 -n --color=always {}' --bind 'ctrl-/:change-preview-window(down|hidden|)'"  
-set -Ux FZF_CTRL_R_OPTS \
+set -Ux FZF_CTRL_R_OPTS "\
     "--with-nth 1,3.." \
     "--bind 'alt-t:change-with-nth(2..|3..|1,3..)'" \
     "--bind 'ctrl-y:execute-silent(echo -n {3..} | wl-copy)+abort'" \
     "--color header:italic" \
-    "--header 'Press CTRL-Y to copy command into clipboard'"
+    "--header 'Press CTRL-Y to copy command into clipboard'" \
+"
 
 set -Ux TERMINAL foot  
 set -Ux VISUAL nvim  
