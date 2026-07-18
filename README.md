@@ -61,25 +61,33 @@ tldr --update && bat cache --build
 
 ## Change shell
 
+chsh -s /bin/fish
+
+```fish
+
 fish_config theme choose catppuccin-mocha
 
-set -Ux FZF_ALT_C_OPTS "--walker-skip
-.git,node_modules,target --preview 'tree -C {}'"  
+set -Ue FZF_ALT_C_OPTS FZF_DEFAULT_OPTS FZF_CTRL_T_OPTS FZF_CTRL_R_OPTS
+
+set -Ux FZF_ALT_C_OPTS "--walker-skip .git,node_modules,target --preview 'tree
+-C {}'"
+
 set -Ux FZF_DEFAULT_OPTS "\
 --color=bg+:#313244,bg:#1E1E2E,spinner:#F5E0DC,hl:#F38BA8 \
 --color=fg:#CDD6F4,header:#F38BA8,info:#CBA6F7,pointer:#F5E0DC \
 --color=marker:#B4BEFE,fg+:#CDD6F4,prompt:#CBA6F7,hl+:#F38BA8 \
 --color=selected-bg:#45475A \
---color=border:#6C7086,label:#CDD6F4"  
+--color=border:#6C7086,label:#CDD6F4"
+
 set -Ux FZF_CTRL_T_OPTS "--walker-skip .git,node_modules,target --preview 'bat
--n --color=always {}' --bind 'ctrl-/:change-preview-window(down|hidden|)'"  
+-n --color=always {}' --bind 'ctrl-/:change-preview-window(down|hidden|)'"
+
 set -Ux FZF_CTRL_R_OPTS "\
-    "--with-nth 1,3.." \
-    "--bind 'alt-t:change-with-nth(2..|3..|1,3..)'" \
-    "--bind 'ctrl-y:execute-silent(echo -n {3..} | wl-copy)+abort'" \
-    "--color header:italic" \
-    "--header 'Press CTRL-Y to copy command into clipboard'" \
-"
+--with-nth 1,3.. \
+--bind 'alt-t:change-with-nth(2..|3..|1,3..)' \
+--bind 'ctrl-y:execute-silent(echo -n {3..} | wl-copy)+abort' \
+--color header:italic \
+--header 'Press CTRL-Y to copy command into clipboard'"
 
 set -Ux TERMINAL foot  
 set -Ux VISUAL nvim  
@@ -88,4 +96,4 @@ set -Ux EDITOR nvim
 mkdir -p ~/.local/bin ~/go/bin  
 fish_add_path ~/.local/bin ~/go/bin
 
-chsh -s /bin/fish
+```
