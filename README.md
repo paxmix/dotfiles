@@ -9,8 +9,7 @@ tealdeer foot fcitx5-bamboo fcitx5-configtool ttf-nerd-fonts-symbols localsend
 papirus-icon-theme gnome-themes-extra cachyos-gaming-applications fnm
 papers gnome-disk-utility baobab loupe vlc amberol libreoffice-fresh yay
 ly mangowm noctalia neovim luarocks vesktop gnome-text-editor nautilus wl-clipboard
-foot transmission file-roller otf-commit-mono-nerd fish
-fisher sushi adwaita-qt5
+foot transmission file-roller otf-commit-mono-nerd fish sushi adwaita-qt5
 
 yay -S bibata-cursor-theme-bin
 
@@ -62,7 +61,6 @@ tldr --update && bat cache --build
 
 ## Change shell
 
-fisher install jorgebucaran/hydro  
 fish_config theme choose catppuccin-mocha
 
 set -Ux FZF_ALT_C_OPTS "--walker-skip
