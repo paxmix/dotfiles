@@ -10,6 +10,7 @@ papirus-icon-theme gnome-themes-extra cachyos-gaming-applications fnm
 papers gnome-disk-utility baobab loupe vlc amberol libreoffice-fresh yay
 ly mangowm noctalia neovim luarocks vesktop gnome-text-editor nautilus wl-clipboard
 transmission-gtk file-roller otf-commit-mono-nerd fish sushi adwaita-qt5 fuzzel
+xdg-desktop-portal-gnome xdg-desktop-portal-gtk
 
 ## Replace sddm with ly
 
@@ -62,7 +63,7 @@ tldr --update && bat cache --build
 ### You need to change shell first  
 
 chsh -s /bin/fish
-
+<!-- markdownlint-disable MD013 -->
 ```fish
 
 fish_config theme choose catppuccin-mocha
