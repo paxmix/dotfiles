@@ -4,7 +4,7 @@
 
 ## Apps
 
-sudo pacman -S github-cli stow wlsunset ddcutil bat eza zoxide fzf go yazi lazygit
+sudo pacman -S github-cli stow wlsunset ddcutil bat eza zoxide fzf yazi lazygit
 tealdeer foot fcitx5-bamboo fcitx5-configtool ttf-nerd-fonts-symbols localsend
 papirus-icon-theme gnome-themes-extra cachyos-gaming-applications fnm
 papers gnome-disk-utility baobab loupe vlc amberol libreoffice-fresh yay
@@ -88,3 +88,7 @@ fish_add_path ~/.local/bin ~/go/bin
 
 fnm i --lts
 ```
+
+### Coding
+
+sudo pacman -S tree-sitter-cli go golangci-lint
