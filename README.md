@@ -11,8 +11,6 @@ papers gnome-disk-utility baobab loupe vlc amberol libreoffice-fresh yay
 ly mangowm noctalia neovim luarocks vesktop gnome-text-editor nautilus wl-clipboard
 transmission-gtk file-roller otf-commit-mono-nerd fish sushi adwaita-qt5 fuzzel
 
-yay -S bibata-cursor-theme-bin
-
 ## Replace sddm with ly
 
 systemctl disable sddm  
@@ -71,8 +69,7 @@ fish_config theme choose catppuccin-mocha
 
 set -Ue FZF_ALT_C_OPTS FZF_DEFAULT_OPTS FZF_CTRL_T_OPTS FZF_CTRL_R_OPTS
 
-set -Ux FZF_ALT_C_OPTS "--walker-skip .git,node_modules,target --preview 'tree
--C {}'"
+set -Ux FZF_ALT_C_OPTS "--walker-skip .git,node_modules,target --preview 'tree -C {}'"
 
 set -Ux FZF_DEFAULT_OPTS "\
 --color=bg+:#313244,bg:#1E1E2E,spinner:#F5E0DC,hl:#F38BA8 \
@@ -81,8 +78,7 @@ set -Ux FZF_DEFAULT_OPTS "\
 --color=selected-bg:#45475A \
 --color=border:#6C7086,label:#CDD6F4"
 
-set -Ux FZF_CTRL_T_OPTS "--walker-skip .git,node_modules,target --preview 'bat
--n --color=always {}' --bind 'ctrl-/:change-preview-window(down|hidden|)'"
+set -Ux FZF_CTRL_T_OPTS "--walker-skip .git,node_modules,target --preview 'bat -n --color=always {}' --bind 'ctrl-/:change-preview-window(down|hidden|)'"
 
 set -Ux FZF_CTRL_R_OPTS "\
 --with-nth 1,3.. \
