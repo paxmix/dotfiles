@@ -22,7 +22,7 @@ sudo pacman -Rns sddm
 ## Set Gnome defaults
 
 dconf write /org/gnome/desktop/interface/color-scheme '"prefer-dark"'  
-gsettings set org.gnome.desktop.interface cursor-theme 'Bibata-Modern-Ice'  
+gsettings set org.gnome.desktop.interface cursor-theme 'Adwaita'  
 gsettings set org.gnome.desktop.interface cursor-size 24  
 gsettings set org.gnome.desktop.default-applications.terminal exec 'foot'  
 gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'  
@@ -60,6 +60,8 @@ stow .
 tldr --update && bat cache --build
 
 ## Change shell
+
+### You need to change shell first  
 
 chsh -s /bin/fish
 
