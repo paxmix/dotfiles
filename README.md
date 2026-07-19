@@ -6,11 +6,11 @@
 
 sudo pacman -S github-cli stow wlsunset ddcutil bat eza zoxide fzf yazi lazygit
 tealdeer foot fcitx5-bamboo fcitx5-configtool ttf-nerd-fonts-symbols localsend
-papirus-icon-theme gnome-themes-extra cachyos-gaming-applications fnm
-papers gnome-disk-utility baobab loupe vlc amberol libreoffice-fresh yay
-ly mangowm noctalia neovim luarocks vesktop gnome-text-editor nautilus wl-clipboard
-transmission-gtk file-roller otf-commit-mono-nerd fish sushi adwaita-qt5 fuzzel
-xdg-desktop-portal-gnome xdg-desktop-portal-gtk
+papirus-icon-theme cachyos-gaming-applications fnm vlc libreoffice-fresh yay
+ly mangowm noctalia neovim luarocks vesktop wl-clipboard otf-commit-mono-nerd
+fish fuzzel xdg-desktop-portal-gtk pcmanfm-qt lximage-qt gst-plugins-base
+gst-plugins-good lxqt-archiver qt5ct qt6ct kvantum qbittorrent udisks2 gvfs
+audacious yt-dlp
 
 ## Replace sddm with ly
 
@@ -25,16 +25,14 @@ gsettings set org.gnome.desktop.interface cursor-theme 'Adwaita'
 gsettings set org.gnome.desktop.interface cursor-size 24  
 gsettings set org.gnome.desktop.default-applications.terminal exec 'foot'  
 gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'  
-xdg-mime default org.gnome.Nautilus.desktop inode/directory  
-xdg-mime default org.gnome.TextEditor.desktop text/plain  
-xdg-mime default org.gnome.Loupe.desktop image/jpeg image/png image/gif
-image/webp  
+xdg-mime default pcmanfm-qt.desktop inode/directory  
+xdg-mime default nvim.desktop text/plain  
+xdg-mime default lximage-qt.desktop image/jpeg image/png image/gif image/webp  
 xdg-mime default vlc.desktop video/mp4 video/x-matroska
 video/quicktime video/webm video/x-flv  
-xdg-mime default io.bassi.Amberol.desktop audio/mpeg audio/ogg audio/mp4
-audio/wav audio/flac audio/aac  
-xdg-mime default org.gnome.Papers.desktop application/pdf
-application/postscript image/vnd.djvu
+xdg-mime default audacious.desktop audio/mpeg audio/ogg audio/mp4 audio/wav
+audio/flac audio/aac  
+xdg-mime default firefox.desktop application/pdf application/postscript image/vnd.djvu
 
 ## Localsend ufw
 
@@ -65,7 +63,6 @@ tldr --update && bat cache --build
 chsh -s /bin/fish
 <!-- markdownlint-disable MD013 -->
 ```fish
-
 set -Ue FZF_ALT_C_OPTS FZF_DEFAULT_OPTS FZF_CTRL_T_OPTS FZF_CTRL_R_OPTS
 
 set -Ux FZF_ALT_C_OPTS "--walker-skip .git,node_modules,target --preview 'tree -C {}'"
