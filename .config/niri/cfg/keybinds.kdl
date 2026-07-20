@@ -4,17 +4,22 @@ binds {
 
   Mod+Shift+ESCAPE                     { show-hotkey-overlay; }
 
-  Mod+Shift+D                         hotkey-overlay-title="Open App Launcher: Fuzzel" { spawn-sh "niri msg pick-window"; }
+  Mod+P                               hotkey-overlay-title="Niri Script: niri msg pick-window" { spawn-sh "niri-pickwindow.sh"; }
 
   // ─── Applications ───
   Mod+Return                          hotkey-overlay-title="Open Terminal: Foot" { spawn "footclient"; }
   Mod+D                               hotkey-overlay-title="Open App Launcher: Fuzzel" { spawn-sh "fuzzel"; }
   Mod+B                               hotkey-overlay-title="Open Browser: Zen Browser" { spawn "zen-browser"; }
-  Mod+ALT+L                           hotkey-overlay-title="Lock Screen: noctalia lock" { spawn-sh "noctalia msg session lock"; }
-  Mod+Shift+Q                         hotkey-overlay-title="Session Menu: noctalia sessionMenu" { spawn-sh "noctalia msg panel-toggle session"; }
-
+  Mod+ALT+L                           hotkey-overlay-title="Lock Screen: Noctalia lock" { spawn-sh "noctalia msg session lock"; }
+  Mod+Shift+Q                         hotkey-overlay-title="Session Menu: Noctalia sessionMenu" { spawn-sh "noctalia msg panel-toggle session"; }
+  Mod+semicolon                       hotkey-overlay-title="Clipboard Menu: Noctalia clipboard" { spawn-sh "noctalia msg panel-toggle clipboard"; }
+  
   // Please choose your own file manager.
   Mod+E                               hotkey-overlay-title="File Manager: PCManFM" { spawn "pcmanfm-qt"; }
+
+  // Noctalia UI
+  Mod+N                               hotkey-overlay-title="Noctalia Control Center" { spawn-sh "noctalia msg panel-toggle control-center"; }
+  Mod+Shift+N                         hotkey-overlay-title="Noctalia Settings" { spawn-sh "noctalia msg settings-toggle"; }
 
   // ─── Media Controls ───
   XF86AudioMicMute                    allow-when-locked=true { spawn-sh "noctalia msg mic-mute"; }
@@ -114,7 +119,7 @@ binds {
   Mod+Shift+Equal                     { set-window-height "+10%"; }
 
   // ─── Modes ───
-  Mod+T                               { toggle-window-floating; }
+  Mod+V                               { toggle-window-floating; }
   Mod+F                               { fullscreen-window; }
   Mod+W                               { toggle-column-tabbed-display; }
 
