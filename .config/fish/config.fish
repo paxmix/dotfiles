@@ -8,6 +8,7 @@ abbr cleanup 'sudo pacman -Rsn $(pacman -Qtdq)'
 abbr ls 'eza -a --icons=auto --color=always' # list all files
 abbr ll 'eza -la --icons=auto --color=always' # list all files with details
 abbr lt 'eza -Ta --icons=auto --color=always' # list all files in tree form
+abbr hx helix
 
 # Yazi
 function y
@@ -57,7 +58,7 @@ set -g fish_pager_color_completion $foreground
 set -g fish_pager_color_description $comment
 
 function starship_transient_prompt_func
-  starship module character
+    starship module character
 end
 starship init fish | source
 enable_transience
