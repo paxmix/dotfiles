@@ -2,5 +2,4 @@
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Miscellaneous#spawn-sh-at-startup
 
 spawn-sh-at-startup "noctalia"
-spawn-at-startup "foot" "--server"
 spawn-at-startup "fcitx5"
