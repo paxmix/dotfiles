@@ -12,6 +12,11 @@ window-rule {
   open-on-workspace "browser"
 }
 
+window-rule {
+  match app-id="lxqt-archiver"
+  open-floating true
+}
+
 // if you use steam you will probably like these
 window-rule {
   match app-id="steam"
