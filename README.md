@@ -1,4 +1,4 @@
-# CachyOS noctalia v5 (Currently use Mango)
+# CachyOS noctalia v5 (Currently use Niri)
 
 ## Get a browser
 
@@ -7,10 +7,10 @@
 sudo pacman -S github-cli stow wlsunset ddcutil bat eza zoxide fzf yazi lazygit
 tealdeer foot fcitx5-bamboo fcitx5-configtool ttf-nerd-fonts-symbols localsend
 papirus-icon-theme cachyos-gaming-applications fnm vlc libreoffice-fresh yay
-ly mangowm noctalia neovim luarocks vesktop wl-clipboard ttf-hack ttf-hack-nerd
-fish fuzzel xdg-desktop-portal-gtk pcmanfm-qt lximage-qt gst-plugins-base
-gst-plugins-good lxqt-archiver qt5ct qt6ct kvantum qbittorrent udisks2 gvfs
-strawberry yt-dlp kvantum-qt5 featherpad breeze-cursors
+ly niri xwayland-satellite noctalia neovim luarocks vesktop wl-clipboard
+ttf-hack ttf-hack-nerd fish fuzzel xdg-desktop-portal-gtk pcmanfm-qt lximage-qt
+gst-plugins-base gst-plugins-good lxqt-archiver qt5ct qt6ct kvantum qbittorrent
+udisks2 gvfs strawberry yt-dlp kvantum-qt5 featherpad breeze-cursors helix
 
 ## Replace sddm with ly
 
@@ -90,6 +90,25 @@ fish_add_path ~/.local/bin ~/go/bin
 fnm i --lts
 ```
 
-### Coding
+## Coding
 
 sudo pacman -S tree-sitter-cli go golangci-lint
+
+## Helix setup
+
+### Markdown:
+
+sudo pacman -S markdown-oxide  
+go install github.com/chrishrb/go-grip@latest
+
+### Go:
+
+sudo pacman -S gopls golangci-lint delve  
+go install github.com/nametake/golangci-lint-langserver@latest  
+go install golang.org/x/tools/cmd/goimports@latest
+
+### Rust:
+
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh  
+rustup component add rust-analyzer   
+sudo pacman -S lldb
