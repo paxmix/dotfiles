@@ -5,26 +5,25 @@
 ## Apps
 
 sudo pacman -S github-cli stow wlsunset ddcutil bat eza zoxide fzf yazi lazygit
-tealdeer foot fcitx5-bamboo fcitx5-configtool ttf-nerd-fonts-symbols localsend
+tealdeer ghostty fcitx5-bamboo fcitx5-configtool ttf-nerd-fonts-symbols localsend
 papirus-icon-theme cachyos-gaming-applications fnm vlc libreoffice-fresh yay
 ly niri xwayland-satellite noctalia neovim luarocks vesktop wl-clipboard
-ttf-jetbrains-mono ttf-jetbrains-mono-nerd fish fuzzel xdg-desktop-portal-gtk
-pcmanfm-qt lximage-qt gst-plugins-base gst-plugins-good lxqt-archiver qt5ct qt6ct
-kvantum qbittorrent udisks2 gvfs strawberry yt-dlp kvantum-qt5 featherpad
-breeze-cursors helix
+fish xdg-desktop-portal-gtk pcmanfm-qt lximage-qt gst-plugins-base resvg
+gst-plugins-good lxqt-archiver qt5ct qt6ct kvantum qbittorrent udisks2 gvfs
+strawberry yt-dlp kvantum-qt5 featherpad breeze-cursors helix
 
 ## Replace sddm with ly
 
 systemctl disable sddm  
 systemctl enable <ly@tty2.service>  
-sudo pacman -Rns sddm  
+sudo pacman -Rns sddm
 
 ## Set Gnome defaults
 
 dconf write /org/gnome/desktop/interface/color-scheme '"prefer-dark"'  
 gsettings set org.gnome.desktop.interface cursor-theme 'breeze_cursors'  
 gsettings set org.gnome.desktop.interface cursor-size 24  
-gsettings set org.gnome.desktop.default-applications.terminal exec 'foot'  
+gsettings set org.gnome.desktop.default-applications.terminal exec 'ghostty'  
 gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'  
 xdg-mime default pcmanfm-qt.desktop inode/directory  
 xdg-mime default featherpad.desktop text/plain  
@@ -81,7 +80,7 @@ set -Ux FZF_CTRL_R_OPTS "\
 --color header:italic \
 --header 'Press CTRL-Y to copy command into clipboard'"
 
-set -Ux TERMINAL foot  
+set -Ux TERMINAL ghostty  
 set -Ux VISUAL helix  
 set -Ux EDITOR helix
 
