@@ -55,3 +55,9 @@ set -g fish_pager_color_progress $comment
 set -g fish_pager_color_prefix $cyan
 set -g fish_pager_color_completion $foreground
 set -g fish_pager_color_description $comment
+
+function starship_transient_prompt_func
+  starship module character
+end
+starship init fish | source
+enable_transience
