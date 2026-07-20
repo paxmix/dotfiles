@@ -3,4 +3,4 @@ show_hidden = true
 show_symlink = true
 
 [opener]
-edit = [{ run = 'nvim "$@"', block = true, for = "unix" }]
+edit = [{ run = 'helix "$@"', block = true, for = "unix" }]
