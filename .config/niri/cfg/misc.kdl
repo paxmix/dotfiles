@@ -8,6 +8,9 @@ environment {
   XDG_CURRENT_DESKTOP "niri"
   XDG_SESSION_TYPE "wayland"
 
+  QT_QPA_PLATFORMTHEME "qt5ct"
+  QT_QPA_PLATFORMTHEME_QT6 "qt6ct"
+
   QT_IM_MODULE "fcitx"
   XMODIFIERS "@im=fcitx"
   SDL_IM_MODULE "fcitx"
