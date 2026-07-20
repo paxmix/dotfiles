@@ -8,7 +8,7 @@ abbr cleanup 'sudo pacman -Rsn $(pacman -Qtdq)'
 abbr ls 'eza -a --icons=auto --color=always' # list all files
 abbr ll 'eza -la --icons=auto --color=always' # list all files with details
 abbr lt 'eza -Ta --icons=auto --color=always' # list all files in tree form
-abbr hx helix
+alias hx helix
 
 # Yazi
 function y
