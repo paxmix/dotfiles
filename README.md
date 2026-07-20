@@ -7,10 +7,10 @@
 sudo pacman -S github-cli stow wlsunset ddcutil bat eza zoxide fzf yazi lazygit
 tealdeer foot fcitx5-bamboo fcitx5-configtool ttf-nerd-fonts-symbols localsend
 papirus-icon-theme cachyos-gaming-applications fnm vlc libreoffice-fresh yay
-ly mangowm noctalia neovim luarocks vesktop wl-clipboard otf-commit-mono-nerd
+ly mangowm noctalia neovim luarocks vesktop wl-clipboard ttf-jetbrains-mono
 fish fuzzel xdg-desktop-portal-gtk pcmanfm-qt lximage-qt gst-plugins-base
 gst-plugins-good lxqt-archiver qt5ct qt6ct kvantum qbittorrent udisks2 gvfs
-audacious yt-dlp
+audacious yt-dlp kvantum-qt5 featherpad ttf-jetbrains-mono-nerd
 
 ## Replace sddm with ly
 
@@ -26,7 +26,7 @@ gsettings set org.gnome.desktop.interface cursor-size 24
 gsettings set org.gnome.desktop.default-applications.terminal exec 'foot'  
 gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'  
 xdg-mime default pcmanfm-qt.desktop inode/directory  
-xdg-mime default nvim.desktop text/plain  
+xdg-mime default featherpad.desktop text/plain  
 xdg-mime default lximage-qt.desktop image/jpeg image/png image/gif image/webp  
 xdg-mime default vlc.desktop video/mp4 video/x-matroska
 video/quicktime video/webm video/x-flv  
