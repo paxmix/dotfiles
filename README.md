@@ -10,7 +10,7 @@ papirus-icon-theme cachyos-gaming-applications fnm vlc libreoffice-fresh yay
 ly mangowm noctalia neovim luarocks vesktop wl-clipboard ttf-hack ttf-hack-nerd
 fish fuzzel xdg-desktop-portal-gtk pcmanfm-qt lximage-qt gst-plugins-base
 gst-plugins-good lxqt-archiver qt5ct qt6ct kvantum qbittorrent udisks2 gvfs
-audacious yt-dlp kvantum-qt5 featherpad breeze-cursors
+strawberry yt-dlp kvantum-qt5 featherpad breeze-cursors
 
 ## Replace sddm with ly
 
@@ -30,7 +30,7 @@ xdg-mime default featherpad.desktop text/plain
 xdg-mime default lximage-qt.desktop image/jpeg image/png image/gif image/webp  
 xdg-mime default vlc.desktop video/mp4 video/x-matroska
 video/quicktime video/webm video/x-flv  
-xdg-mime default audacious.desktop audio/mpeg audio/ogg audio/mp4 audio/wav
+xdg-mime default org.strawberrymusicplayer.strawberry.desktop audio/mpeg audio/ogg audio/mp4 audio/wav
 audio/flac audio/aac  
 xdg-mime default firefox.desktop application/pdf application/postscript image/vnd.djvu
 
