@@ -62,3 +62,9 @@ function starship_transient_prompt_func
 end
 starship init fish | source
 enable_transience
+
+function prompt_newline --on-event fish_postexec
+    echo
+end
+
+alias clear "command clear; commandline -f clear-screen"
