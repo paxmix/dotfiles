@@ -8,9 +8,10 @@ sudo pacman -S github-cli stow wlsunset ddcutil bat eza zoxide fzf yazi lazygit
 tealdeer foot fcitx5-bamboo fcitx5-configtool ttf-nerd-fonts-symbols localsend
 papirus-icon-theme cachyos-gaming-applications fnm vlc libreoffice-fresh yay
 ly niri xwayland-satellite noctalia neovim luarocks vesktop wl-clipboard
-ttf-hack ttf-hack-nerd fish fuzzel xdg-desktop-portal-gtk pcmanfm-qt lximage-qt
-gst-plugins-base gst-plugins-good lxqt-archiver qt5ct qt6ct kvantum qbittorrent
-udisks2 gvfs strawberry yt-dlp kvantum-qt5 featherpad breeze-cursors helix
+ttf-jetbrains-mono ttf-jetbrains-mono-nerd fish fuzzel xdg-desktop-portal-gtk
+pcmanfm-qt lximage-qt gst-plugins-base gst-plugins-good lxqt-archiver qt5ct qt6ct
+kvantum qbittorrent udisks2 gvfs strawberry yt-dlp kvantum-qt5 featherpad
+breeze-cursors helix
 
 ## Replace sddm with ly
 
