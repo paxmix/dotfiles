@@ -7,10 +7,10 @@
 sudo pacman -S github-cli stow wlsunset ddcutil bat eza zoxide fzf yazi lazygit
 tealdeer foot fcitx5-bamboo fcitx5-configtool ttf-nerd-fonts-symbols localsend
 papirus-icon-theme cachyos-gaming-applications fnm vlc libreoffice-fresh yay
-ly mangowm noctalia neovim luarocks vesktop wl-clipboard ttf-jetbrains-mono
+ly mangowm noctalia neovim luarocks vesktop wl-clipboard ttf-hack ttf-hack-nerd
 fish fuzzel xdg-desktop-portal-gtk pcmanfm-qt lximage-qt gst-plugins-base
 gst-plugins-good lxqt-archiver qt5ct qt6ct kvantum qbittorrent udisks2 gvfs
-audacious yt-dlp kvantum-qt5 featherpad ttf-jetbrains-mono-nerd
+audacious yt-dlp kvantum-qt5 featherpad breeze-cursors
 
 ## Replace sddm with ly
 
@@ -21,7 +21,7 @@ sudo pacman -Rns sddm
 ## Set Gnome defaults
 
 dconf write /org/gnome/desktop/interface/color-scheme '"prefer-dark"'  
-gsettings set org.gnome.desktop.interface cursor-theme 'Adwaita'  
+gsettings set org.gnome.desktop.interface cursor-theme 'breeze_cursors'  
 gsettings set org.gnome.desktop.interface cursor-size 24  
 gsettings set org.gnome.desktop.default-applications.terminal exec 'foot'  
 gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'  
@@ -48,6 +48,7 @@ gh auth login
 cd  
 git clone <https://github.com/paxmix/dotfiles.git>  
 cd dotfiles  
+mkdir -p ~/.config/fish ~/Projects
 stow .  
 
 (noctalia need to restart for some configs to work)
@@ -56,11 +57,14 @@ stow .
 
 tldr --update && bat cache --build
 
-## Shell config
+## Shell config 
 
 ### You need to change shell first  
 
 chsh -s /bin/fish
+
+Below commands might not needed for our symlink fish_variables, check first  
+The mkdir and fnm commands are still required
 <!-- markdownlint-disable MD013 -->
 ```fish
 set -Ue FZF_ALT_C_OPTS FZF_DEFAULT_OPTS FZF_CTRL_T_OPTS FZF_CTRL_R_OPTS
