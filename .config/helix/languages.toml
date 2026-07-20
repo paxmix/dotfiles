@@ -1,6 +1,6 @@
 [[language]]
 name = "go"
-formatter = { command = "gofmt" }
+formatter = { command = "goimports" }
 
 [[language]]
 name = "html"
