@@ -1,5 +1,6 @@
 workspace "󰖟"
 workspace ""
+workspace "󰵅"
 workspace "󰻏"
 
 window-rule {
@@ -27,6 +28,11 @@ window-rule {
   match app-id="org.strawberrymusicplayer.strawberry"
   open-maximized true
   open-on-workspace "󰻏"
+}
+
+window-rule {
+  match app-id="vesktop"
+  open-on-workspace "󰵅"
 }
 
 // if you use steam you will probably like these
