@@ -8,7 +8,8 @@ binds {
 
   // ─── Applications ───
   Mod+Return                          hotkey-overlay-title="Open Terminal: Foot" { spawn "footclient"; }
-  Mod+D                               hotkey-overlay-title="Open App Launcher: Noctalia Launcher" { spawn-sh "noctalia msg panel-toggle launcher"; }
+  Mod+D                               hotkey-overlay-title="Open App Launcher: Fuzzel" { spawn-sh "fuzzel"; }
+  Mod+R                               hotkey-overlay-title="Open App Launcher: Noctalia Launcher" { spawn-sh "noctalia msg panel-toggle launcher"; }
   Mod+B                               hotkey-overlay-title="Open Browser: Helium" { spawn "helium-browser"; }
   Mod+ALT+L                           hotkey-overlay-title="Lock Screen: Noctalia lock" { spawn-sh "noctalia msg session lock"; }
   Mod+Shift+Q                         hotkey-overlay-title="Session Menu: Noctalia sessionMenu" { spawn-sh "noctalia msg panel-toggle session"; }

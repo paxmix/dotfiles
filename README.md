@@ -10,7 +10,7 @@ papirus-icon-theme cachyos-gaming-applications fnm vlc libreoffice-fresh yay
 ly niri xwayland-satellite noctalia vesktop wl-clipboard fish xdg-desktop-portal-gtk
 pcmanfm-qt lximage-qt gst-plugins-base resvg gst-plugins-good lxqt-archiver qt5ct
 qt6ct kvantum qbittorrent udisks2 gvfs strawberry yt-dlp kvantum-qt5 featherpad
-breeze-cursors helix starship
+breeze-cursors helix starship fuzzel
 
 ## Replace sddm with ly
 
