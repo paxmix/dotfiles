@@ -7,10 +7,10 @@
 sudo pacman -S github-cli stow wlsunset ddcutil bat eza zoxide fzf yazi lazygit
 tealdeer ghostty fcitx5-bamboo fcitx5-configtool ttf-nerd-fonts-symbols localsend
 papirus-icon-theme cachyos-gaming-applications fnm vlc libreoffice-fresh yay
-ly niri xwayland-satellite noctalia neovim luarocks vesktop wl-clipboard
-fish xdg-desktop-portal-gtk pcmanfm-qt lximage-qt gst-plugins-base resvg
-gst-plugins-good lxqt-archiver qt5ct qt6ct kvantum qbittorrent udisks2 gvfs
-strawberry yt-dlp kvantum-qt5 featherpad breeze-cursors helix
+ly niri xwayland-satellite noctalia vesktop wl-clipboard fish xdg-desktop-portal-gtk
+pcmanfm-qt lximage-qt gst-plugins-base resvg gst-plugins-good lxqt-archiver qt5ct
+qt6ct kvantum qbittorrent udisks2 gvfs strawberry yt-dlp kvantum-qt5 featherpad
+breeze-cursors helix
 
 ## Replace sddm with ly
 
@@ -89,10 +89,6 @@ fish_add_path ~/.local/bin ~/go/bin
 
 fnm i --lts
 ```
-
-## Coding
-
-sudo pacman -S tree-sitter-cli go golangci-lint
 
 ## Helix setup
 
