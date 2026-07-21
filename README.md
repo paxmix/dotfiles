@@ -112,3 +112,12 @@ go install golang.org/x/tools/cmd/goimports@latest
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh  
 rustup component add rust-analyzer   
 sudo pacman -S lldb
+
+### Web:
+
+sudo pacman -S vscode-html-languageserver vscode-css-languageserver vscode-json-languageserver
+
+### Shell:
+
+sudo pacman -S bash-language-server  
+npm install -g fish-lsp
