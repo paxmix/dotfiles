@@ -9,7 +9,7 @@ binds {
   // ─── Applications ───
   Mod+Return                          hotkey-overlay-title="Open Terminal: Ghostty" { spawn "ghostty"; }
   Mod+D                               hotkey-overlay-title="Open App Launcher: Noctalia Launcher" { spawn-sh "noctalia msg panel-toggle launcher"; }
-  Mod+B                               hotkey-overlay-title="Open Browser: Zen Browser" { spawn "zen-browser"; }
+  Mod+B                               hotkey-overlay-title="Open Browser: Helium" { spawn "helium-browser"; }
   Mod+ALT+L                           hotkey-overlay-title="Lock Screen: Noctalia lock" { spawn-sh "noctalia msg session lock"; }
   Mod+Shift+Q                         hotkey-overlay-title="Session Menu: Noctalia sessionMenu" { spawn-sh "noctalia msg panel-toggle session"; }
   Mod+semicolon                       hotkey-overlay-title="Clipboard Menu: Noctalia clipboard" { spawn-sh "noctalia msg panel-toggle clipboard"; }
