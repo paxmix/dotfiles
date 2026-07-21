@@ -10,7 +10,7 @@ papirus-icon-theme cachyos-gaming-applications fnm vlc libreoffice-fresh yay
 ly niri xwayland-satellite noctalia vesktop wl-clipboard fish xdg-desktop-portal-gtk
 pcmanfm-qt lximage-qt gst-plugins-base resvg gst-plugins-good lxqt-archiver qt5ct
 qt6ct kvantum qbittorrent udisks2 gvfs strawberry yt-dlp kvantum-qt5 featherpad
-breeze-cursors helix
+breeze-cursors helix starship
 
 ## Replace sddm with ly
 
@@ -32,7 +32,7 @@ xdg-mime default vlc.desktop video/mp4 video/x-matroska
 video/quicktime video/webm video/x-flv  
 xdg-mime default org.strawberrymusicplayer.strawberry.desktop audio/mpeg audio/ogg audio/mp4 audio/wav
 audio/flac audio/aac  
-xdg-mime default firefox.desktop application/pdf application/postscript image/vnd.djvu
+xdg-mime default helium.desktop application/pdf application/postscript image/vnd.djvu
 
 ## Localsend ufw
 
@@ -48,7 +48,7 @@ gh auth login
 cd  
 git clone <https://github.com/paxmix/dotfiles.git>  
 cd dotfiles  
-mkdir -p ~/.config/fish ~/Projects
+mkdir -p ~/.config/fish ~/Projects  
 stow .  
 
 (noctalia need to restart for some configs to work)
@@ -90,16 +90,29 @@ fish_add_path ~/.local/bin ~/go/bin
 fnm i --lts
 ```
 
+## QT config
+
+- Open kvantum manager and pick a theme (Change/ Delete theme)  
+- Open qt5 and qt6 settings and pick the theme, also the icons, fonts, etc
+
+### PCManFM-qt
+
+- Edit/Preferences:  
+Archiver integration: lxqt-archiver  
+Terminal emulator:  
+Command: ghostty  
+Custom options: --working-directory=%s
+ 
 ## Helix setup
 
 ### Markdown:
 
-sudo pacman -S markdown-oxide  
-go install github.com/chrishrb/go-grip@latest
+go install github.com/chrishrb/go-grip@latest  
+sudo pacman -S markdown-oxide
 
 ### Go:
 
-sudo pacman -S gopls golangci-lint delve  
+sudo pacman -S go gopls golangci-lint delve  
 go install github.com/nametake/golangci-lint-langserver@latest  
 go install golang.org/x/tools/cmd/goimports@latest
 
