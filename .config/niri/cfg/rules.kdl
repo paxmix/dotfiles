@@ -1,5 +1,6 @@
-workspace "browser"
-workspace "steam"
+workspace "󰖟"
+workspace ""
+workspace "󰻏"
 
 window-rule {
   geometry-corner-radius 8
@@ -9,12 +10,20 @@ window-rule {
 window-rule {
   match app-id="zen"
   open-maximized true
-  open-on-workspace "browser"
+  open-on-workspace "󰖟"
 }
 
 window-rule {
   match app-id="lxqt-archiver"
+  match app-id="pcmanfm-qt" title="Move Files"
   open-floating true
+}
+
+window-rule {
+  match app-id="vlc"
+  match app-id="org.strawberrymusicplayer.strawberry"
+  open-maximized true
+  open-on-workspace "󰻏"
 }
 
 // if you use steam you will probably like these
@@ -22,7 +31,7 @@ window-rule {
   match app-id="steam"
   open-floating true
   open-focused false
-  open-on-workspace "steam"
+  open-on-workspace ""
 }
 
 window-rule {
