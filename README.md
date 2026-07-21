@@ -5,7 +5,7 @@
 ## Apps
 
 sudo pacman -S github-cli stow wlsunset ddcutil bat eza zoxide fzf yazi lazygit
-tealdeer ghostty fcitx5-bamboo fcitx5-configtool ttf-nerd-fonts-symbols localsend
+tealdeer foot fcitx5-bamboo fcitx5-configtool ttf-nerd-fonts-symbols localsend
 papirus-icon-theme cachyos-gaming-applications fnm vlc libreoffice-fresh yay
 ly niri xwayland-satellite noctalia vesktop wl-clipboard fish xdg-desktop-portal-gtk
 pcmanfm-qt lximage-qt gst-plugins-base resvg gst-plugins-good lxqt-archiver qt5ct
@@ -23,7 +23,7 @@ sudo pacman -Rns sddm
 dconf write /org/gnome/desktop/interface/color-scheme '"prefer-dark"'  
 gsettings set org.gnome.desktop.interface cursor-theme 'breeze_cursors'  
 gsettings set org.gnome.desktop.interface cursor-size 24  
-gsettings set org.gnome.desktop.default-applications.terminal exec 'ghostty'  
+gsettings set org.gnome.desktop.default-applications.terminal exec 'foot'  
 gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'  
 xdg-mime default pcmanfm-qt.desktop inode/directory  
 xdg-mime default featherpad.desktop text/plain  
@@ -80,7 +80,7 @@ set -Ux FZF_CTRL_R_OPTS "\
 --color header:italic \
 --header 'Press CTRL-Y to copy command into clipboard'"
 
-set -Ux TERMINAL ghostty  
+set -Ux TERMINAL foot  
 set -Ux VISUAL helix  
 set -Ux EDITOR helix
 
@@ -99,9 +99,7 @@ fnm i --lts
 
 - Edit/Preferences:  
 Archiver integration: lxqt-archiver  
-Terminal emulator:  
-Command: ghostty  
-Custom options: --working-directory=%s
+Terminal emulator - Command: footclient  
  
 ## Helix setup
 
