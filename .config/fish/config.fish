@@ -24,7 +24,7 @@ zoxide init fish --cmd cd | source
 
 fzf --fish | source
 
-fnm env --use-on-cd --shell fish | source
+mise activate fish | source
 
 set -l foreground DCD7BA normal
 set -l selection 2D4F67 brcyan
