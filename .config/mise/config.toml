@@ -1,0 +1,19 @@
+[tools]
+usage = "latest"
+
+# Golang
+go = "latest"
+"go:github.com/go-delve/delve/cmd/dlv" = "latest"
+"go:golang.org/x/tools/cmd/goimports" = "latest"
+"go:golang.org/x/tools/gopls" = "latest"
+golangci-lint = "latest"
+golangci-lint-langserver = "latest"
+
+# Node and npm
+node = "lts"
+"npm:vscode-langservers-extracted" = "latest"
+
+# Bash
+"npm:bash-language-server" = "latest"
+shellcheck = "latest"
+shfmt = "latest"
