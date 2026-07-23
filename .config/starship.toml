@@ -1,6 +1,19 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
+format = '$all'
+
 add_newline = false
+command_timeout = 1000
+
+[username]
+show_always = true
+format = '[$user]($style)@'
+
+[mise]
+disabled = false
+
+[cmd_duration]
+min_time = 5000
 
 [aws]
 symbol = " "
@@ -53,6 +66,7 @@ symbol = " "
 
 [directory]
 read_only = " 󰌾"
+truncation_symbol = "…/"
 
 [docker_context]
 symbol = " "
@@ -112,6 +126,7 @@ symbol = " "
 symbol = " "
 
 [hostname]
+ssh_only = false
 ssh_symbol = " "
 
 [java]
