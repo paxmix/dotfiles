@@ -7,10 +7,11 @@
 sudo pacman -S github-cli stow wlsunset ddcutil bat eza zoxide fzf yazi lazygit
 tealdeer foot fcitx5-bamboo fcitx5-configtool ttf-nerd-fonts-symbols localsend
 papirus-icon-theme cachyos-gaming-applications fnm vlc libreoffice-fresh yay
-ly niri xwayland-satellite noctalia vesktop wl-clipboard fish xdg-desktop-portal-gtk
-pcmanfm-qt lximage-qt gst-plugins-base resvg gst-plugins-good lxqt-archiver qt5ct
-qt6ct kvantum qbittorrent udisks2 gvfs strawberry yt-dlp kvantum-qt5 featherpad
-breeze-cursors helix starship fuzzel
+ly mangowm noctalia vesktop wl-clipboard fish xdg-desktop-portal-gtk lximage-qt
+gst-plugins-base resvg gst-plugins-good lxqt-archiver qt5ct qt6ct kvantum qbittorrent
+udisks2 gvfs strawberry yt-dlp kvantum-qt5 featherpad breeze-cursors helix
+starship fuzzel thunar thunar-archive-plugin thunar-volman thunar-media-tags-plugin
+thunar-shares-plugin thunar-vcs-plugin papers
 
 ## Replace sddm with ly
 
@@ -25,14 +26,14 @@ gsettings set org.gnome.desktop.interface cursor-theme 'breeze_cursors'
 gsettings set org.gnome.desktop.interface cursor-size 24  
 gsettings set org.gnome.desktop.default-applications.terminal exec 'foot'  
 gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'  
-xdg-mime default pcmanfm-qt.desktop inode/directory  
+xdg-mime default thunar.desktop inode/directory  
 xdg-mime default featherpad.desktop text/plain  
 xdg-mime default lximage-qt.desktop image/jpeg image/png image/gif image/webp  
 xdg-mime default vlc.desktop video/mp4 video/x-matroska
 video/quicktime video/webm video/x-flv  
 xdg-mime default org.strawberrymusicplayer.strawberry.desktop audio/mpeg audio/ogg audio/mp4 audio/wav
 audio/flac audio/aac  
-xdg-mime default helium.desktop application/pdf application/postscript image/vnd.djvu
+xdg-mime default org.gnome.Papers.desktop application/pdf application/postscript image/vnd.djvu
 
 ## Localsend ufw
 
@@ -95,11 +96,10 @@ fnm i --lts
 - Open kvantum manager and pick a theme (Change/ Delete theme)  
 - Open qt5 and qt6 settings and pick the theme, also the icons, fonts, etc
 
-### PCManFM-qt
+## Thunar
 
-- Edit/Preferences:  
-Archiver integration: lxqt-archiver  
-Terminal emulator - Command: footclient  
+View -> Location Selector -> Buttons style  
+Edit -> Configure custom actions -> Command: footclient
  
 ## Helix setup
 
