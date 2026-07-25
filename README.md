@@ -11,8 +11,7 @@ ly mangowm noctalia vesktop wl-clipboard fish xdg-desktop-portal-gtk lximage-qt
 gst-plugins-base resvg gst-plugins-good lxqt-archiver qt5ct qt6ct kvantum qbittorrent
 udisks2 gvfs strawberry yt-dlp kvantum-qt5 featherpad helix starship fuzzel thunar
 thunar-archive-plugin thunar-volman thunar-media-tags-plugin thunar-shares-plugin
-thunar-vcs-plugin papers adobe-source-code-pro-fonts zip xarchiver
-
+thunar-vcs-plugin papers zip xarchiver ttf-inconsolata  ttf-inconsolata-nerd
 ## Replace sddm with ly
 
 ```sh
@@ -38,7 +37,7 @@ sudo ufw reload
 
 ```sh
 cd
-git clone <https://github.com/paxmix/dotfiles.git>
+git clone https://github.com/paxmix/dotfiles.git
 cd dotfiles
 mkdir -p ~/.config/fish ~/Projects ~/.local/bin ~/.local/share/fonts ~/go/bin
 stow .
@@ -47,7 +46,7 @@ stow .
 
 ```sh
 git config --global user.name "paxmix"
-git config --global user.email "<manh1998nb@gmail.com>"
+git config --global user.email "manh1998nb@gmail.com"
 gh auth login
 ```
 
