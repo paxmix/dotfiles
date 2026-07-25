@@ -7,17 +7,19 @@
 sudo pacman -S github-cli stow wlsunset ddcutil bat eza zoxide fzf yazi lazygit
 tealdeer foot fcitx5-bamboo fcitx5-configtool ttf-nerd-fonts-symbols localsend
 papirus-icon-theme cachyos-gaming-applications vlc libreoffice-fresh yay mise
-ly mangowm noctalia vesktop wl-clipboard fish xdg-desktop-portal-gtk lximage-qt
+mangowm noctalia vesktop wl-clipboard fish xdg-desktop-portal-gtk lximage-qt
 gst-plugins-base resvg gst-plugins-good lxqt-archiver qt5ct qt6ct kvantum qbittorrent
 udisks2 gvfs strawberry yt-dlp kvantum-qt5 featherpad helix starship fuzzel thunar
 thunar-archive-plugin thunar-volman thunar-media-tags-plugin thunar-shares-plugin
-thunar-vcs-plugin papers zip xarchiver ttf-inconsolata  ttf-inconsolata-nerd
-## Replace sddm with ly
+thunar-vcs-plugin papers zip xarchiver ttf-jetbrains-mono ttf-jetbrains-mono-nerd
+gnome-disk-utility
+
+## Replace sddm with noctalia-greeter
 
 ```sh
 systemctl disable sddm
-systemctl enable ly@tty2.service
 sudo pacman -Rns sddm
+sudo noctalia-greeter-print-greetd-config
 ```
 
 ## Localsend ufw (and some baselines)
