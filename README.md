@@ -9,10 +9,9 @@ tealdeer foot fcitx5-bamboo fcitx5-configtool ttf-nerd-fonts-symbols localsend
 papirus-icon-theme cachyos-gaming-applications vlc libreoffice-fresh yay mise
 ly mangowm noctalia vesktop wl-clipboard fish xdg-desktop-portal-gtk lximage-qt
 gst-plugins-base resvg gst-plugins-good lxqt-archiver qt5ct qt6ct kvantum qbittorrent
-udisks2 gvfs strawberry yt-dlp kvantum-qt5 featherpad breeze-cursors helix
-starship fuzzel thunar thunar-archive-plugin thunar-volman thunar-media-tags-plugin
-thunar-shares-plugin thunar-vcs-plugin papers adobe-source-code-pro-fonts
-zip xarchiver
+udisks2 gvfs strawberry yt-dlp kvantum-qt5 featherpad helix starship fuzzel thunar
+thunar-archive-plugin thunar-volman thunar-media-tags-plugin thunar-shares-plugin
+thunar-vcs-plugin papers adobe-source-code-pro-fonts zip xarchiver
 
 ## Replace sddm with ly
 
