@@ -1,2 +1,3 @@
 [flavor]
-dark = "noctalia"
+dark = "base16"
+light = "base16"
