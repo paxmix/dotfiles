@@ -19,6 +19,7 @@ window-rule {
   match app-id="thunar" title="Rename"
   match app-id="thunar" title="File Operation Progress"
   match app-id="org.strawberrymusicplayer.strawberry" title="Tag fetcher"
+  match app-id="org.strawberrymusicplayer.strawberry" title="Settings"
   open-floating true
 }
 
