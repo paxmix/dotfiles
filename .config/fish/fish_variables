@@ -6,4 +6,4 @@ SETUVAR --export FZF_CTRL_R_OPTS:\x2d\x2dwith\x2dnth\x201\x2c3\x2e\x2e\x20\x2d\x
 SETUVAR --export FZF_CTRL_T_OPTS:\x2d\x2dwalker\x2dskip\x20\x2egit\x2cnode_modules\x2ctarget\x20\x2d\x2dpreview\x20\x27bat\x20\x2dn\x20\x2d\x2dcolor\x3dalways\x20\x7b\x7d\x27\x20\x2d\x2dbind\x20\x27ctrl\x2d/\x3achange\x2dpreview\x2dwindow\x28down\x7chidden\x7c\x29\x27
 SETUVAR --export TERMINAL:foot
 SETUVAR --export VISUAL:helix
-SETUVAR fish_user_paths:/home/paxmix/\x2elocal/bin\x1e/home/paxmix/go/bin
+SETUVAR fish_user_paths:/home/paxmix/\x2econfig/emacs/bin\x1e/home/paxmix/\x2elocal/bin\x1e/home/paxmix/go/bin
