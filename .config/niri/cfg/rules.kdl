@@ -9,16 +9,15 @@ window-rule {
 }
 
 window-rule {
-  match app-id="helium"
+  match app-id="zen"
   open-maximized true
   open-on-workspace "󰖟"
 }
 
 window-rule {
   match app-id="lxqt-archiver"
-  match app-id="pcmanfm-qt" title="Move Files"
-  match app-id="pcmanfm-qt" title="Copy Files"
-  match app-id="pcmanfm-qt" title="Preferences"
+  match app-id="thunar" title="Rename"
+  match app-id="thunar" title="File Operation Progress"
   match app-id="org.strawberrymusicplayer.strawberry" title="Tag fetcher"
   open-floating true
 }
