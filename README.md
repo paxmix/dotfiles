@@ -9,10 +9,10 @@ tealdeer foot fcitx5-bamboo fcitx5-configtool ttf-nerd-fonts-symbols localsend
 papirus-icon-theme cachyos-gaming-applications vlc libreoffice-fresh yay mise
 mangowm noctalia vesktop wl-clipboard fish xdg-desktop-portal-gtk lximage-qt
 gst-plugins-base resvg gst-plugins-good lxqt-archiver qt5ct qt6ct kvantum qbittorrent
-udisks2 gvfs strawberry yt-dlp kvantum-qt5 featherpad helix starship fuzzel thunar
+udisks2 gvfs strawberry yt-dlp kvantum-qt5 featherpad helix starship thunar tumbler
 thunar-archive-plugin thunar-volman thunar-media-tags-plugin thunar-shares-plugin
 thunar-vcs-plugin papers zip xarchiver ttf-jetbrains-mono ttf-jetbrains-mono-nerd
-gnome-disk-utility
+gnome-disk-utility markdown-oxide trash-cli noctalia-greeter
 
 ## Replace sddm with noctalia-greeter
 
@@ -63,7 +63,7 @@ chsh -s /bin/fish
 ## Thunar
 
 View -> Location Selector -> Buttons style\
-Edit -> Configure custom actions -> Command: footclient
+Edit -> Configure custom actions -> Command: foot
 
 ## Helix setup
 
