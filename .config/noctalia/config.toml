@@ -110,7 +110,7 @@ temperature_night = 4500
 enabled = []
 
 [shell]
-font_family = "Noto Sans"
+font_family = "Inter"
 polkit_agent = true
 
     [shell.panel]
@@ -184,7 +184,7 @@ transition_on_startup = true
 refresh_minutes = 240
 
 [widget.clock]
-font_family = "Noto Sans"
+font_family = "Inter"
 font_weight = 600
 format = "{:%I:%M %p %A, %d/%m/%Y}"
 
