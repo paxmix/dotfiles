@@ -25,8 +25,6 @@ fzf --fish | source
 
 mise activate fish | source
 
-fish_config theme choose base16-default
-
 function starship_transient_prompt_func
     starship module character
 end
