@@ -11,7 +11,7 @@ mangowm noctalia vesktop wl-clipboard fish xdg-desktop-portal-gtk lximage-qt
 gst-plugins-base resvg gst-plugins-good lxqt-archiver qt5ct qt6ct kvantum qbittorrent
 udisks2 gvfs strawberry yt-dlp kvantum-qt5 featherpad helix starship thunar tumbler
 thunar-archive-plugin thunar-volman thunar-media-tags-plugin thunar-shares-plugin
-thunar-vcs-plugin papers zip xarchiver ttf-jetbrains-mono ttf-jetbrains-mono-nerd
+thunar-vcs-plugin papers zip xarchiver dobe-source-code-pro-fonts ttf-sourcecodepro-nerd
 gnome-disk-utility markdown-oxide trash-cli noctalia-greeter
 
 ## Replace sddm with noctalia-greeter
