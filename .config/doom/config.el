@@ -15,6 +15,13 @@
 (setq display-line-numbers-type 'relative)
 (setq confirm-kill-emacs nil)
 
+;; Non-POSIX compliant shells (particularly Fish and Nushell) can cause
+;; unpredictable issues with any Emacs utilities that spawn child processes from
+;; shell commands (like diff-hl TRAMP, and terminal emulators).
+(setq shell-file-name (executable-find "bash"))
+(setq-default vterm-shell "/bin/fish")
+(setq-default explicit-shell-file-name "/bin/fish")
+
 (setq evil-escape-key-sequence "jk")
 
 (map! :n "H" #'previous-buffer
