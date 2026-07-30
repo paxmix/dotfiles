@@ -15,7 +15,7 @@
 ;;   presentations or streaming.
 ;; - `doom-symbol-font' -- for symbols
 ;; - `doom-serif-font' -- for the `fixed-pitch-serif' face
-(setq doom-font (font-spec :family "Source Code Pro" :size 15)
+(setq doom-font (font-spec :family "JetBrains Mono NL" :size 15)
      doom-variable-pitch-font (font-spec :family "Inter" :size 14))
 
 ;; There are two ways to load a theme. Both assume the theme is installed and
