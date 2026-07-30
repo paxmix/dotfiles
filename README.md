@@ -1,6 +1,6 @@
 # CachyOS noctalia v5 (Currently use Mango)
 
-## Get a browser: Zen Browser
+## Get a browser: Brave Origin
 
 ## Apps
 
@@ -12,7 +12,7 @@ gst-plugins-base resvg gst-plugins-good lxqt-archiver qt5ct qt6ct kvantum qbitto
 udisks2 gvfs strawberry yt-dlp kvantum-qt5 featherpad helix starship thunar tumbler
 thunar-archive-plugin thunar-volman thunar-media-tags-plugin thunar-shares-plugin
 thunar-vcs-plugin papers zip xarchiver ttf-jetbrains-mono ttf-jetbrains-mono-nerd
-gnome-disk-utility markdown-oxide trash-cli noctalia-greeter
+gnome-disk-utility trash-cli noctalia-greeter
 
 ## Replace sddm with noctalia-greeter
 
@@ -65,10 +65,8 @@ chsh -s /bin/fish
 View -> Location Selector -> Buttons style\
 Edit -> Configure custom actions -> Command: alacritty
 
-## Helix setup
+## Setup
 
 ```sh
 mise install
-sudo pacman -S lldb
-go install github.com/chrishrb/go-grip@latest
 ```
