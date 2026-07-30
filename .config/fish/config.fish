@@ -8,7 +8,6 @@ abbr cleanup 'sudo pacman -Rsn $(pacman -Qtdq)'
 abbr ls 'eza -a --icons=auto --color=always' # list all files
 abbr ll 'eza -la --icons=auto --color=always' # list all files with details
 abbr lt 'eza -Ta --icons=auto --color=always' # list all files in tree form
-alias hx helix
 
 # Yazi
 function y
@@ -23,8 +22,6 @@ end
 zoxide init fish --cmd cd | source
 
 fzf --fish | source
-
-mise activate fish | source
 
 function starship_transient_prompt_func
     starship module character
