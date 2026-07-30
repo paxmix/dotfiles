@@ -23,6 +23,8 @@ zoxide init fish --cmd cd | source
 
 fzf --fish | source
 
+mise activate fish | source
+
 function starship_transient_prompt_func
     starship module character
 end
