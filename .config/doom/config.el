@@ -4,16 +4,19 @@
 ;;   presentations or streaming.
 ;; - `doom-symbol-font' -- for symbols
 ;; - `doom-serif-font' -- for the `fixed-pitch-serif' face
-(setq doom-font (font-spec :family "JetBrains Mono NL" :size 15)
+(setq doom-font (font-spec :family "DejaVu Sans Mono" :size 16)
      doom-variable-pitch-font (font-spec :family "Inter" :size 14))
 
-;; There are two ways to load a theme. Both assume the theme is installed and
-;; available. You can either set `doom-theme' or manually load a theme with the
-;; `load-theme' function. This is the default:
 (setq doom-theme 'doom-one)
+
+(after! apheleia
+  ;; Point Go major modes to the `goimports` entry in `apheleia-formatters`
+  (setf (alist-get 'go-mode apheleia-mode-alist) 'goimports)
+  (setf (alist-get 'go-ts-mode apheleia-mode-alist) 'goimports))
 
 (setq display-line-numbers-type 'relative)
 (setq confirm-kill-emacs nil)
+(setq scroll-margin 8)
 
 ;; Non-POSIX compliant shells (particularly Fish and Nushell) can cause
 ;; unpredictable issues with any Emacs utilities that spawn child processes from
@@ -41,5 +44,21 @@
 
 (setq org-directory "~/Org/")
 (add-hook 'org-mode-hook #'hl-todo-mode)
+
+(custom-set-faces
+ '(markdown-header-face ((t (:inherit font-lock-function-name-face :weight bold :family "variable-pitch"))))
+ '(markdown-header-face-1 ((t (:inherit markdown-header-face :height 1.6))))
+ '(markdown-header-face-2 ((t (:inherit markdown-header-face :height 1.5))))
+ '(markdown-header-face-3 ((t (:inherit markdown-header-face :height 1.4))))
+ '(markdown-header-face-4 ((t (:inherit markdown-header-face :height 1.3))))
+ '(markdown-header-face-5 ((t (:inherit markdown-header-face :height 1.2))))
+ '(markdown-header-face-6 ((t (:inherit markdown-header-face :height 1.1)))))
+
+(defun dt/toggle-markdown-view-mode ()
+  "Toggle between `markdown-mode' and `markdown-view-mode'."
+  (interactive)
+  (if (eq major-mode 'markdown-view-mode)
+      (markdown-mode)
+    (markdown-view-mode)))
 
 (add-hook! 'elfeed-search-mode-hook #'elfeed-update)
