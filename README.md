@@ -5,7 +5,7 @@
 ## Apps
 
 sudo pacman -S github-cli stow wlsunset ddcutil bat eza zoxide fzf yazi lazygit
-tealdeer kitty fcitx5-bamboo fcitx5-configtool ttf-nerd-fonts-symbols localsend
+tealdeer alacritty fcitx5-bamboo fcitx5-configtool ttf-nerd-fonts-symbols localsend
 papirus-icon-theme cachyos-gaming-applications vlc libreoffice-fresh yay mise
 mangowm noctalia vesktop wl-clipboard fish xdg-desktop-portal-gtk lximage-qt
 gst-plugins-base resvg gst-plugins-good lxqt-archiver qt5ct qt6ct kvantum qbittorrent
@@ -63,7 +63,7 @@ chsh -s /bin/fish
 ## Thunar
 
 View -> Location Selector -> Buttons style\
-Edit -> Configure custom actions -> Command: kitty
+Edit -> Configure custom actions -> Command: alacritty
 
 ## Helix setup
 
