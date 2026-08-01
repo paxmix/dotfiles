@@ -29,6 +29,7 @@ audio/aac=org.strawberrymusicplayer.strawberry.desktop
 application/pdf=org.gnome.Papers.desktop
 application/postscript=org.gnome.Papers.desktop
 image/vnd.djvu=org.gnome.Papers.desktop
+x-scheme-handler/discord=vesktop.desktop
 
 [Added Associations]
 x-scheme-handler/http=zen.desktop;
