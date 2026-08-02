@@ -3,7 +3,7 @@ theme = Nightfox
 # maximize = true
 gtk-tabs-location = bottom
 
-font-family = Maple Mono Normal NL
+font-family = JetBrains Mono NL
 font-size = 12
 
 window-padding-x = 5
