@@ -4,7 +4,7 @@
 ;;   presentations or streaming.
 ;; - `doom-symbol-font' -- for symbols
 ;; - `doom-serif-font' -- for the `fixed-pitch-serif' face
-(setq doom-font (font-spec :family "DejaVu Sans Mono" :size 16)
+(setq doom-font (font-spec :family "Maple Mono Normal NL" :size 15)
      doom-variable-pitch-font (font-spec :family "Inter" :size 14))
 
 (setq doom-theme 'doom-one)
