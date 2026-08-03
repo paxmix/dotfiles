@@ -10,17 +10,15 @@
 (setq doom-theme 'doom-one)
 
 (after! apheleia
-  ;; Point Go major modes to the `goimports` entry in `apheleia-formatters`
   (setf (alist-get 'go-mode apheleia-mode-alist) 'goimports)
   (setf (alist-get 'go-ts-mode apheleia-mode-alist) 'goimports))
+
+(add-to-list 'auto-mode-alist '("\\.tmpl\\'" . web-mode))
 
 (setq display-line-numbers-type 'relative)
 (setq confirm-kill-emacs nil)
 (setq scroll-margin 8)
 
-;; Non-POSIX compliant shells (particularly Fish and Nushell) can cause
-;; unpredictable issues with any Emacs utilities that spawn child processes from
-;; shell commands (like diff-hl TRAMP, and terminal emulators).
 (setq shell-file-name (executable-find "bash"))
 (setq-default ghostel-shell "/bin/fish")
 (setq-default explicit-shell-file-name "/bin/fish")
