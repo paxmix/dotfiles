@@ -5,14 +5,17 @@
 ## Apps
 
 sudo pacman -S github-cli stow wlsunset ddcutil bat eza zoxide fzf yazi lazygit
-tealdeer alacritty fcitx5-bamboo fcitx5-configtool ttf-nerd-fonts-symbols localsend
+tealdeer foot fcitx5-unikey fcitx5-configtool ttf-nerd-fonts-symbols localsend
 papirus-icon-theme cachyos-gaming-applications vlc libreoffice-fresh yay mise
-mangowm noctalia vesktop wl-clipboard fish xdg-desktop-portal-gtk lximage-qt
-gst-plugins-base resvg gst-plugins-good lxqt-archiver qt5ct qt6ct kvantum qbittorrent
-udisks2 gvfs strawberry yt-dlp kvantum-qt5 featherpad helix starship thunar tumbler
+mangowm noctalia vesktop wl-clipboard fish xdg-desktop-portal-gtk ristretto
+gst-plugins-base resvg gst-plugins-good qt5ct qt6ct kvantum qbittorrent udisks2
+gvfs strawberry yt-dlp kvantum-qt5 mousepad starship thunar tumbler
 thunar-archive-plugin thunar-volman thunar-media-tags-plugin thunar-shares-plugin
 thunar-vcs-plugin papers zip xarchiver ttf-jetbrains-mono ttf-jetbrains-mono-nerd
-gnome-disk-utility markdown-oxide trash-cli noctalia-greeter
+gnome-disk-utility markdown-oxide trash-cli noctalia-greeter emacs-wayland cmake
+streamlink ttf-nerd-fonts-symbols-mono inter-font
+
+yay -S ttf-symbola
 
 ## Replace sddm with noctalia-greeter
 
@@ -63,12 +66,11 @@ chsh -s /bin/fish
 ## Thunar
 
 View -> Location Selector -> Buttons style\
-Edit -> Configure custom actions -> Command: alacritty
+Edit -> Configure custom actions -> Command: foot
 
-## Helix setup
+## Setup
 
 ```sh
 mise install
 sudo pacman -S lldb
-go install github.com/chrishrb/go-grip@latest
 ```
