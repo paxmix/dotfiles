@@ -15,6 +15,9 @@
 
 (add-to-list 'auto-mode-alist '("\\.tmpl\\'" . web-mode))
 
+(after! go-ts-mode
+  (setq go-ts-mode-indent-offset 4))
+
 (setq display-line-numbers-type 'relative)
 (setq confirm-kill-emacs nil)
 (setq scroll-margin 8)

@@ -35,7 +35,12 @@
 #+end_src
 - Add tmpl to web-mode
   #+begin_src emacs-lisp
- (add-to-list 'auto-mode-alist '("\\.tmpl\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.tmpl\\'" . web-mode))
+  #+end_src
+- Set tab size to 4
+  #+begin_src emacs-lisp
+(after! go-ts-mode
+  (setq go-ts-mode-indent-offset 4))
   #+end_src
 
 * Emacs Settings
