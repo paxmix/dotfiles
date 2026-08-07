@@ -7,7 +7,7 @@
 (setq doom-font (font-spec :family "MesloLGS Nerd Font" :size 16)
       doom-variable-pitch-font (font-spec :family "Inter" :size 14))
 
-(setq doom-theme 'doom-one)
+(setq doom-theme 'doom-dracula)
 
 (after! apheleia
   (setf (alist-get 'go-mode apheleia-mode-alist) 'goimports)
@@ -32,7 +32,7 @@
       :n "L" #'next-buffer)
 
 (custom-theme-set-faces!
-  'doom-one
+  'doom-dracula
   '(org-level-8 :inherit outline-3 :height 1.0)
   '(org-level-7 :inherit outline-3 :height 1.0)
   '(org-level-6 :inherit outline-3 :height 1.1)
