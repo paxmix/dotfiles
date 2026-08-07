@@ -1,0 +1,67 @@
+#+TITLE: CachyOS Mango + Noctalia v5
+
+* Table of Contents :toc:
+- [[#get-a-browser-zen-browser][Get a browser: Zen Browser]]
+- [[#apps][Apps]]
+- [[#replace-sddm-with-noctalia-greeter][Replace sddm with noctalia-greeter]]
+- [[#localsend-ufw-and-some-baselines][Localsend ufw (and some baselines)]]
+- [[#setup-git-and-stow-might-need-to-delete-cachyos-default-config][Setup git and stow (might need to delete CachyOS default config)]]
+- [[#environment-setup][Environment Setup]]
+- [[#thunar][Thunar]]
+- [[#emacs-setup][Emacs Setup]]
+
+* Get a browser: Zen Browser
+
+* Apps
+#+begin_src shell
+sudo pacman -S github-cli stow wlsunset ddcutil bat eza zoxide fzf yazi lazygit tealdeer foot fcitx5-unikey fcitx5-configtool ttf-nerd-fonts-symbols localsend papirus-icon-theme cachyos-gaming-applications vlc libreoffice-fresh yay mise mangowm noctalia vesktop wl-clipboard fish xdg-desktop-portal-gtk ristretto gst-plugins-base resvg gst-plugins-good qt5ct qt6ct kvantum qbittorrent udisks2 gvfs strawberry yt-dlp kvantum-qt5 mousepad starship thunar tumbler fuzzel thunar-archive-plugin thunar-volman thunar-media-tags-plugin thunar-shares-plugin thunar-vcs-plugin papers zip xarchiver ttf-input ttf-input-nerd gnome-disk-utility markdown-oxide trash-cli noctalia-greeter emacs-wayland cmake streamlink  ttf-nerd-fonts-symbols-mono inter-font
+
+yay -S ttf-symbola bibata-cursor-theme-bin
+#+end_src
+
+* Replace sddm with noctalia-greeter
+#+begin_src shell
+systemctl disable sddm
+sudo pacman -Rns sddm
+sudo noctalia-greeter-print-greetd-config
+#+end_src
+* Localsend ufw (and some baselines)
+#+begin_src shell
+sudo ufw allow 53317/tcp
+sudo ufw allow 53317/udp
+sudo ufw limit 22/tcp
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw reload
+#+end_src
+* Setup git and stow (might need to delete CachyOS default config)
+#+begin_src shell
+cd
+git clone https://github.com/paxmix/dotfiles.git
+cd dotfiles
+mkdir -p ~/.config/fish ~/Projects ~/.local/bin ~/.local/share/fonts ~/go/bin
+stow .
+#+end_src
+(noctalia need to restart for some configs to work)
+
+#+begin_src shell
+git config --global user.name "paxmix"
+git config --global user.email "manh1998nb@gmail.com"
+gh auth login
+#+end_src
+* Environment Setup
+#+begin_src shell
+xdg-user-dirs-update
+tldr --update && bat cache --build
+chsh -s /bin/fish
+#+end_src
+* Thunar
++ View -> Location Selector -> Buttons style\
++ Edit -> Configure custom actions -> Command: foot
+* Emacs Setup
+#+begin_src shell
+mise install
+sudo pacman -S lldb odin ols odinfmt tidy
+#+end_src
