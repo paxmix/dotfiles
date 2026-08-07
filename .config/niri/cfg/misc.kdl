@@ -17,7 +17,7 @@ environment {
 }
 
 cursor {
-  xcursor-theme "Adwaita"
+  xcursor-theme "Bibata-Modern-Ice"
   xcursor-size 24
 }
 
