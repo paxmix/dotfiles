@@ -26,7 +26,7 @@ fzf --fish | source
 
 mise activate fish | source
 
-fish_config theme choose dracula
+fish_config theme choose nord
 
 function starship_transient_prompt_func
     starship module character
