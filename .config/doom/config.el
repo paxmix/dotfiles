@@ -29,7 +29,8 @@
 (setq evil-escape-key-sequence "jk")
 
 (map! :n "H" #'previous-buffer
-      :n "L" #'next-buffer)
+      :n "L" #'next-buffer
+      :i "C-S-v" #'clipboard-yank)
 
 (custom-theme-set-faces!
   'doom-one
