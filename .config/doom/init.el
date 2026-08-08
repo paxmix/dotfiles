@@ -69,10 +69,10 @@
        ;;word-wrap         ; soft wrapping with language-aware indent
 
        :emacs
-       dired             ; making dired pretty [functional]
+       (dired +dirvish +icons)             ; making dired pretty [functional]
        electric          ; smarter, keyword-based electric-indent
        ;;eww               ; the internet is gross
-       ibuffer           ; interactive buffer management
+       (ibuffer +icons)           ; interactive buffer management
        tramp             ; remote files at your arthritic fingertips
        undo              ; persistent, smarter undo for your inevitable mistakes
        vc                ; version-control and Emacs, sitting in a tree
@@ -105,7 +105,7 @@
        magit             ; a git porcelain for Emacs
        ;;make              ; run make tasks from Emacs
        ;;pass              ; password manager for nerds
-       ;;pdf               ; pdf enhancements
+       pdf               ; pdf enhancements
        ;;terraform         ; infrastructure as code
        ;;tmux              ; an API for interacting with tmux
        tree-sitter       ; syntax and parsing, sitting in a tree...
