@@ -58,7 +58,7 @@ tldr --update && bat cache --build
 chsh -s /bin/fish
 #+end_src
 * Thunar
-+ View -> Location Selector -> Buttons style\
++ View -> Location Selector -> Buttons style
 + Edit -> Configure custom actions -> Command: foot
 * Emacs Setup
 #+begin_src shell
