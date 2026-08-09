@@ -3,7 +3,7 @@ background_opacity = 0.84999998100101948
 end = [ "weather", "tray", "notifications", "clipboard", "network", "volume", "brightness", "session" ]
 font_weight = 400
 shadow = false
-start = [ "workspaces" ]
+start = [ "workspaces", "active_window" ]
 thickness = 30
 widget_spacing = 16
 
@@ -38,6 +38,7 @@ address = "Vientiane"
 enabled = true
 schema_version = 2
 widget_order = [
+    "lockscreen-login-box@HDMI-A-1",
     "lockscreen-widget-0000000000000001",
     "lockscreen-widget-0000000000000002",
     "lockscreen-widget-0000000000000003",
@@ -48,6 +49,31 @@ widget_order = [
     cell_size = 16
     major_interval = 4
     visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 898.0
+    output = "HDMI-A-1"
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
 
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
     box_height = 0.0
@@ -123,46 +149,50 @@ polkit_agent = true
     confirm_region = true
     directory = "/home/paxmix/Pictures/Screenshots"
 
-    [[shell.session.actions]]
-    action = "lock"
-    countdown_seconds = 0.0
-    enabled = true
-    shortcut = "1"
-    variant = "default"
+    [shell.session]
+    show_shortcuts = false
 
-    [[shell.session.actions]]
-    action = "logout"
-    countdown_seconds = 0.0
-    enabled = true
-    shortcut = "2"
-    variant = "default"
+        [[shell.session.actions]]
+        action = "lock"
+        countdown_seconds = 0.0
+        enabled = true
+        shortcut = "1"
+        variant = "default"
 
-    [[shell.session.actions]]
-    action = "reboot"
-    countdown_seconds = 0.0
-    enabled = true
-    shortcut = "3"
-    variant = "default"
+        [[shell.session.actions]]
+        action = "logout"
+        countdown_seconds = 0.0
+        enabled = true
+        shortcut = "2"
+        variant = "default"
 
-    [[shell.session.actions]]
-    action = "shutdown"
-    countdown_seconds = 0.0
-    enabled = true
-    shortcut = "4"
-    variant = "destructive"
+        [[shell.session.actions]]
+        action = "reboot"
+        countdown_seconds = 0.0
+        enabled = true
+        shortcut = "3"
+        variant = "default"
 
-    [[shell.session.actions]]
-    action = "lock_and_suspend"
-    countdown_seconds = 0.0
-    enabled = false
-    shortcut = "5"
-    variant = "default"
+        [[shell.session.actions]]
+        action = "shutdown"
+        countdown_seconds = 0.0
+        enabled = true
+        shortcut = "4"
+        variant = "destructive"
+
+        [[shell.session.actions]]
+        action = "lock_and_suspend"
+        countdown_seconds = 0.0
+        enabled = false
+        shortcut = "5"
+        variant = "default"
 
 [system.monitor]
 enabled = false
 
 [theme]
-builtin = "Noctalia"
+builtin = "Nord"
+community_palette = "One Dark Two"
 
     [theme.templates]
     builtin_ids = []
@@ -172,16 +202,19 @@ directory = "/home/paxmix/Pictures/Wallpapers"
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/home/paxmix/Pictures/Wallpapers/1410565.png"
+    path = "/home/paxmix/Pictures/Wallpapers/pokemon.png"
 
     [wallpaper.last]
-    path = "/home/paxmix/Pictures/Wallpapers/1410565.png"
+    path = "/home/paxmix/Pictures/Wallpapers/pokemon.png"
 
     [wallpaper.monitors.HDMI-A-1]
-    path = "/home/paxmix/Pictures/Wallpapers/1410565.png"
+    path = "/home/paxmix/Pictures/Wallpapers/pokemon.png"
 
 [weather]
 refresh_minutes = 240
+
+[widget.active_window]
+title_scroll = "on_hover"
 
 [widget.clock]
 font_family = "Inter"
@@ -191,5 +224,9 @@ format = "{:%I:%M %p %A, %d/%m/%Y}"
 [widget.media]
 hide_when_no_media = true
 
+[widget.tray]
+scale = 1.1500000000000001
+
 [widget.workspaces]
 hide_when_empty = true
+scale = 1.2
