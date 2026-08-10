@@ -1,7 +1,7 @@
 #+TITLE: CachyOS Mango + Noctalia v5
 
 * Table of Contents :toc:
-- [[#get-a-browser-brave-origin][Get a browser: Brave Origin]]
+- [[#get-a-browser-zen-browser][Get a browser: Zen Browser]]
 - [[#apps][Apps]]
 - [[#replace-sddm-with-noctalia-greeter][Replace sddm with noctalia-greeter]]
 - [[#localsend-ufw-and-some-baselines][Localsend ufw (and some baselines)]]
@@ -10,7 +10,7 @@
 - [[#thunar][Thunar]]
 - [[#emacs-setup][Emacs Setup]]
 
-* Get a browser: Brave Origin
+* Get a browser: Zen Browser
 
 * Apps
 #+begin_src shell

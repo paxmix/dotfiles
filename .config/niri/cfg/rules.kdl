@@ -9,7 +9,7 @@ window-rule {
 }
 
 window-rule {
-  match app-id="brave-origin"
+  match app-id="zen"
   open-maximized true
   open-on-workspace "󰖟"
 }
