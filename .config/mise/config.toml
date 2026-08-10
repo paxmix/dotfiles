@@ -12,6 +12,9 @@ golangci-lint-langserver = "latest"
 "go:github.com/cweill/gotests/gotests" = "latest"
 "go:github.com/x-motemen/gore/cmd/gore" = "latest"
 
+# Arch odin package shipped git lfs pointer instead of real vendor .a file
+odin = "latest"
+
 # Node and npm
 node = "lts"
 "npm:vscode-langservers-extracted" = "latest"
