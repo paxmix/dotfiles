@@ -5,9 +5,11 @@
 ;; - `doom-symbol-font' -- for symbols
 ;; - `doom-serif-font' -- for the `fixed-pitch-serif' face
 (setq doom-font (font-spec :family "MesloLGS Nerd Font" :size 16)
-      doom-variable-pitch-font (font-spec :family "Inter" :size 14))
+      doom-variable-pitch-font (font-spec :family "Inter" :size 15))
 
 (setq doom-theme 'doom-one)
+(custom-set-faces!
+  '(font-lock-function-call-face :slant normal))
 
 (after! apheleia
   (setf (alist-get 'go-mode apheleia-mode-alist) 'goimports)
