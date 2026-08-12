@@ -1,13 +1,8 @@
-;; - `doom-font' -- the primary font to use
-;; - `doom-variable-pitch-font' -- a non-monospace font (where applicable)
-;; - `doom-big-font' -- used for `doom-big-font-mode'; use this for
-;;   presentations or streaming.
-;; - `doom-symbol-font' -- for symbols
-;; - `doom-serif-font' -- for the `fixed-pitch-serif' face
-(setq doom-font (font-spec :family "MesloLGS Nerd Font" :size 16)
+(setq doom-font (font-spec :family "JetBrainsMonoNL Nerd Font" :size 15)
       doom-variable-pitch-font (font-spec :family "Inter" :size 15))
 
-(setq doom-theme 'doom-one)
+(setq doom-theme 'doom-tomorrow-night)
+
 (custom-set-faces!
   '(font-lock-function-call-face :slant normal))
 
@@ -35,7 +30,7 @@
       :i "C-S-v" #'clipboard-yank)
 
 (custom-theme-set-faces!
-  'doom-one
+  'doom-tomorrow-night
   '(org-level-8 :inherit outline-3 :height 1.0)
   '(org-level-7 :inherit outline-3 :height 1.0)
   '(org-level-6 :inherit outline-3 :height 1.1)

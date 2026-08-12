@@ -2,6 +2,8 @@
 
 * Table of Contents :toc:
 - [[#doom-settings][Doom Settings]]
+  - [[#font][Font]]
+  - [[#theme][Theme]]
   - [[#lsp-settings][LSP Settings]]
 - [[#emacs-settings][Emacs Settings]]
   - [[#misc][Misc]]
@@ -12,34 +14,38 @@
 - [[#elfeed][Elfeed]]
 
 * Doom Settings
+** Font
++ *doom-font*: the primary font to use.
++ *doom-variable-pitch-font*: a /non/-*monospace* font (where applicable).
++ *doom-big-font*: used for *doom-big-font-mode*, use this for presentations or streaming.
++ *doom-symbol-font*: for symbols.
++ *doom-serif-font*: for the *fixed-pitch-serif* face.
 #+begin_src emacs-lisp
-;; - `doom-font' -- the primary font to use
-;; - `doom-variable-pitch-font' -- a non-monospace font (where applicable)
-;; - `doom-big-font' -- used for `doom-big-font-mode'; use this for
-;;   presentations or streaming.
-;; - `doom-symbol-font' -- for symbols
-;; - `doom-serif-font' -- for the `fixed-pitch-serif' face
-(setq doom-font (font-spec :family "MesloLGS Nerd Font" :size 16)
+(setq doom-font (font-spec :family "JetBrainsMonoNL Nerd Font" :size 15)
       doom-variable-pitch-font (font-spec :family "Inter" :size 15))
-
-(setq doom-theme 'doom-one)
+#+end_src
+** Theme
+#+begin_src emacs-lisp
+(setq doom-theme 'doom-tomorrow-night)
+#+end_src
++ Disable function call italic style.
+#+begin_src emacs-lisp
 (custom-set-faces!
   '(font-lock-function-call-face :slant normal))
 #+end_src
-
 ** LSP Settings
 *** Go
-- Use goimports instead of gofmt
++ Use *goimports* instead of *gofmt*.
 #+begin_src emacs-lisp
 (after! apheleia
   (setf (alist-get 'go-mode apheleia-mode-alist) 'goimports)
   (setf (alist-get 'go-ts-mode apheleia-mode-alist) 'goimports))
 #+end_src
-- Add tmpl to web-mode
++ Add *tmpl* to web-mode.
 #+begin_src emacs-lisp
 (add-to-list 'auto-mode-alist '("\\.tmpl\\'" . web-mode))
 #+end_src
-- Set tab size to 4
++ Set /tab size/ to *4*.
 #+begin_src emacs-lisp
 (after! go-ts-mode
   (setq go-ts-mode-indent-offset 4))
@@ -53,7 +59,7 @@
 (setq scroll-margin 8)
 #+end_src
 ** Fish shell workaround
-- Non-POSIX compliant shells (particularly Fish and Nushell) can cause unpredictable issues with any Emacs utilities that spawn child processes from shell commands (like diff-hl TRAMP, and terminal emulators).
++ /Non/-*POSIX* compliant shells (particularly *Fish* and *Nushell*) can cause unpredictable issues with any Emacs utilities that spawn child processes from shell commands (like /diff-hl/ *TRAMP*, and *terminal emulators*).
 #+begin_src emacs-lisp
 (setq shell-file-name (executable-find "bash"))
 (setq-default ghostel-shell "/bin/fish")
@@ -72,7 +78,7 @@
 * Org
 #+begin_src emacs-lisp
 (custom-theme-set-faces!
-  'doom-one
+  'doom-tomorrow-night
   '(org-level-8 :inherit outline-3 :height 1.0)
   '(org-level-7 :inherit outline-3 :height 1.0)
   '(org-level-6 :inherit outline-3 :height 1.1)
