@@ -47,8 +47,8 @@ stow .
 (noctalia need to restart for some configs to work)
 
 #+begin_src shell
-git config --global user.name "paxmix"
-git config --global user.email "manh1998nb@gmail.com"
+git config --global user.name "{{username}}"
+git config --global user.email "{{email}}"
 gh auth login
 git lfs install
 #+end_src
