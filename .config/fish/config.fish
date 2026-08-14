@@ -26,7 +26,7 @@ fzf --fish | source
 
 mise activate fish | source
 
-fish_config theme choose nord
+fish_config theme choose ayu
 
 function starship_transient_prompt_func
     starship module character
