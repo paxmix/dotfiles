@@ -1,5 +1,5 @@
-(setq doom-font (font-spec :family "JetBrainsMonoNL Nerd Font" :size 15)
-      doom-variable-pitch-font (font-spec :family "Inter" :size 15))
+(setq doom-font (font-spec :family "JetBrainsMonoNL Nerd Font" :size 16)
+      doom-variable-pitch-font (font-spec :family "Inter" :size 16))
 
 (setq doom-theme 'doom-tomorrow-night)
 
