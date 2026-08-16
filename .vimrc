@@ -24,3 +24,4 @@ set smartcase           " ...unless search contains a capital letter
 " Clear search highlights easily by pressing the Spacebar
 let mapleader = " "
 nnoremap <leader><space> :nohlsearch<CR>
+inoremap jk <Esc>
